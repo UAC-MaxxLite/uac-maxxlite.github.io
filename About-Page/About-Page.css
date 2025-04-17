@@ -1,6 +1,6 @@
 .u-section-1 {
   min-height: 540px;
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/Connect.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/Connect.webp");
   background-position: 50% 50%;
   background-size: 115%;
 }
@@ -174,7 +174,7 @@
 .u-section-2 .u-image-1 {
   height: 213px;
   width: 213px;
-  background-image: url("/images/IMG_0219.png");
+  background-image: url("../images/IMG_0219.png");
   background-position: 50% 0%;
   margin: 0 -26px;
 }
@@ -197,7 +197,7 @@
 .u-section-2 .u-image-2 {
   height: 213px;
   width: 213px;
-  background-image: url("/images/MaxxLiteLogo.jpg");
+  background-image: url("../images/MaxxLiteLogo.webp");
   background-position: 50% 50%;
   margin: 0 -26px;
 }
@@ -220,7 +220,7 @@
 .u-section-2 .u-image-3 {
   height: 213px;
   width: 213px;
-  background-image: url("/images/Stutpippfp.png");
+  background-image: url("../images/Stutpippfp.webp");
   background-position: 50% 50%;
   margin: 0 -26px;
 }
@@ -243,7 +243,7 @@
 .u-section-2 .u-image-4 {
   height: 213px;
   width: 213px;
-  background-image: url("/images/Silencepfp.png");
+  background-image: url("../images/Silencepfp.webp");
   background-position: 50% 50%;
   margin: 0 -26px;
 }
@@ -266,7 +266,7 @@
 .u-section-2 .u-image-5 {
   height: 213px;
   width: 213px;
-  background-image: url("/images/37cf4c58c00dd6f4c9c49320dcae636a.webp");
+  background-image: url("../images/37cf4c58c00dd6f4c9c49320dcae636a.webp");
   background-position: 50% 50%;
   margin: 0 -26px;
 }
