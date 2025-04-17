@@ -1,48 +1,59 @@
-
-function autoResizeTextInSection(sectionSelector, textSelector) {
-    const section = document.querySelector(sectionSelector);
-    if (!section) return;
-
-    const elements = section.querySelectorAll(textSelector);
+function autoResizeText(selector) {
+    const elements = document.querySelectorAll(selector);
+  
     elements.forEach(el => {
-        el.style.fontSize = ''; // Reset any previous inline font size
-        const parent = el.parentElement;
-        const minFontSize = 5; // Minimum font size
-        let fontSize = 20; // Starting font size
-
-        while (el.scrollWidth > parent.offsetWidth || el.scrollHeight > parent.offsetHeight) {
-            fontSize -= 1.5;
-            el.style.fontSize = fontSize + 'px';
-            if (fontSize <= minFontSize) break;
+      el.style.fontSize = ''; // Reset any previous inline font size
+      const parent = el.parentElement;
+      const minFontSize = 5; // Minimum font size
+      let fontSize = 20; // Starting font size
+  
+      // Apply font size shrinking until the text fits both width and height
+      while (el.scrollWidth > parent.offsetWidth || el.scrollHeight > parent.offsetHeight) {
+        fontSize -= 1.5;
+        el.style.fontSize = fontSize + 'px';
+  
+        // Stop if the font size is too small
+        if (fontSize <= minFontSize) {
+          break;
         }
+      }
     });
-}
-
-function initCardSection() {
-    autoResizeTextInSection('.card-section', 'h1.card-text, .card-middle-text-back');
-
-    // Mobile flip on tap
-    const cardContainers = document.querySelectorAll('.card-section .card-base');
-    cardContainers.forEach(card => {
-        card.addEventListener('click', () => {
-            card.classList.toggle('flipped');
-        });
+  }
+  
+  // Apply auto-resize for h1 and card-middle-text-back
+  window.addEventListener('load', () => {
+    autoResizeText('h1.card-text, .card-middle-text-back');
+  });
+  
+  window.addEventListener('resize', () => {
+    autoResizeText('h1.card-text, .card-middle-text-back');
+  });
+  
+  document.querySelectorAll('.card-base').forEach(card => {
+      card.addEventListener('click', () => {
+          card.classList.toggle('flipped');
+      });
+  });
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    // Create an Intersection Observer to detect when cards are in view
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate'); // Add animation class for cards entering
+          entry.target.classList.remove('fade-out'); // Ensure fade-out is removed when card enters
+        } else {
+          entry.target.classList.add('fade-out'); // Add fade-out class when card leaves
+        }
+      });
+    }, {
+      threshold: 0.25 // Trigger the animation when 25% of the card is visible
     });
-
-    // Button hover effect for mobile
-    const buttons = document.querySelectorAll('.card-section .card-button1');
-    buttons.forEach(button => {
-        button.addEventListener('touchstart', () => {
-            button.classList.add('hovered');
-        });
-        button.addEventListener('touchend', () => {
-            button.classList.remove('hovered');
-        });
+  
+    // Observe all the card elements
+    const cards = document.querySelectorAll('.card-base');
+    cards.forEach(card => {
+      observer.observe(card);
     });
-}
-
-window.addEventListener('load', initCardSection);
-window.addEventListener('resize', () => {
-    autoResizeTextInSection('.card-section', 'h1.card-text, .card-middle-text-back');
-});
-
+  });
+  
