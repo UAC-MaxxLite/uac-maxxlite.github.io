@@ -935,7 +935,7 @@ body {
 /* Keyframe animation for card entry */
 @keyframes slideIn {
   from {
-    transform: translateY(20px);
+    transform: translateY(50px);
     opacity: 0;
   }
   to {
@@ -945,23 +945,17 @@ body {
 }
 
 /* Initially hide cards */
-.card-base {
+.card-container {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 1s ease, transform 1s ease;
 }
 
-/* Add animation class to card */
-.card-base.animate {
+/* Add animation class to card when in view */
+.card-container.animate {
   opacity: 1;
   transform: translateY(0);
   animation: slideIn 1s ease-out forwards;
-}
-
-/* Fade out effect when card is not in view */
-.card-base.fade-out {
-  opacity: 0;
-  transform: translateY(50px);
 }
 
 .card-section {

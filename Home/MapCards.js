@@ -36,20 +36,18 @@ document.querySelectorAll('.card-base').forEach(card => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Create an Intersection Observer to detect when cards are in view
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('animate'); // Add animation class for cards entering
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target); // animate only once
             }
         });
     }, {
-        threshold: 0.5 // Trigger when 50% of the card is visible
+        threshold: 0.5
     });
 
-    // Observe all the card elements
-    const cards = document.querySelectorAll('.card-base');
-    cards.forEach(card => {
+    document.querySelectorAll('.card-container').forEach(card => {
         observer.observe(card);
     });
 });
