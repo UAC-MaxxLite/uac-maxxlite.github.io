@@ -943,18 +943,6 @@ body {
 }
 
 /* Initially hide cards */
-.card-container {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-/* Add animation class to card when in view */
-.card-container.animate {
-  opacity: 1;
-  transform: translateY(0);
-  animation: slideIn 1s ease-out forwards;
-}
 
 .card-section {
   width: 100%;

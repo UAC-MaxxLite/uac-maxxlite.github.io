@@ -403,6 +403,39 @@ body {
   /* Make sure there's no additional space above the text */
 }
 
+.card-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card-tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  max-width: 260px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Black Ops One';
+  position: absolute;
+  z-index: 1002;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.card-tooltip:hover .card-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 .card-bottom-back {
   height: 17%;
   display: flex;
