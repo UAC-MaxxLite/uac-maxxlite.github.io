@@ -535,6 +535,10 @@ body {
 
 .footer-links a:hover {
   color: #ffd700;
+  text-decoration-line: underline;
+  text-decoration-color: #ffd700;
+  text-underline-offset: 10px; /* You can adjust this value */
+  text-decoration-thickness: 2px;
 }
 
 .footer-divider {
