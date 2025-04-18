@@ -55,6 +55,17 @@ body {
   display: inline-block;
 }
 
+.dropdown-arrow {
+  font-size: 0.6em;
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+  font-family: inherit;
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+}
+
 .dropbtn {
   font-family: 'Black Ops One';
   background-color: #dddddd00;
@@ -62,15 +73,37 @@ body {
   padding: 10px 15px;
   font-size: 16px;
   border: none;
-  cursor: pointer;
+  cursor: default;
   border-radius: 5px;
   transition: background 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dropbtn-text {
+  text-decoration: none;
+}
+
+.dropbtn:hover .dropbtn-text {
+  color: #ffd700;
+  text-decoration-line: underline;
+  text-decoration-color: #ffd700;
+  text-underline-offset: 10px; /* You can adjust this value */
+  text-decoration-thickness: 2px;
+}
+
+.dropdown-arrow {
+  font-size: 0.6em;
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+  font-family: inherit;
+  color: inherit;
+  font-weight: inherit;
 }
 
 .dropbtn:hover {
   color: #ffd700;
-  text-decoration-line: underline;
-  text-decoration-color: #ffd700;
 }
 
 .dropdown-content {
@@ -79,7 +112,7 @@ body {
   right: 0;
   background-color: #333333;
   min-width: 180px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1001;
   border-radius: 6px;
   overflow: hidden;
@@ -101,7 +134,6 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 /* Header End */
 
 /* Text Devider Start */
@@ -473,11 +505,11 @@ body {
 }
 
 .footer-divider {
-  width: 70%;
+  width: 50%;
   margin: 20px auto;
-  border: none;
-  height: 2px;
-  background-color: #444;
+  border-radius: 10px;
+  height: 4px;
+  background-color: #505050;
 }
 
 .footer-icons {
