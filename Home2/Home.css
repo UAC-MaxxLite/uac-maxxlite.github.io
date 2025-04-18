@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+
+/* Map Showcase Start*/
+
+/* Keyframe animation for card entry */
+@keyframes slideIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Initially hide cards */
+  
+  .card-section {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('https://i.imgur.com/RKZ3nba.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 1%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Wrapper for the card container */
+  .card-container {
+    perspective: 1000px; /* Adds perspective for 3D effect */
+  }
+  
+  /* The card itself */
+  .card-base {
+    width: 210px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d; /* Required for 3D transformations */
+    transition: transform 0.6s; /* Smooth flip effect */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-base:hover {
+    transform: rotateY(180deg); /* Flip the card on hover */
+  }
+  
+  /* Front side of the card */
+  .card-front, .card-back {
+    border-radius: 15px;
+    box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.2), 0 3px 20px 0 rgba(255, 255, 255, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side during the flip */
+  }
+  
+  .card-front {
+    background-image: url('https://i.imgur.com/ja1q8a4.jpeg'); /* Front image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-back {
+    background-image: url('https://i.imgur.com/rJ9KkzJ.jpeg'); /* Back image */
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(180deg); /* Initially hidden by 180 degrees */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Card sections */
+  .card-top {
+    height: 8%;
+    font-family: 'Black Ops One'; /* Apply the Black Ops One font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: visible; /* Ensure no overflow is hidden */
+  }
+  
+  .card-top h1 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    width: 100%;
+    font-size: 20px; /* Default size */
+    flex-shrink: 0; /* Prevent shrinking */
+    box-sizing: border-box;
+    text-overflow: clip; /* Ensure no ellipsis */
+    display: inline-block;
+    max-width: 100%;
+  }
+  
+  .card-middle {
+    height: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align the image at the top */
+    align-items: center;
+    padding: 0 5px; /* Left and right padding of 5px */
+  }
+  
+  .card-image {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Maintain a 1x1 aspect ratio */
+    object-fit: cover; /* Ensure image covers the area without stretching */
+    margin-bottom: 10px; /* Space between the image and the text */
+  }
+  
+  .card-middle-text {
+    text-align: center;
+    font-size: 14px; /* Fixed font size for text */
+    color: white; /* Ensure text is visible */
+    padding: 0 5px; /* Padding to ensure the text doesn't touch the edges */
+    font-family: 'Black Ops One'; /* Use the same font as h1 */
+    margin-top: 0; /* Make sure there's no additional space above the text */
+  }
+  
+  .card-bottom {
+    height: 9%;
+    text-align: center;
+  }
+  
+  /* Styles for the back side content *//* Card sections */
+  .card-top-back {
+    height: 19%;
+    font-family: 'Black Ops One'; /* Apply the Black Ops One font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: visible; /* Ensure no overflow is hidden */
+  }
+  
+  .card-top-back h1 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    width: 100%;
+    font-size: 20px; /* Default size */
+    flex-shrink: 0; /* Prevent shrinking */
+    box-sizing: border-box;
+    text-overflow: clip; /* Ensure no ellipsis */
+    display: inline-block;
+    max-width: 100%;
+  }
+  
+  .card-middle-back {
+    height: 64%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align the image at the top */
+    align-items: center;
+    padding: 0 5px; /* Left and right padding of 5px */
+  }
+  
+  .card-middle-text-back {
+    text-align: center;
+    font-size: 14px; /* Fixed font size for text */
+    color: white; /* Ensure text is visible */
+    padding: 0 5px; /* Padding to ensure the text doesn't touch the edges */
+    font-family: 'Black Ops One'; /* Use the same font as h1 */
+    margin-top: 0; /* Make sure there's no additional space above the text */
+  }
+  
+  .card-bottom-back {
+    height: 17%;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    position: relative;
+    text-align: center;
+  }
+  
+  .card-button {
+    font-family: 'Black Ops One';
+    /* Remove positioning so flexbox handles it */
+    white-space: nowrap;
+    border-radius: 25px;
+    padding: 6px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Style variant with white border */
+  .card-button1 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  /* Hover effect */
+  .card-button1:hover {
+    background-color: #868787;
+    color: white;
+  }
+  
+  .card-button1:active {
+    background-color: #868787;
+    color: white;
+  }
+  
+  /* Back side button positioning */
+  .card-back .card-bottom {
+    height: 9%;
+    position: relative; /* Ensure button is positioned correctly */
+    text-align: center;
+  }
+  
+  @media (max-width: 480px) {
+    .card-button {
+      font-size: 0.85em;
+      padding: 5px 20px;
+    }
+  }
+  
+  .card-base:hover,
+  .card-base.flipped {
+    transform: rotateY(180deg);
+  }
+/* Map Showcase End*/
