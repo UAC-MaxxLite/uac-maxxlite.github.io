@@ -31,7 +31,7 @@ body {
   .card-section {
     width: 100%;
     min-height: 100vh;
-    background-image: url('https://i.imgur.com/RKZ3nba.jpeg');
+    background-image: url('../images/mapcard-page-bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ body {
   }
   
   .card-front {
-    background-image: url('https://i.imgur.com/ja1q8a4.jpeg'); /* Front image */
+    background-image: url('../images/mapcard-bg-front.webp'); /* Front image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -95,7 +95,7 @@ body {
   }
   
   .card-back {
-    background-image: url('https://i.imgur.com/rJ9KkzJ.jpeg'); /* Back image */
+    background-image: url('../images/mapcard-bg-back.webp'); /* Back image */
     background-size: cover;
     background-position: center;
     transform: rotateY(180deg); /* Initially hidden by 180 degrees */
