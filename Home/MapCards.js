@@ -34,3 +34,20 @@ document.querySelectorAll('.card-base').forEach(card => {
         card.classList.toggle('flipped');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target); // animate only once
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    document.querySelectorAll('.card-container').forEach(card => {
+        observer.observe(card);
+    });
+});
