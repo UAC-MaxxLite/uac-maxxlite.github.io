@@ -504,10 +504,21 @@ body {
 }
 
 .card-middle-back {
-  height: 64%;
+  height: 14%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  /* Align the image at the top */
+  align-items: center;
+  padding: 0 5px;
+  /* Left and right padding of 5px */
+}
+
+.card-middle-down-back {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   /* Align the image at the top */
   align-items: center;
   padding: 0 5px;
@@ -527,11 +538,12 @@ body {
   margin-top: 0;
   /* Make sure there's no additional space above the text */
 }
-
 .card-tooltip {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  background-color: rgb(66, 66, 66);
+  width: 100%;
 }
 
 .card-tooltip-text {
