@@ -34,3 +34,12 @@ document.querySelectorAll('.card-base').forEach(card => {
         card.classList.toggle('flipped');
     });
 });
+
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('.sticky-header');
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
