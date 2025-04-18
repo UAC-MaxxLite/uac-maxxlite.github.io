@@ -136,6 +136,111 @@ body {
 }
 /* Header End */
 
+/* Connect Page Start */
+.server-section {
+  width: 100%;
+  height: 100vh;
+  background: url('../images/StealthNight.webp') center center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  font-family: 'Black Ops One';
+}
+
+.server-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.server-shape-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.server-diamond {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.server-line {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.server-logo {
+  position: absolute;
+  width: 300px;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.server-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
+  align-items: center; /* Ensure the buttons are centered horizontally */
+}
+
+.server-text {
+  color: white;
+  font-size: 18px;
+}
+
+.server-btn {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 2px solid white;
+  padding: 3px 3px; /* Adjust padding to suit the text */
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-block; /* Changed from inline-flex to inline-block */
+  white-space: nowrap; /* Prevent text from wrapping */
+  width: auto; /* Ensure the width is based on the text */
+  min-width: 120px; /* Optional: To ensure buttons don't get too small */
+}
+
+.server-btn--small {
+  padding: 3px 3px;
+  font-size: 12px;
+  min-width: 100px; /* Optional: To ensure buttons don't get too small */
+}
+
+.server-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+  color: #ffd700;
+}
+
+/* Connect Page End */
+
 /* Text Devider Start */
 .section-divider {
   width: 100%;
@@ -159,7 +264,6 @@ body {
   color: #ffffff;
   /* darker gray text */
 }
-
 /* Text Devider End */
 
 /* Divider Start*/
