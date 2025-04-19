@@ -2,7 +2,7 @@
 <html lang="en-GB" style="font-size: 16px;">
 
 <head>
-	<script type="text/javascript" src="MapCards.js" defer=""></script>
+	<script type="text/javascript" src="Home.js" defer=""></script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">
@@ -2585,6 +2585,723 @@
 	<!-- Supported Mods Start -->
 	<section class="section-divider">
 		<h2 class="divider-text">Supported Mods</h2>
+	</section>
+	<section class="section-bg">
+		<div class="mods-tab">
+			<div class="mods-tab-buttons-container">
+				<button class="mods-tablinks active" onclick="openCity(event, 'Gen-Mods')" id="mods-defaultOpen">General
+					Mods</button>
+				<button class="mods-tablinks" onclick="openCity(event, 'Modern-Mods')">Modern Era</button>
+				<button class="mods-tablinks" onclick="openCity(event, 'Scifi-Mods')">Sci-Fi Era</button>
+				<button class="mods-tablinks" onclick="openCity(event, 'Historic-Mods')">Historic Era</button>
+				<button class="mods-tablinks" onclick="openCity(event, 'Unique-Mods')">Unique Era</button>
+				<button class="mods-tablinks" onclick="openCity(event, 'Trader-Mods')">Trader Mods</button>
+				<button class="mods-tablinks" onclick="openCity(event, 'Vehicle-Mods')">Vehicle Mods</button>
+				<button class="mods-tablinks" onclick="openCity(event, 'cDLC-Mods')">Supported cDLC</button>
+			</div>
+		</div>
+		<div id="Gen-Mods" class="mods-tabcontent active">
+			<div class="mods-content">
+				<h2 class="content-mods-header">ACE</h2>
+				<p class="content-mods-info">
+					A complete overhaul of the game. It's impossible to explain.
+				</p>
+				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=463939057" target="_blank"
+					class="content-mods-button">Workshop Page</a>
+				<div class="content-mods-divider"></div>
+			</div>
+			<div class="mods-content">
+				<h2 class="content-mods-header">KAT Advanced Medical</h2>
+				<p class="content-mods-info">
+					A complete overhaul of ACE medical. It's also impossible to explain.
+				</p>
+				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2020940806" target="_blank"
+					class="content-mods-button">Workshop Page</a>
+				<div class="content-mods-divider"></div>
+			</div>
+			<div class="mods-content">
+				<h2 class="content-mods-header">Task Force Arrowhead Radio (TFAR)</h2>
+				<p class="content-mods-info">
+					Task Force Arrowhead Radio provides a way to dramatically increase gameplay realism and atmosphere
+					by seamless integration with TeamSpeak.
+				</p>
+				<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=620019431" target="_blank"
+					class="content-mods-button">Workshop Page</a>
+				<div class="content-mods-divider"></div>
+			</div>
+			<div class="mods-content">
+				<h2 class="content-mods-header">Zeus Enhanced</h2>
+				<p class="content-mods-info">
+					Zeus Enhanced, also known as ZEN, is an Arma 3 mod aimed at improving and expanding the
+					functionality of the Zeus real-time editor.
+				</p>
+				<a href="https://steamcommunity.com/workshop/filedetails/?id=1779063631" target="_blank"
+					class="content-mods-button">Workshop Page</a>
+				<div class="content-mods-divider"></div>
+			</div>
+			<div class="mods-content">
+				<h2 class="content-mods-header">Balancing Notice:</h2>
+				<ul class="content-mods-info mods">
+					<li>Mods that have RHS balancing will play well with each other. RHS typically doesn't play well
+						with other balancing methods. Take this into account when choosing factions.</li><br>
+					<li>Mods that use Custom balancing are a wildcard. They may work well with other methods, or they
+						may not. Some may require ACE compats if using ACE, some may not.</li><br>
+					<li>Mods that use Vanilla balancing will play well with each other. This is why we mostly use CUP to
+						supplement factions that are also balanced with Vanilla.</li>
+				</ul>
+				<div class="content-mods-divider"></div>
+			</div>
+		</div>
+		<div id="Modern-Mods" class="mods-tabcontent">
+			<div class="mods-content">
+				<h1 class="content-mods-header">RHS</h1>
+				<ul class="content-mods-info mods-2">
+					<li>Factions: Russian Federation, CDF, US Army, USMC.</li>
+					<li>Balancing: RHS</li>
+					<li><a class="mods-link" href="default.asp" target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">RHS Green Sea Battalion</h1>
+				<ul class="content-mods-info mods-2">
+					<li>Factions: GSB, SZAVB.</li>
+					<li>Balancing: RHS</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019567905"
+							target="_blank">RHS Base</a> and <a class="mods-link"
+							href="https://steamcommunity.com/workshop/filedetails/?id=2899715306" target="_blank">Green
+							Sea Battalion Gear 2022</a></li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2872102180"
+							target="_blank">Optional Additions</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">TFC</h1>
+				<ul class="mods-2">
+					<li>Factions: Canada.</li>
+					<li>Balancing: RHS</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3063926843"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">3CBBAF</h1>
+				<ul class="mods-2">
+					<li>Factions: Britain.</li>
+					<li>Balancing: RHS</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019552209"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">3CBF</h1>
+				<ul class="mods-2">
+					<li>Factions: AAF, Russian Federation, ARD, CDF, HIDF, LDF, TKA, US Army, USMC.</li>
+					<li>Balancing: RHS</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019553097"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Project RACS</h1>
+				<ul class="mods-2">
+					<li>Factions: RACS, SLA.</li>
+					<li>Balancing: RHS</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019567083"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Aegis</h1>
+				<ul class="mods-2">
+					<li>Factions: AAF, AFRF, AUKUS, CSAT, NATO, CHDKZ, ION.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3029745748"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">BWMod (Germany)</h1>
+				<ul class="mods-2">
+					<li>Factions: Germany.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019560391"
+							target="_blank">BWMod/Vanilla</a></li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019561262"
+							target="_blank">BWMod/RHS</a></li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019562271"
+							target="_blank">BWMod/CUP</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">CUP</h1>
+				<ul class="mods-2">
+					<li>Factions: Czech Republic, Russian Federation, Britain, Germany, CDF, HIL, ION PMC, RACS, TKA, US
+						Army, USMC.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019562847"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Estraria</h1>
+				<ul class="mods-2">
+					<li>Factions: Federal Republic of Estraria.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3092603536"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">FFAA</h1>
+				<ul class="mods-2">
+					<li>Factions: Spain.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019563232"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Pedagne</h1>
+				<ul class="mods-2">
+					<li>Factions: Italy.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019565642"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">PLA</h1>
+				<ul class="mods-2">
+					<li>Factions: China.</li>
+					<li>Balancing: Custom</li>
+					<li style="color:#c10303;">Mods required have been removed from the workshop.</li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Swedish Faction Project</h1>
+				<ul class="mods-2">
+					<li>Factions: Sweden.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019568578"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">BRAF</h1>
+				<ul class="mods-2">
+					<li>Factions: Brazil, MNGC.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3034666054"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">AMF</h1>
+				<ul class="mods-2">
+					<li>Factions: France.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3055728379"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">TMT (Turkey/Turkish Land Forces)</h1>
+				<ul class="mods-2">
+					<li>Factions: Turkey.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/workshop/filedetails/?id=3136919159"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Norwegian Armed Forces</h1>
+				<ul class="mods-2">
+					<li>Factions: Norway.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3333292879"
+							target="_blank">Base</a> (Requires CUP Weapons, Vehicles and Units)</li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Finnish Armed Forces</h1>
+				<ul class="mods-2">
+					<li>Factions: Finland.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=917042703"
+							target="_blank">Base</a> (Requires CUP Weapons, Vehicles and Units)</li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Hellenic Armed Forces</h1>
+				<ul class="mods-2">
+					<li>Factions: Greece.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/workshop/filedetails/?id=862564410"
+							target="_blank">Base</a> (Requires CUP Weapons, Vehicles and Units)</li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+		</div>
+		<div id="Scifi-Mods" class="mods-tabcontent">
+			<div class="mods-content">
+				<h1 class="content-mods-header">Star Wars Clone Wars</h1>
+				<ul class="mods-2">
+					<li>Factions: The Republic, The CIS, Death Watch and The Mandalorians.</li>
+					<li>Balancing: Custom</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019570269"
+							target="_blank">Base</a></li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019571546"
+							target="_blank">Webknights</a> (Warning: Jedi in this modset are borderline invincible. Use
+						with EXTREME caution!)</li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Star Wars Empire (WMs)</h1>
+				<ul class="mods-2">
+					<li>Factions: Galactic Empire, Rebel Alliance, Rex's Clone Uprising and Saw Gerrera's Partisans.
+					</li>
+					<li>Balancing: Custom</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3222259903"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Star Wars Empire (JMs)</h1>
+				<ul class="mods-2">
+					<li>Factions: The Empire, Saw Gerrera's Partisans, Empire Civilians.</li>
+					<li>Balancing: Custom</li>
+					<li style="color:#c10303;">Mods required have been removed from the workshop.</li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">OPTRE (Halo)</h1>
+				<ul class="mods-2">
+					<li>Factions: UNSC, Covenant, Insurrectionists, Flood.</li>
+					<li>Balancing: Custom</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019563643"
+							target="_blank">Base</a></li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3019564987"
+							target="_blank">Webknights</a></li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2796579441"
+							target="_blank">Precursors</a> is also supported.</li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Android Ascension</h1>
+				<ul class="mods-2">
+					<li>Factions: Android Army, Vanguard, Replikas, Android civilians.</li>
+					<li>Balancing: Custom</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3234836437"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+		</div>
+		<div id="Historic-Mods" class="mods-tabcontent">
+			<div class="mods-content">
+				<h1 class="content-mods-header">IFA3</h1>
+				<ul class="mods-2">
+					<li>Era: WW2</li>
+					<li>Factions: Wehrmacht, Afrika Korps, Red Army, US Army, British Army, Polish Resistance, Allies
+					</li>
+					<li>Balancing: Vanilla (ACE Compat Required)</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2648308937"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">CSA38</h1>
+				<ul class="mods-2">
+					<li>Era: WW2</li>
+					<li>Factions: Wehrmacht, British Army, Czech Resistance.</li>
+					<li>Balancing: Vanilla (ACE Compat Required)</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3034665416"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Northern Fronts</h1>
+				<ul class="mods-2">
+					<li>Era: WW2</li>
+					<li>Factions: Soviet, Finland, Norway.</li>
+					<li>Balancing: Vanilla (ACE Compat Required)</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3082226640"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Faces of War</h1>
+				<ul class="mods-2">
+					<li>Era: WW2</li>
+					<li>Factions: Wehrmacht and USA.</li>
+					<li>Balancing: Vanilla (ACE Compat Required)</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3222258367"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">East Asia War</h1>
+				<ul class="mods-2">
+					<li>Era: WW2</li>
+					<li>Factions: Imperial Japan, China and Chinese Civilians.</li>
+					<li>Balancing: Vanilla (ACE Compat Required)</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3222254003"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Unsung</h1>
+				<ul class="mods-2">
+					<li>Era: Cold War</li>
+					<li>Factions: US Army, PAVN, Viet Cong.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=943001311"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Cold War Rearmed III</h1>
+				<ul class="mods-2">
+					<p style="font-size:0.8rem">This collection has 3 extra CWR mods that add BAF, USMC, TDF and TRF.
+						They are not technically required, but they round out the factions.</p>
+					<li>Era: Cold War</li>
+					<li>Factions: USSR, TDF, US Army, US Marine Corps, BAF, TRF, Miltia, FIA</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3269370567"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+		</div>
+		<div id="Unique-Mods" class="mods-tabcontent">
+			<div class="mods-content">
+				<h1 class="content-mods-header">STALKER</h1>
+				<ul class="mods-2">
+					<li>Era: Modern, Alternate History</li>
+					<li>Factions: Clear Sky, Freedom, Military, Monolith, Ecologists, Loners, Bandits, Duty.</li>
+					<li>Balancing: Vanilla or RHS Respectively</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3029710536"
+							target="_blank">Base</a></li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3033192423"
+							target="_blank">Expanded</a></li>
+					<li style="font-size:0.8rem">You can swap the three CUP mods with RHSUSAF, RHSAFRF, RHSGREF, and
+						RHSSAF to get RHS versions of these factions.</li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Zombies</h1>
+				<ul class="mods-2">
+					<li>Era: Multi Era</li>
+					<li>Factions: Zombies.</li>
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3034673986"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+		</div>
+		<div id="Trader-Mods" class="mods-tabcontent">
+			<div class="mods-content">
+				<h2 class="content-mods-header">Supported Mods (Weapons)</h2>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">NIArms</h1>
+				<ul class="mods-2">
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2595680138"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Specialist Military Arms</h1>
+				<ul class="mods-2">
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=699630614"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Tier One Weapons</h1>
+				<ul class="mods-2">
+					<li>Balancing: RHS</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3034672470"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Free World Armoury</h1>
+				<ul class="mods-2">
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2424797017"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">JCA - Infantry Arsenal</h1>
+				<ul class="mods-2">
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3333302397"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Project Infinite - All in one</h1>
+				<ul class="mods-2">
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/workshop/filedetails/?id=807038742"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">YLArms</h1>
+				<ul class="mods-2">
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3052209341"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 class="content-mods-header">Supported Mods (Vehicles)</h2>
+				<p style="font-size:0.8rem; text-align:center;">Most modsets have supported vehicles.</p>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Flying Legends</h1>
+				<ul class="mods-2">
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/workshop/filedetails/?id=2012417505"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Secret Weapons Reloaded</h1>
+				<ul class="mods-2">
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2710902874"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Naval Legends</h1>
+				<ul class="mods-2">
+					<li>Balancing: Vanilla</li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2012371414"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+		</div>
+		<div id="Vehicle-Mods" class="mods-tabcontent">
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">Apex Vehicle Pack</h2>
+				<a class="content-mods-button" href="https://store.steampowered.com/app/395180/Arma_3_Apex/"
+					target="_blank">Store Page</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">Laws of War Vehicle Pack
+				</h2>
+				<a class="content-mods-button"
+					href="https://store.steampowered.com/app/571710/Arma_3_Laws_of_War/?curator_clanid=2799889"
+					target="_blank">Store Page</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">Contact Vehicle Pack</h2>
+				<a class="content-mods-button"
+					href="https://store.steampowered.com/app/1021790/Arma_3_Contact/?curator_clanid=2799889"
+					target="_blank">Store Page</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">Karts Vehicle Pack</h2>
+				<a class="content-mods-button"
+					href="https://store.steampowered.com/app/288520/Arma_3_Karts/?curator_clanid=2799889"
+					target="_blank">Store Page</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">Western Sahara Vehicle
+					Pack</h2>
+				<a class="content-mods-button"
+					href="https://store.steampowered.com/app/1681170/Arma_3_Creator_DLC_Western_Sahara/?curator_clanid=2799889"
+					target="_blank">Store Page</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">Reaction Forces Vehicle
+					Pack</h2>
+				<a class="content-mods-button"
+					href="https://store.steampowered.com/app/2647760/Arma_3_Creator_DLC_Reaction_Forces/?curator_clanid=2799889"
+					target="_blank">Store Page</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">S.O.G. Vehicle pack</h2>
+				<a class="content-mods-button"
+					href="https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/?curator_clanid=2799889"
+					target="_blank">Store Page</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">Global Mobalization
+					Vehicle Pack</h2>
+				<a class="content-mods-button"
+					href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/?curator_clanid=2799889"
+					target="_blank">Store Page</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">CSLA Iron Curtain Vehicle
+					Pack</h2>
+				<a class="content-mods-button"
+					href="https://store.steampowered.com/app/1294440/Arma_3_Creator_DLC_CSLA_Iron_Curtain/?curator_clanid=2799889"
+					target="_blank">Store Page</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">D3S Car Pack</h2>
+				<a class="content-mods-button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1639607571"
+					target="_blank">Workshop</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">Ivory Car Pack</h2>
+				<a class="content-mods-button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1888644057"
+					target="_blank">Workshop</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">RDS Car Pack</h2>
+				<a class="content-mods-button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=612930542"
+					target="_blank">Workshop</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">TCGM Backpack Bikes</h2>
+				<a class="content-mods-button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2096950604"
+					target="_blank">Workshop</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h2 style="padding-bottom:10px; font-size:1.5rem;" class="content-mods-header">CUP Civilian Vehicle Pack
+				</h2>
+				<a class="content-mods-button" href="https://steamcommunity.com/sharedfiles/filedetails/?id=541888371"
+					target="_blank">Workshop</a>
+				<div class="content-mods-divider-full"></div>
+			</div>
+		</div>
+		<div id="cDLC-Mods" class="mods-tabcontent">
+			<div class="mods-content">
+				<h1 class="content-mods-header">S.O.G. Prairie Fire</h1>
+				<ul class="mods-2">
+					<li>Era: Cold War</li>
+					<li><a class="mods-link"
+							href="https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/"
+							target="_blank">Store Page</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Western Sahara</h1>
+				<ul class="mods-2">
+					<li>Era: Modern</li>
+					<li><a class="mods-link"
+							href="https://store.steampowered.com/app/1681170/Arma_3_Creator_DLC_Western_Sahara/"
+							target="_blank">Store Page</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Reaction Forces</h1>
+				<ul class="mods-2">
+					<li>Era: Modern</li>
+					<li><a class="mods-link"
+							href="https://store.steampowered.com/app/2647760/Arma_3_Creator_DLC_Reaction_Forces/"
+							target="_blank">Store Page</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Expeditionary Forces</h1>
+				<ul class="mods-2">
+					<li>Era: Modern</li>
+					<li><a class="mods-link"
+							href="https://store.steampowered.com/app/2647830/Arma_3_Creator_DLC_Expeditionary_Forces/"
+							target="_blank">Store Page</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Spearhead 1944</h1>
+				<ul class="mods-2">
+					<li>Era: WW2</li>
+					<li><a class="mods-link"
+							href="https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/"
+							target="_blank">Store Page</a></li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2894199585"
+							target="_blank">Base</a></li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2648308937"
+							target="_blank">IFA3</a></li>
+					<li>You can also just use Spearhead 1944 + <a class="mods-link"
+							href="https://steamcommunity.com/sharedfiles/filedetails/?id=3117898674"
+							target="_blank">SPEX</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+			<div class="mods-content">
+				<h1 class="content-mods-header">Global Mobilisation</h1>
+				<ul class="mods-2">
+					<li>Era: Cold War</li>
+					<li><a class="mods-link"
+							href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/"
+							target="_blank">Store Page</a></li>
+					<li><a class="mods-link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3034735195"
+							target="_blank">Base</a></li>
+				</ul>
+				<div class="content-mods-divider-full"></div>
+			</div>
+		</div>
 	</section>
 	<!-- Supported Mods End -->
 	<!-- Donation Start -->
