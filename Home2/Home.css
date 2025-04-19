@@ -89,7 +89,6 @@ body {
   text-decoration-line: underline;
   text-decoration-color: #ffd700;
   text-underline-offset: 10px;
-  /* You can adjust this value */
   text-decoration-thickness: 2px;
 }
 
@@ -136,6 +135,28 @@ body {
   display: block;
 }
 /* Header End */
+
+/* Text Devider Start */
+.section-divider {
+  width: 100%;
+  background-color: #1c1c1c;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 5px solid #555;
+  border-bottom: 5px solid #555;
+  box-sizing: border-box;
+}
+
+.divider-text {
+  margin: 0;
+  font-size: 2rem;
+  font-family: Black Ops One;
+  color: #ffffff;
+}
+/* Text Devider End */
 
 /* Connect Page Start */
 .server-section {
@@ -206,7 +227,6 @@ body {
   gap: 10px;
   z-index: 2;
   align-items: center;
-  /* Ensure the buttons are centered horizontally */
 }
 
 .server-text {
@@ -219,26 +239,20 @@ body {
   color: white;
   border: 2px solid white;
   padding: 3px 3px;
-  /* Adjust padding to suit the text */
   font-size: 16px;
   text-decoration: none;
   border-radius: 20px;
   transition: background 0.3s, transform 0.2s;
   display: inline-block;
-  /* Changed from inline-flex to inline-block */
   white-space: nowrap;
-  /* Prevent text from wrapping */
   width: auto;
-  /* Ensure the width is based on the text */
   min-width: 120px;
-  /* Optional: To ensure buttons don't get too small */
 }
 
 .server-btn--small {
   padding: 3px 3px;
   font-size: 12px;
   min-width: 100px;
-  /* Optional: To ensure buttons don't get too small */
 }
 
 .server-btn:hover {
@@ -286,41 +300,41 @@ body {
   align-items: center;
 }
 
+
 .slide-text-background {
   color: white;
   position: absolute;
-  top: -100%; /* Start off-screen */
+  top: -100%;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
   border-radius: 0 0 10px 10px;
   padding: 10px 20px;
-  transition: top 1.2s ease-out; /* Smooth transition for sliding */
+  transition: top 1.2s ease-out;
   z-index: 0;
 }
 
-/* Main Text */
 .slide-text {
   text-align: center;
   position: relative;
-  top: -50%; /* Start off-screen */
+  top: -50%;
   font-size: 1.5rem;
-  opacity: 0; /* Start hidden */
-  transition: top 1.5s ease-out, opacity 1.5s ease-out; /* Slide and fade */
+  opacity: 0;
+  transition: top 1.5s ease-out, opacity 1.5s ease-out;
   margin: 5px 0;
 }
 
-/* Small Text */
 .slide-text-small {
   text-align: center;
   position: relative;
-  top: -50%; /* Start off-screen */
+  top: -50%;
   font-size: 0.6rem;
-  opacity: 0; /* Start hidden */
-  transition: top 2s ease-out, opacity 2s ease-out; /* Slide and fade with delayed transition */
+  opacity: 0;
+  transition: top 2s ease-out, opacity 2s ease-out;
   margin: 5px 0;
 }
+
 
 .slider-arrow {
   position: absolute;
@@ -384,37 +398,13 @@ body {
 }
 /* Slider Section End */
 
-/* Text Devider Start */
-.section-divider {
-  width: 100%;
-  background-color: #1c1c1c;
-  /* light gray */
-  padding: 40px 20px;
-  /* height and spacing */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-top: 5px solid #555;
-  border-bottom: 5px solid #555;
-  box-sizing: border-box;
-}
-
-.divider-text {
-  margin: 0;
-  font-size: 2rem;
-  font-family: Black Ops One;
-  color: #ffffff;
-  /* darker gray text */
-}
-/* Text Devider End */
-
 /* Map Showcase Start*/
 @keyframes slideIn {
   from {
     transform: translateY(50px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -446,31 +436,24 @@ body {
   box-sizing: border-box;
 }
 
-/* Wrapper for the card container */
 .card-container {
   perspective: 1000px;
-  /* Adds perspective for 3D effect */
 }
 
-/* The card itself */
 .card-base {
   width: 210px;
   height: 300px;
   position: relative;
   transform-style: preserve-3d;
-  /* Required for 3D transformations */
   transition: transform 0.6s;
-  /* Smooth flip effect */
   display: flex;
   flex-direction: column;
 }
 
 .card-base:hover {
   transform: rotateY(180deg);
-  /* Flip the card on hover */
 }
 
-/* Front side of the card */
 .card-front,
 .card-back {
   border-radius: 15px;
@@ -479,12 +462,10 @@ body {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  /* Hide the back side during the flip */
 }
 
 .card-front {
   background-image: url('../images/mapcard-bg-front.webp');
-  /* Front image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -494,20 +475,16 @@ body {
 
 .card-back {
   background-image: url('../images/mapcard-bg-back.webp');
-  /* Back image */
   background-size: cover;
   background-position: center;
   transform: rotateY(180deg);
-  /* Initially hidden by 180 degrees */
   display: flex;
   flex-direction: column;
 }
 
-/* Card sections */
 .card-top {
   height: 8%;
   font-family: 'Black Ops One';
-  /* Apply the Black Ops One font */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -515,7 +492,6 @@ body {
   box-sizing: border-box;
   width: 100%;
   overflow: visible;
-  /* Ensure no overflow is hidden */
 }
 
 .card-top h1 {
@@ -523,15 +499,11 @@ body {
   margin: 0;
   text-align: center;
   white-space: nowrap;
-  /* Prevent text from wrapping */
   width: 100%;
   font-size: 20px;
-  /* Default size */
   flex-shrink: 0;
-  /* Prevent shrinking */
   box-sizing: border-box;
   text-overflow: clip;
-  /* Ensure no ellipsis */
   display: inline-block;
   max-width: 100%;
 }
@@ -541,34 +513,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* Align the image at the top */
   align-items: center;
   padding: 0 5px;
-  /* Left and right padding of 5px */
 }
 
 .card-image {
   width: 100%;
   aspect-ratio: 1 / 1;
-  /* Maintain a 1x1 aspect ratio */
   object-fit: cover;
-  /* Ensure image covers the area without stretching */
   margin-bottom: 10px;
-  /* Space between the image and the text */
 }
 
 .card-middle-text {
   text-align: center;
   font-size: 14px;
-  /* Fixed font size for text */
   color: white;
-  /* Ensure text is visible */
   padding: 0 5px;
-  /* Padding to ensure the text doesn't touch the edges */
   font-family: 'Black Ops One';
-  /* Use the same font as h1 */
   margin-top: 0;
-  /* Make sure there's no additional space above the text */
 }
 
 .card-bottom {
@@ -576,12 +538,9 @@ body {
   text-align: center;
 }
 
-/* Styles for the back side content */
-/* Card sections */
 .card-top-back {
   height: 19%;
   font-family: 'Black Ops One';
-  /* Apply the Black Ops One font */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -589,7 +548,6 @@ body {
   box-sizing: border-box;
   width: 100%;
   overflow: visible;
-  /* Ensure no overflow is hidden */
 }
 
 .card-top-back h1 {
@@ -597,15 +555,11 @@ body {
   margin: 0;
   text-align: center;
   white-space: nowrap;
-  /* Prevent text from wrapping */
   width: 100%;
   font-size: 20px;
-  /* Default size */
   flex-shrink: 0;
-  /* Prevent shrinking */
   box-sizing: border-box;
   text-overflow: clip;
-  /* Ensure no ellipsis */
   display: inline-block;
   max-width: 100%;
 }
@@ -615,10 +569,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* Align the image at the top */
   align-items: center;
   padding: 0 5px;
-  /* Left and right padding of 5px */
 }
 
 .card-middle-down-back {
@@ -626,25 +578,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Align the image at the top */
   align-items: center;
   padding: 0 5px;
-  /* Left and right padding of 5px */
 }
 
 .card-middle-text-back {
   text-align: center;
   font-size: 14px;
-  /* Fixed font size for text */
   color: white;
-  /* Ensure text is visible */
   padding: 0 5px;
-  /* Padding to ensure the text doesn't touch the edges */
   font-family: 'Black Ops One';
-  /* Use the same font as h1 */
   margin-top: 0;
-  /* Make sure there's no additional space above the text */
 }
+
 .card-tooltip {
   position: relative;
   display: inline-block;
@@ -683,16 +629,13 @@ body {
   height: 17%;
   display: flex;
   justify-content: center;
-  /* center horizontally */
   align-items: center;
-  /* center vertically */
   position: relative;
   text-align: center;
 }
 
 .card-button {
   font-family: 'Black Ops One';
-  /* Remove positioning so flexbox handles it */
   white-space: nowrap;
   border-radius: 25px;
   padding: 6px 30px;
@@ -704,14 +647,12 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Style variant with white border */
 .card-button1 {
   background-color: transparent;
   color: white;
   border: 2px solid white;
 }
 
-/* Hover effect */
 .card-button1:hover {
   background-color: #868787;
   color: white;
@@ -722,11 +663,9 @@ body {
   color: white;
 }
 
-/* Back side button positioning */
 .card-back .card-bottom {
   height: 9%;
   position: relative;
-  /* Ensure button is positioned correctly */
   text-align: center;
 }
 
@@ -741,7 +680,6 @@ body {
 .card-base.flipped {
   transform: rotateY(180deg);
 }
-
 /* Map Showcase End*/
 
 /* Footer Start*/
@@ -781,7 +719,6 @@ body {
   text-decoration-line: underline;
   text-decoration-color: #ffd700;
   text-underline-offset: 10px;
-  /* You can adjust this value */
   text-decoration-thickness: 2px;
 }
 
@@ -816,5 +753,4 @@ body {
   color: #6b6b6b;
   margin-top: 20px;
 }
-
 /* Footer End*/

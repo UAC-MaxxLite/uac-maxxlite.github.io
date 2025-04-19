@@ -80,7 +80,7 @@ function goToSlide(index) {
     // Animate the selected slide
     setTimeout(() => {
         const activeBg = slideTextBackgrounds[currentIndex];
-        activeBg.style.top = '-2%'; // Bring background up
+        activeBg.style.top = '0%'; // Bring background up
 
         const mainText = activeBg.querySelector('.slide-text');
         const smallText = activeBg.querySelector('.slide-text-small');
