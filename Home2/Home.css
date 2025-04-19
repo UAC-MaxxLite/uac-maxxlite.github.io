@@ -436,13 +436,14 @@ body {
 
 .card-section {
   width: 100%;
-  min-height: 100vh;
   background-size: contain;
   background-image: url('../images/mapcard-page-bg.webp');
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding: 40px 20px;
+  gap: 20px;
   box-sizing: border-box;
 }
 
@@ -456,7 +457,7 @@ body {
   padding-bottom: 1%;
   padding-left: 5%;
   width: 100%;
-  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .card-container {
