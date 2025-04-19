@@ -156,3 +156,16 @@ document.querySelector('.slider-arrow.right').addEventListener('click', () => go
 // Initialize the slider and dots
 createDots();  // Create the correct number of dots
 goToSlide(currentIndex);  // Initialize the slider to the first slide
+
+// === Autoplay ===
+let autoplayInterval = setInterval(() => {
+    goToSlide(currentIndex + 1);
+  }, 10000);
+  
+  const sliderContainer = document.querySelector('.slider-container');
+  sliderContainer.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+  sliderContainer.addEventListener('mouseleave', () => {
+    autoplayInterval = setInterval(() => {
+      goToSlide(currentIndex + 1);
+    }, 10000);
+  });
