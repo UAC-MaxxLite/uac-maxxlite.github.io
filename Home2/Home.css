@@ -134,7 +134,6 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 /* Header End */
 
 /* Text Devider Start */
@@ -157,7 +156,6 @@ body {
   font-family: "Black Ops One";
   color: #ffffff;
 }
-
 /* Text Devider End */
 
 /* Connect Page Start */
@@ -262,7 +260,6 @@ body {
   transform: scale(1.05);
   color: #ffd700;
 }
-
 /* Connect Page End */
 
 /* Slider Section Start */
@@ -303,9 +300,55 @@ body {
   align-items: center;
 }
 
+.slider-dots {
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  z-index: 5;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dots-background {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+.dot {
+  height: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+  width: 10px;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background-color: #ffd90056;
+}
+
+.dot.active {
+  width: 30px;
+  background-color: #ffd700;
+  border-width: 1px;
+  border-color: #1c1c1c;
+  border-style: solid;
+}
 
 .slide-text-background {
-  color: white;
   position: absolute;
   top: -100%;
   left: 50%;
@@ -315,21 +358,17 @@ body {
   border-radius: 0 0 10px 10px;
   padding: 10px 20px;
   transition: top 1.2s ease-out;
-  z-index: 0;
-  border-bottom: solid;
-  border-left: solid;
-  border-right: solid;
-  border-color: #ffffff4f;
+  z-index: 1;
 }
 
 .slide-text {
   text-align: center;
   position: relative;
   top: -50%;
-  font-size: 2.5rem;
-  opacity: 0;
-  transition: top 1.5s ease-out, opacity 1.5s ease-out;
+  font-size: 3rem;
+  transition: top 1.5s ease-out;
   margin: 5px 0;
+  z-index: 2;
 }
 
 .slide-text-small {
@@ -337,11 +376,10 @@ body {
   position: relative;
   top: -50%;
   font-size: 1.2rem;
-  opacity: 0;
-  transition: top 2s ease-out, opacity 2s ease-out;
+  transition: top 2s ease-out;
   margin: 5px 0;
+  z-index: 2;
 }
-
 
 .slider-arrow {
   position: absolute;
@@ -376,50 +414,6 @@ body {
 .slider-arrow.right {
   right: 20px;
 }
-
-.slider-dots {
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  z-index: 5;
-}
-
-.dots-background {
-  position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
-  border-radius: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: -1;
-  transition: width 0.3s ease;
-}
-
-.dot {
-  height: 10px;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.6);
-  transition: all 0.3s ease;
-  width: 10px;
-  cursor: pointer;
-}
-
-.dot.active {
-  width: 30px;
-  background-color: #ffd700;
-  border-width: 1px;
-  border-color: #1c1c1c;
-  border-style: solid;
-}
-
 /* Slider Section End */
 
 /* Map Showcase Start*/
@@ -704,7 +698,6 @@ body {
 .card-base.flipped {
   transform: rotateY(180deg);
 }
-
 /* Map Showcase End*/
 
 /* Footer Start*/
@@ -778,5 +771,4 @@ body {
   color: #6b6b6b;
   margin-top: 20px;
 }
-
 /* Footer End*/
