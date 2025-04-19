@@ -337,7 +337,7 @@ body {
 }
 
 .dot:hover {
-  background-color: #ffd90056;
+  background-color: #fff1a1;
 }
 
 .dot.active {
@@ -359,9 +359,14 @@ body {
   padding: 10px 20px;
   transition: top 1.2s ease-out;
   z-index: 1;
+  border-color: #1c1c1c;
+  border-left: solid;
+  border-right: solid;
+  border-bottom: solid;
 }
 
 .slide-text {
+  color: white;
   text-align: center;
   position: relative;
   top: -50%;
@@ -372,6 +377,7 @@ body {
 }
 
 .slide-text-small {
+  color: white;
   text-align: center;
   position: relative;
   top: -50%;
