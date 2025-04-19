@@ -706,6 +706,68 @@ body {
 }
 /* Map Showcase End*/
 
+/* Supported Mods Start */
+
+/* Supported Mods End */
+
+/* Donation Start */
+.donation-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/MiddleEast.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.donation-content {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: white;
+  cursor: default;
+}
+
+.donation-title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.donation-subtext {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.donation-note {
+  font-size: 0.6rem;
+  margin-bottom: 30px;
+}
+
+.donate-button {
+  display: inline-block;
+  padding: 5px 30px;
+  background-color: #ffd90000;
+  border: solid;
+  border-width: 2px;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.donate-button:hover {
+  color: #ffd700;
+}
+/* Donation End */
+
 /* Footer Start*/
 .site-footer {
   background-color: #333333;
