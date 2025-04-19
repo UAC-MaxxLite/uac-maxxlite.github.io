@@ -47,83 +47,112 @@ window.addEventListener('scroll', () => {
 let currentIndex = 0;
 const slides = document.querySelectorAll('.slide');
 const slideTextBackgrounds = document.querySelectorAll('.slide-text-background');
+const slideTexts = document.querySelectorAll('.slide-text');
+const slideTextSmall = document.querySelectorAll('.slide-text-small');
 const dotsContainer = document.querySelector('.slider-dots');
 const totalSlides = slides.length;
 
+// Function to go to a specific slide
 function goToSlide(index) {
-    if (index >= totalSlides) {
-        currentIndex = 0;
-    } else if (index < 0) {
-        currentIndex = totalSlides - 1;
-    } else {
-        currentIndex = index;
+  if (index >= totalSlides) {
+    currentIndex = 0;  // Loop back to the first slide
+  } else if (index < 0) {
+    currentIndex = totalSlides - 1;  // Loop back to the last slide
+  } else {
+    currentIndex = index;
+  }
+
+  // Slide transition
+  document.querySelector('.slider-track').style.transform = `translateX(-${currentIndex * 100}%)`;
+
+  // Reset all backgrounds and text
+  slideTextBackgrounds.forEach(bg => {
+    bg.style.top = '-100%';
+    const mainText = bg.querySelector('.slide-text');
+    const smallText = bg.querySelector('.slide-text-small');
+    if (mainText) mainText.style.top = '-50%';
+    if (smallText) smallText.style.top = '-50%';
+  });
+
+  // Animate the selected slide's background and text
+  setTimeout(() => {
+    const activeBg = slideTextBackgrounds[currentIndex];
+    activeBg.style.top = '0%';
+
+    const mainText = activeBg.querySelector('.slide-text');
+    const smallText = activeBg.querySelector('.slide-text-small');
+
+    // Delay text animations
+    if (mainText) {
+      setTimeout(() => {
+        mainText.style.top = '0';
+      }, 1500); // First text delay
     }
 
-    // Slide transition
-    document.querySelector('.slider-track').style.transform = `translateX(-${currentIndex * 100}%)`;
+    if (smallText) {
+      setTimeout(() => {
+        smallText.style.top = '0';
+      }, 2000); // Second text delay (0.5s later)
+    }
 
-    // Reset all backgrounds and text
-    slideTextBackgrounds.forEach(bg => {
-        bg.style.top = '-100%';
-        const mainText = bg.querySelector('.slide-text');
-        const smallText = bg.querySelector('.slide-text-small');
-        if (mainText) {
-            mainText.style.top = '-50%';
-            mainText.style.opacity = 0; // Reset opacity
-        }
-        if (smallText) {
-            smallText.style.top = '-50%';
-            smallText.style.opacity = 0; // Reset opacity
-        }
-    });
+  }, 300); // Delay start of animation after slide transition
 
-    // Animate the selected slide
-    setTimeout(() => {
-        const activeBg = slideTextBackgrounds[currentIndex];
-        activeBg.style.top = '0%'; // Bring background up
-
-        const mainText = activeBg.querySelector('.slide-text');
-        const smallText = activeBg.querySelector('.slide-text-small');
-
-        // Delay text animations
-        if (mainText) {
-            setTimeout(() => {
-                mainText.style.top = '0';  // Slide text down
-                mainText.style.opacity = 1; // Fade in text
-            }, 1000); // First text delay
-        }
-
-        if (smallText) {
-            setTimeout(() => {
-                smallText.style.top = '0';  // Slide text down
-                smallText.style.opacity = 1; // Fade in text
-            }, 1500); // Second text delay (0.5s later)
-        }
-
-    }, 300); // Delay start of animation after slide transition
-
-    updateActiveDot();
+  // Update active dot
+  updateActiveDot();
 }
 
+// Function to update active dot
 function updateActiveDot() {
-    const dots = document.querySelectorAll('.dot');
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[currentIndex].classList.add('active');
+  const dots = document.querySelectorAll('.dot');
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[currentIndex].classList.add('active');
 }
 
+// Function to create and update dots
 function createDots() {
-    dotsContainer.innerHTML = '';
-    for (let i = 0; i < totalSlides; i++) {
-        const dot = document.createElement('div');
-        dot.classList.add('dot');
-        dot.addEventListener('click', () => goToSlide(i));
-        dotsContainer.appendChild(dot);
-    }
-    updateActiveDot();
+  dotsContainer.innerHTML = ''; // Clear existing dots
+
+  // Create the background if it doesn't exist
+  let background = dotsContainer.querySelector('.dots-background');
+  if (!background) {
+    background = document.createElement('div');
+    background.classList.add('dots-background');
+    dotsContainer.appendChild(background);
+  }
+
+  // Create the dots
+  for (let i = 0; i < totalSlides; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    dot.addEventListener('click', () => goToSlide(i));
+    dotsContainer.appendChild(dot);
+  }
+
+  updateActiveDot();  // Set the initial active dot
+  updateDotBackground();  // Adjust background for dots
 }
 
+// Function to update the background width based on the number of dots
+function updateDotBackground() {
+  const dots = document.querySelectorAll('.dot');
+  const dotContainer = document.querySelector('.slider-dots');
+  
+  // Get the background container
+  const background = dotContainer.querySelector('.dots-background');
+
+  // Calculate the total width of all dots, including the gaps between them
+  const dotWidth = 10; // The width of each dot
+  const dotGap = 12; // The gap between dots
+  const totalWidth = dots.length * (dotWidth + dotGap + 5); // Adjust for the last gap
+
+  // Set the width of the background to fit the total width of the dots
+  background.style.width = `${totalWidth}px`;
+}
+
+// Event listeners for arrows
 document.querySelector('.slider-arrow.left').addEventListener('click', () => goToSlide(currentIndex - 1));
 document.querySelector('.slider-arrow.right').addEventListener('click', () => goToSlide(currentIndex + 1));
 
-createDots();
-goToSlide(currentIndex);
+// Initialize the slider and dots
+createDots();  // Create the correct number of dots
+goToSlide(currentIndex);  // Initialize the slider to the first slide

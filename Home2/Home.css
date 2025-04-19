@@ -134,13 +134,14 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 /* Header End */
 
 /* Text Devider Start */
 .section-divider {
   width: 100%;
   background-color: #1c1c1c;
-  padding: 40px 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,10 +153,11 @@ body {
 
 .divider-text {
   margin: 0;
-  font-size: 2rem;
-  font-family: Black Ops One;
+  font-size: 3rem;
+  font-family: "Black Ops One";
   color: #ffffff;
 }
+
 /* Text Devider End */
 
 /* Connect Page Start */
@@ -260,6 +262,7 @@ body {
   transform: scale(1.05);
   color: #ffd700;
 }
+
 /* Connect Page End */
 
 /* Slider Section Start */
@@ -313,13 +316,17 @@ body {
   padding: 10px 20px;
   transition: top 1.2s ease-out;
   z-index: 0;
+  border-bottom: solid;
+  border-left: solid;
+  border-right: solid;
+  border-color: #ffffff4f;
 }
 
 .slide-text {
   text-align: center;
   position: relative;
   top: -50%;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   opacity: 0;
   transition: top 1.5s ease-out, opacity 1.5s ease-out;
   margin: 5px 0;
@@ -329,7 +336,7 @@ body {
   text-align: center;
   position: relative;
   top: -50%;
-  font-size: 0.6rem;
+  font-size: 1.2rem;
   opacity: 0;
   transition: top 2s ease-out, opacity 2s ease-out;
   margin: 5px 0;
@@ -380,6 +387,22 @@ body {
   z-index: 5;
 }
 
+.dots-background {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
 .dot {
   height: 10px;
   border-radius: 20px;
@@ -396,6 +419,7 @@ body {
   border-color: #1c1c1c;
   border-style: solid;
 }
+
 /* Slider Section End */
 
 /* Map Showcase Start*/
@@ -680,6 +704,7 @@ body {
 .card-base.flipped {
   transform: rotateY(180deg);
 }
+
 /* Map Showcase End*/
 
 /* Footer Start*/
@@ -753,4 +778,5 @@ body {
   color: #6b6b6b;
   margin-top: 20px;
 }
+
 /* Footer End*/
