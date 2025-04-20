@@ -212,3 +212,70 @@ function toggleMobileMenu(button) {
     menu.classList.toggle("active");
     button.classList.toggle("open");
 }
+
+function toggleFAQ(button) {
+    const allButtons = document.querySelectorAll('.faq-question');
+    const allAnswers = document.querySelectorAll('.faq-answer');
+    const faqBox = document.querySelector('.faq-box');
+
+    const answer = button.nextElementSibling;
+    const isExpanding = !button.classList.contains('active');
+
+    // Reset all buttons except the clicked one
+    allButtons.forEach(q => {
+        if (q !== button) q.classList.remove('active');
+    });
+
+    // Close other answers
+    allAnswers.forEach(a => {
+        if (a !== answer && a.classList.contains('show')) {
+            a.classList.remove('show');
+            a.classList.add('hide');
+            setTimeout(() => {
+                if (a.classList.contains('hide')) a.style.display = 'none';
+            }, 400);
+        }
+    });
+
+    // Store current height
+    const startHeight = faqBox.offsetHeight;
+    faqBox.style.height = startHeight + 'px';
+
+    if (isExpanding) {
+        // Expand clicked
+        button.classList.add('active');
+        answer.style.display = 'block';
+
+        requestAnimationFrame(() => {
+            answer.classList.remove('hide');
+            answer.classList.add('show');
+
+            // Measure height after opening answer
+            const endHeight = faqBox.scrollHeight;
+            faqBox.style.transition = 'height 0.4s ease';
+            faqBox.style.height = endHeight + 'px';
+        });
+    } else {
+        // Collapse clicked
+        button.classList.remove('active');
+        answer.classList.remove('show');
+        answer.classList.add('hide');
+
+        // Measure height after hiding content
+        const tempHeight = answer.offsetHeight;
+        const endHeight = startHeight - tempHeight;
+
+        faqBox.style.transition = 'height 0.6s ease';
+        faqBox.style.height = endHeight + 'px';
+
+        setTimeout(() => {
+            answer.style.display = 'none';
+        }, 400);
+    }
+
+    // Reset height to auto after animation
+    setTimeout(() => {
+        faqBox.style.transition = '';
+        faqBox.style.height = 'auto';
+    }, 600);
+}

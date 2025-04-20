@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en-GB" style="font-size: 16px;">
+
+<head>
+    <script type="text/javascript" src="../Site.js" defer=""></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgb(41, 41, 41);
+            border-radius: 5px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #d1b902;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9e8c00;
+        }
+    </style>
+    <title>FAQ - Antistasi Ultimate</title>
+    <meta name="keywords"
+        content="AntistasiUltimate, FAQ, Arma3, Mod, Help, Support, Answers, Arma 3 Antistasi Ultimate">
+    <meta name="description"
+        content="Frequently Asked Questions about the Antistasi Ultimate Mod for Arma 3. Get support, learn more, and find quick answers.">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="2 days">
+    <meta name="author" content="Maxx">
+    <meta name="theme-color" content="#e8ba00">
+    <meta property="og:title" content="Antistasi Ultimate - FAQ">
+    <meta property="og:description" content="Frequently Asked Questions about the Antistasi Ultimate Mod for Arma 3.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../images/UACLogoSmall.png">
+
+    <link href="FAQ.css" rel="stylesheet" />
+    <link href="../Site.css" rel="stylesheet" />
+    <link href="../images/Yellow.png" rel="icon" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Open+Sans:300,400,600,700,800|Black+Ops+One:400"
+        rel="stylesheet" />
+    <script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"name": "Antistasi Ultimate",
+			"logo": "../images/UACLogoSmall.png",
+			"sameAs": [
+				"https://www.youtube.com/@AntistasiUltimateCommunity",
+				"https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate",
+				"https://discord.gg/antistasiultimate",
+				"https://steamcommunity.com/sharedfiles/filedetails/?id=3020755032"
+			]
+		}
+	</script>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="sticky-header">
+        <a href="https://antistasiultimate.com/Home/" class="logo-link">
+            <img src="../images/SiteLogo1.png" alt="Logo" class="header-logo" />
+        </a>
+
+        <div class="header-dropdowns">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <span class="dropbtn-text">Information</span>
+                    <span class="dropdown-arrow">▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate" target="_blank">Documentation</a>
+                    <a href="https://antistasiultimate.com/Useful-Information" target="_blank">More Info</a>
+                    <a href="https://antistasiultimate.com/FAQ" target="_blank">FAQ</a>
+                    <a href="https://antistasiultimate.com/About-Page" target="_blank">About</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <span class="dropbtn-text">Links</span>
+                    <span class="dropdown-arrow">▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="https://antistasiultimate.com/Community" target="_blank">Community</a>
+                    <a href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate" target="_blank">Github</a>
+                    <a href="https://discord.gg/antistasiultimate" target="_blank">Discord</a>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3020755032" target="_blank">Steam
+                        Workshop</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <nav class="mobile-navbar">
+        <a href="https://antistasiultimate.com/Home/" class="logo-link">
+            <img src="../images/SiteLogo1.png" alt="Logo" class="header-logo" />
+        </a>
+        <button class="menu-toggle" onclick="toggleMobileMenu(this)">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+    <div class="mobile-nav-links" id="mobileNav">
+        <div class="mobile-menu-links">
+            <h3>Information</h3>
+            <div class="content-mods-divider-full"></div>
+            <a href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate" target="_blank">Documentation</a>
+            <a href="https://antistasiultimate.com/Useful-Information" target="_blank">More Info</a>
+            <a href="https://antistasiultimate.com/FAQ" target="_blank">FAQ</a>
+            <a href="https://antistasiultimate.com/About-Page" target="_blank">About</a>
+            <div style="padding:10px"></div>
+            <h3>Links</h3>
+            <div class="content-mods-divider-full"></div>
+            <a href="https://antistasiultimate.com/Community" target="_blank">Community</a>
+            <a href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate" target="_blank">Github</a>
+            <a href="https://discord.gg/antistasiultimate" target="_blank">Discord</a>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3020755032" target="_blank">Steam
+                Workshop</a>
+        </div>
+    </div>
+    <!-- Header End -->
+    <!-- FAQ Start -->
+    <section class="faq-section">
+        <div class="faq-header-wrapper">
+            <div class="faq-header">
+                <h1>Frequently Asked Questions</h1>
+                <p>Here you will find the most frequently asked questions regarding the mod!</p>
+            </div>
+        </div>
+        <div class="faq-container">
+            <div class="faq-box">
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">What is Antistasi Ultimate?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Antistasi Ultimate is a mod for Arma 3 that expands on the original Antistasi with new
+                                content, gameplay mechanics, and community-driven features.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"What do the different victory conditions mean?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <h1>Normal Victory</h1>
+                            <p>more than 50% support and ownership of all airports and military bases (Recommended for
+                                new players)</p>
+                            <div style="margin:10px 0 10px 0" class="content-mods-divider-full"></div>
+                            <h1>Total Victory</h1>
+                            <p>more than 50% support and ownership of all airports, military bases, outposts, factories
+                                and resources</p>
+                            <div style="margin:10px 0 10px 0" class="content-mods-divider-full"></div>
+                            <h1>Economic Victory</h1>
+                            <p>have the following amount of faction money; number of resources * 100,000</p>
+                            <div style="margin:10px 0 10px 0" class="content-mods-divider-full"></div>
+                            <h1>Logistical Victory</h1>
+                            <p>ownership of all airports, seaports and military bases</p>
+                            <div style="margin:10px 0 10px 0" class="content-mods-divider-full"></div>
+                            <h1>Political Victory</h1>
+                            <p>more than 75% support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"Do I need to enable the Contact DLC in the launcher?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No. There really isn't ever a reason to load the Contact DLC unless you are playing the
+                                campaign it adds. Despite Contact having the ability to be loaded like a CDLC, it's
+                                actually like a normal DLC in which you can access its content without loading it.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"How do I unlock vehicles in the black market?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>In the new update, you will unlock vehicles based on the zones you have mostly. Check out
+                                the <a class="faq-link"
+                                    href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Arms-Dealer">Arms
+                                    Dealer</a> page for concrete information.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"I saw a mod with "extender", "extension" or "A3UE" in the name. What
+                                does this mean?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Extensions are mods made by anyone, to add anything to Antistasi (Whether that be
+                                Community or Plus). We do not support these nor do we affiliate with them (unless
+                                explicitly stated by us). <br><br>They may use a black or white Antistasi Ultimate
+                                Extension logo to distinguish them as independently made projects. <br><br>We do not
+                                have a hand in what they add or do; The tools are available for anyone to use as they
+                                wish.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"Something is broken. Fix it!"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We are not psychics. Create a bug report in the discord and follow the guidelines.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"Why won't the spearhead 1944 factions show up?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Load <a class="faq-link"
+                                    href="https://steamcommunity.com/workshop/filedetails/?id=2648308937">IFA3</a> OR <a
+                                    class="faq-link"
+                                    href="https://steamcommunity.com/sharedfiles/filedetails/?id=2894199585">C-47
+                                    Skytrain Mega Pack</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"Can you make X faction/map?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Depends, we all have lives. You can make a suggestion but we guarantee nothing but our
+                                best. If you want to do these yourself, feel free to do so and create a PR. If we deem
+                                that your addition/change is suitable, you will be added to the contributor list on our
+                                github page.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"Is X mod compatible with ultimate?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We don't know. AI mods will probably break ultimate, even some quality of life mods can.
+                                Trial and error! We do have a system to try and catch mods that might not work well with
+                                ultimate and alert the user about the mods they have loaded, and to consider removing
+                                them if any issues arise.<br><br>
+                                You can find a list of mods that throw a warning <a class="faq-link"
+                                    href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/blob/unstable/A3A/addons/ultimate/Stringtable.xml">HERE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"When is the next update?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>While we appreciate that people are interested in what we are planning/doing, we can't
+                                give any concrete answers. We work as a team of individuals who all have our own things
+                                going on. We can't promise a feature, we can't promise an update.<br><br>
+                                You can always look at our github pull requests or commits page and get a general idea
+                                on what is coming. Or even contribute yourself!<br><br>
+                                The next update will release when it is ready.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"Why does it say undercover is unavailable in the current civ
+                                template?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>This will be due to the template makers decision to include the low civ or civ non human
+                                attribute. This is usually reserved for templates in which it wouldn't make sense to be
+                                able to go undercover. (Take zombies for example, if all the civilians are zombies then
+                                how can you go undercover?)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"Why can some people access antistasi features like the arsenal and
+                                others can't?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>There is a good chance that this is due to a corrupt mod, or out of date mod. Make sure
+                                every client updates their mod, and update the server if applicable. If that fails, the
+                                second best chance is that server membership is enabled but the people in question
+                                aren't on the server member list.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"Why should we play this instead of other versions?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Antistasi Ultimate offers all the features of Antistasi Plus, anything you can do in Plus
+                                can also be done in Ultimate. But beyond that, it has support for more factions and more
+                                maps. More new content to experience. Better support for mixing mods together for any
+                                faction combination you like, the newly reworked trader will work with whatever
+                                supported mods you load and factions you use.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"Where is the arms dealer?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Arms dealer location can be obtained via squad leader interrogations, documents and
+                                laptop hacks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"Where is the HQ tent?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>HQ tent was removed, it's functionality was moved into Commander Menu, Environment tab.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"I can't find the mission in Scenarios tab in single player menu, is
+                                there any way to play as single player?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Antistasi Ultimate will not appear in Scenarios menu, but you can still play as single
+                                player by creating a LAN server in Arma 3's multiplayer menu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"Where are the mission PBOs?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>This is no longer just a mission, it is a mod. Therefore it does not have PBOs like pure
+                                missions. It must be handled either via admin commands to switch to the mission when
+                                logged into a dedicated server, or via a custom mission config. Please join the discord
+                                if you require help with this.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"In modsets that utilise custom skeletons, why can't I use X from
+                                enemy X?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Due to the different skeletons, it just doesn't make sense for you to be able to use
+                                certain things. It's also practically impossible to add skeletons without adding them to
+                                each map beforehand (which would then break compatibility.)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"In modsets that have special features such as the Jedi, Spartans,
+                                etc, why can't I play as one?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Antistasi is about making triumphs and gathering victories, small or big. You start from
+                                nothing because it makes for interesting decisions and gameplay. Technical limitations
+                                aside, it just wouldn't be as fun as you think it would! Though we do suggest a mode
+                                called Liberation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"Why can't I get infinite of X in the arsenal?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>This is likely due to a template makers decision to exclude content from spawning into
+                                crates or becoming infinite in the arsenal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"What are the file names for server hosters?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>On the home page you can find the supported maps section.<br><br>Hover above the map card
+                                you want and the information will be on the back side of it</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ End -->
+    <!-- Footer Start -->
+    <footer class="site-footer">
+        <div class="footer-logo-container">
+            <img src="../images/Yellow.png" alt="Logo" class="footer-logo">
+        </div>
+        <div class="footer-links">
+            <a href="https://antistasiultimate.com/About-Page" target="_blank">ABOUT US</a>
+            <a href="https://discord.gg/antistasiultimate" target="_blank">CONTACT US</a>
+            <a href="https://drive.google.com/file/d/1UrDAuN9-9us8Xb-AIFxLrvs6tzw2hbb5/view?usp=sharing"
+                target="_blank">LICENSES</a>
+            <a href="https://drive.google.com/drive/folders/1R3Ylk2RGkukywdA9IhdoURtnonqs7W8Y?usp=sharing"
+                target="_blank">RESOURCES</a>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-icons">
+            <a href="https://www.youtube.com/@AntistasiUltimateCommunity" target="_blank"><img
+                    src="../images/youtubelogo.png" alt="YouTube"></a>
+            <a href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate" target="_blank"><img
+                    src="../images/githublogo.png" alt="GitHub"></a>
+            <a href="https://discord.gg/antistasiultimate" target="_blank"><img src="../images/discordlogo.png"
+                    alt="Discord"></a>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3020755032" target="_blank"><img
+                    src="../images/steamlogo.png" alt="Steam"></a>
+        </div>
+        <p class="footer-copyright">
+            Copyright © 2023 - 2025 Antistasi Ultimate All Rights Reserved
+        </p>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>
