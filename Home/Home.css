@@ -1,960 +1,312 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
+/* Text Devider Start */
+.section-divider {
+  width: 100%;
+  background-color: #1c1c1c;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 5px solid #555;
+  border-bottom: 5px solid #555;
   box-sizing: border-box;
 }
 
-html,
-body {
+.divider-text {
+  margin: 0;
+  font-size: 3rem;
+  font-family: "Black Ops One";
+  color: #ffffff;
+}
+/* Text Devider End */
+
+/* Connect Page Start */
+.server-section {
   width: 100%;
+  height: 100vh;
+  background: url('../images/StealthNight.webp') center center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  font-family: 'Black Ops One';
 }
 
-.u-section-1 {
-  background-image: url("../images/StealthNight.webp");
-  background-position: 50% 50%;
-  min-height: 782px;
+.server-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
-.u-section-1 .u-shape-1 {
-  height: 134px;
-  background-image: none;
-  margin-top: 324px;
-  margin-bottom: 0;
-}
-
-.u-section-1 .u-shape-2 {
-  width: 325px;
-  height: 325px;
-  margin: -229px auto 0;
-}
-
-.u-section-1 .u-image-1 {
-  width: 444px;
+.server-shape-container {
+  position: relative;
+  width: 100%;
   height: 300px;
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin: -312px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.u-section-1 .u-text-1 {
-  width: 392px;
-  margin: 12px auto 0;
-}
-
-.u-section-1 .u-btn-1 {
-  border-style: solid;
-  text-transform: uppercase;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-  margin: 12px auto 0;
-  padding: 10px 64px 10px 63px;
-}
-
-.u-section-1 .u-btn-2 {
-  border-style: solid;
-  text-transform: uppercase;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-  margin: 20px auto 60px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-1 {
-    min-height: 716px;
-  }
-
-  .u-section-1 .u-shape-1 {
-    margin-top: 245px;
-  }
-
-  .u-section-1 .u-text-1 {
-    width: auto;
-  }
-
-  .u-section-1 .u-btn-1 {
-    margin-top: 16px;
-  }
-
-  .u-section-1 .u-btn-2 {
-    margin-top: 12px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-1 {
-    min-height: 548px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-1 {
-    min-height: 411px;
-  }
-
-  .u-section-1 .u-shape-1 {
-    margin-top: 244px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-1 {
-    min-height: 650px;
-  }
-
-  .u-section-1 .u-shape-1 {
-    margin-top: 205px;
-  }
-
-  .u-section-1 .u-shape-2 {
-    margin-top: -230px;
-  }
-
-  .u-section-1 .u-image-1 {
-    width: 340px;
-    height: 230px;
-    margin-top: -276px;
-  }
-
-  .u-section-1 .u-text-1 {
-    margin-top: 48px;
-  }
-
-  .u-section-1 .u-btn-1 {
-    margin-top: 13px;
-  }
-
-  .u-section-1 .u-btn-2 {
-    margin-top: 13px;
-  }
-}
-
-.u-section-2 .u-sheet-1 {
-  min-height: 79px;
-}
-
-.u-section-2 .u-text-1 {
-  font-family: "Black Ops One";
-  font-size: 4.5rem;
-  margin: 0 35px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-2 .u-text-1 {
-    font-size: 3.75rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-2 .u-sheet-1 {
-    min-height: 32px;
-  }
-
-  .u-section-2 .u-text-1 {
-    font-size: 1.875rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-2 .u-sheet-1 {
-    min-height: 18px;
-  }
-
-  .u-section-2 .u-text-1 {
-    font-size: 1.125rem;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.u-block-b308-2 {
+.server-diamond {
   position: absolute;
-  bottom: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.u-block-b308-5 {
+.server-line {
   position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.server-logo {
+  position: absolute;
+  width: 300px;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.server-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
+  align-items: center;
+}
+
+.server-text {
+  color: white;
+  font-size: 18px;
+}
+
+.server-btn {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 2px solid white;
+  padding: 3px 3px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-block;
+  white-space: nowrap;
+  width: auto;
+  min-width: 120px;
+}
+
+.server-btn--small {
+  padding: 3px 3px;
+  font-size: 12px;
+  min-width: 100px;
+}
+
+.server-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+  color: #ffd700;
+}
+/* Connect Page End */
+
+/* Slider Section Start */
+.image-slider-section {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-container {
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+  min-width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slide-inner {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-dots {
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  z-index: 5;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dots-background {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+.dot {
+  height: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+  width: 10px;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background-color: #fff1a1;
+}
+
+.dot.active {
+  width: 30px;
+  background-color: #ffd700;
+  border-width: 1px;
+  border-color: #1c1c1c;
+  border-style: solid;
+}
+
+.slide-text-background {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 0 0 10px 10px;
+  padding: 10px 20px;
+  transition: top 1.2s ease-out;
+  z-index: 1;
+  border-color: #1c1c1c;
+  border-left: solid;
+  border-right: solid;
+  border-bottom: solid;
+}
+
+.slide-text {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: -50%;
+  font-size: 3rem;
+  transition: top 1.5s ease-out;
+  margin: 5px 0;
+  z-index: 2;
+}
+
+.slide-text-small {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: -50%;
+  font-size: 1.2rem;
+  transition: top 2s ease-out;
+  margin: 5px 0;
+  z-index: 2;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.6s ease, background-color 0.9s ease;
+}
+
+.slider-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  color: #ffd700;
+  transition: color 0.6s ease, background-color 0.9s ease;
+}
+
+.slider-arrow.left {
   left: 0;
-  width: 50px;
-  height: 50px;
-  right: auto;
 }
 
-.u-block-b308-4 {
-  position: absolute;
+.slider-arrow.right {
   right: 0;
-  width: 50px;
-  height: 50px;
 }
+/* Slider Section End */
 
-.u-section-3-1 {
-  background-image: url("../images/Maps.webp");
-  background-position: 50% 50%;
-}
-
-.u-section-3-1 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-3-1 .u-text-1 {
-  font-size: 3rem;
-  text-shadow: 0px 0px 30px rgba(26, 26, 26, 1);
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin: 8px auto 60px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-3-1 {
-    background-size: auto 110%;
-  }
-
-  .u-section-3-1 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-3-1 .u-text-1 {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-3-1 .u-sheet-1 {
-    min-height: 500px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-3-1 .u-sheet-1 {
-    min-height: 400px;
-  }
-
-  .u-section-3-1 .u-text-1 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-3-1 .u-sheet-1 {
-    min-height: 300px;
-  }
-}
-
-.u-section-3-2 {
-  background-image: url("../images/Modsets.webp");
-  background-position: 50% 50%;
-}
-
-.u-section-3-2 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-3-2 .u-text-1 {
-  font-size: 3rem;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin: 8px auto 60px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-3-2 {
-    background-size: auto 110%;
-  }
-
-  .u-section-3-2 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-3-2 .u-text-1 {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-3-2 .u-sheet-1 {
-    min-height: 500px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-3-2 .u-sheet-1 {
-    min-height: 400px;
-  }
-
-  .u-section-3-2 .u-text-1 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-3-2 .u-sheet-1 {
-    min-height: 300px;
-  }
-}
-
-.u-section-3-3 {
-  background-image: url("../images/spearhead_1944.webp");
-  background-position: 50% 50%;
-}
-
-.u-section-3-3 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-3-3 .u-text-1 {
-  font-size: 3rem;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin: 8px auto 60px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-3-3 {
-    background-size: auto 110%;
-  }
-
-  .u-section-3-3 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-3-3 .u-text-1 {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-3-3 .u-sheet-1 {
-    min-height: 500px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-3-3 .u-sheet-1 {
-    min-height: 400px;
-  }
-
-  .u-section-3-3 .u-text-1 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-3-3 .u-sheet-1 {
-    min-height: 300px;
-  }
-}
-
-.u-section-3-4 {
-  background-image: url("../images/StealthNight2.webp");
-  background-position: 50% 50%;
-}
-
-.u-section-3-4 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-3-4 .u-text-1 {
-  font-size: 3rem;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin: 8px auto 60px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-3-4 {
-    background-size: auto 110%;
-  }
-
-  .u-section-3-4 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-3-4 .u-text-1 {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-3-4 .u-sheet-1 {
-    min-height: 500px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-3-4 .u-sheet-1 {
-    min-height: 400px;
-  }
-
-  .u-section-3-4 .u-text-1 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-3-4 .u-sheet-1 {
-    min-height: 300px;
-  }
-}
-
-.u-section-3-5 {
-  background-image: url("../images/builder.webp");
-  background-position: 50% 50%;
-}
-
-.u-section-3-5 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-3-5 .u-text-1 {
-  font-size: 3rem;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin: 8px auto 60px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-3-5 {
-    background-size: auto 110%;
-  }
-
-  .u-section-3-5 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-3-5 .u-text-1 {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-3-5 .u-sheet-1 {
-    min-height: 500px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-3-5 .u-sheet-1 {
-    min-height: 400px;
-  }
-
-  .u-section-3-5 .u-text-1 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-3-5 .u-sheet-1 {
-    min-height: 300px;
-  }
-}
-
-.u-section-3-6 {
-  background-image: url("../images/ArmsDealer.webp");
-  background-position: 50% 50%;
-}
-
-.u-section-3-6 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-3-6 .u-text-1 {
-  font-size: 3rem;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin: 8px auto 0;
-}
-
-.u-section-3-6 .u-text-2 {
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
-  font-size: 1.25rem;
-  margin: -11px auto 60px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-3-6 {
-    background-size: auto 110%;
-  }
-
-  .u-section-3-6 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-3-6 .u-text-2 {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-3-6 .u-sheet-1 {
-    min-height: 500px;
-  }
-
-  .u-section-3-6 .u-text-2 {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-3-6 .u-sheet-1 {
-    min-height: 400px;
-  }
-
-  .u-section-3-6 .u-text-1 {
-    font-size: 1.5rem;
-  }
-
-  .u-section-3-6 .u-text-2 {
-    font-size: 0.75rem;
-    width: auto;
-    margin-top: -7px;
-    margin-left: 22px;
-    margin-right: 22px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-3-6 .u-sheet-1 {
-    min-height: 300px;
-  }
-
-  .u-section-3-6 .u-text-2 {
-    font-size: 0.625rem;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-.u-section-3-7 {
-  background-image: url("../images/canada.webp");
-  background-position: 50% 50%;
-}
-
-.u-section-3-7 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-3-7 .u-text-1 {
-  font-size: 3rem;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin: 8px auto 0;
-}
-
-.u-section-3-7 .u-text-2 {
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
-  font-size: 1.25rem;
-  margin: -11px auto 60px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-3-7 {
-    background-size: auto 110%;
-  }
-
-  .u-section-3-7 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-3-7 .u-text-2 {
-    width: auto;
-    margin-top: -16px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-3-7 .u-sheet-1 {
-    min-height: 500px;
-  }
-
-  .u-section-3-7 .u-text-2 {
-    font-size: 1rem;
-    margin-top: -12px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-3-7 .u-sheet-1 {
-    min-height: 400px;
-  }
-
-  .u-section-3-7 .u-text-1 {
-    font-size: 1.5rem;
-    width: auto;
-    margin-top: 1px;
-  }
-
-  .u-section-3-7 .u-text-2 {
-    font-size: 0.75rem;
-    margin-top: 1px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-3-7 .u-sheet-1 {
-    min-height: 300px;
-  }
-
-  .u-section-3-7 .u-text-1 {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  .u-section-3-7 .u-text-2 {
-    font-size: 0.625rem;
-    margin-right: 0;
-  }
-}
-
-.u-section-3-8 {
-  background-image: url("../images/Garrison.webp");
-  background-position: 50% 50%;
-}
-
-.u-section-3-8 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-3-8 .u-text-1 {
-  font-size: 3rem;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin: 8px auto 0;
-}
-
-.u-section-3-8 .u-text-2 {
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
-  font-size: 1.25rem;
-  margin: -11px auto 60px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-3-8 {
-    background-size: auto 110%;
-  }
-
-  .u-section-3-8 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-3-8 .u-text-2 {
-    width: auto;
-    margin-top: -16px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-3-8 .u-sheet-1 {
-    min-height: 500px;
-  }
-
-  .u-section-3-8 .u-text-2 {
-    font-size: 1rem;
-    margin-top: -12px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-3-8 .u-sheet-1 {
-    min-height: 400px;
-  }
-
-  .u-section-3-8 .u-text-1 {
-    font-size: 1.5rem;
-    width: auto;
-    margin-top: 1px;
-  }
-
-  .u-section-3-8 .u-text-2 {
-    font-size: 0.75rem;
-    margin-top: 1px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-3-8 .u-sheet-1 {
-    min-height: 300px;
-  }
-
-  .u-section-3-8 .u-text-1 {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  .u-section-3-8 .u-text-2 {
-    font-size: 0.625rem;
-    margin-right: 0;
-  }
-}
-
-.u-section-3-9 {
-  background-image: url("../images/Zombies.webp");
-  background-position: 50% 50%;
-}
-
-.u-section-3-9 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-3-9 .u-text-1 {
-  font-size: 3rem;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin: 8px auto 0;
-}
-
-.u-section-3-9 .u-text-2 {
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
-  font-size: 1.25rem;
-  margin: -11px auto 60px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-3-9 {
-    background-size: auto 110%;
-  }
-
-  .u-section-3-9 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-3-9 .u-text-2 {
-    width: auto;
-    margin-top: -16px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-3-9 .u-sheet-1 {
-    min-height: 500px;
-  }
-
-  .u-section-3-9 .u-text-2 {
-    font-size: 1rem;
-    margin-top: -12px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-3-9 .u-sheet-1 {
-    min-height: 400px;
-  }
-
-  .u-section-3-9 .u-text-1 {
-    font-size: 1.5rem;
-    width: auto;
-    margin-top: 1px;
-  }
-
-  .u-section-3-9 .u-text-2 {
-    font-size: 0.75rem;
-    margin-top: 1px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-3-9 .u-sheet-1 {
-    min-height: 300px;
-  }
-
-  .u-section-3-9 .u-text-1 {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  .u-section-3-9 .u-text-2 {
-    font-size: 0.625rem;
-    margin-right: 0;
-  }
-}
-
-.u-section-3-10 {
-  background-image: url("../images/Melee.jpg");
-  background-position: 50% 50%;
-}
-
-.u-section-3-10 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-3-10 .u-text-1 {
-  font-size: 3rem;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: -300px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin: 8px auto 60px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-3-10 {
-    background-size: auto 110%;
-  }
-
-  .u-section-3-10 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-3-10 .u-text-1 {
-    font-size: 2.25rem;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-3-10 .u-sheet-1 {
-    min-height: 500px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-3-10 .u-sheet-1 {
-    min-height: 400px;
-  }
-
-  .u-section-3-10 .u-text-1 {
-    font-size: 1.5rem;
-    width: auto;
-    margin-top: 1px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-3-10 .u-sheet-1 {
-    min-height: 300px;
-  }
-
-  .u-section-3-10 .u-text-1 {
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 1rem;
-  }
-}
-
-.u-section-4 .u-sheet-1 {
-  min-height: 79px;
-}
-
-.u-section-4 .u-text-1 {
-  font-family: "Black Ops One";
-  font-size: 4.5rem;
-  margin: 0 auto;
-}
-
-@media (max-width: 1199px) {
-  .u-section-4 .u-text-1 {
-    font-size: 3.75rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-4 .u-sheet-1 {
-    min-height: 32px;
-  }
-
-  .u-section-4 .u-text-1 {
-    font-size: 1.875rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-4 .u-sheet-1 {
-    min-height: 18px;
-  }
-
-  .u-section-4 .u-text-1 {
-    font-size: 1.125rem;
-    width: auto;
-  }
-}
-
-/* Keyframe animation for card entry */
+/* Map Showcase Start*/
 @keyframes slideIn {
   from {
     transform: translateY(50px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-/* Initially hide cards */
-
 .card-section {
   width: 100%;
-  min-height: 100vh;
-  background-image: url('https://i.imgur.com/RKZ3nba.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../images/mapcard-page-bg.webp');
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding: 40px 20px;
+  gap: 20px;
   box-sizing: border-box;
 }
 
@@ -968,41 +320,39 @@ body {
   padding-bottom: 1%;
   padding-left: 5%;
   width: 100%;
-  box-sizing: border-box;
+  margin: 0 auto;
 }
 
-/* Wrapper for the card container */
 .card-container {
-  perspective: 1000px; /* Adds perspective for 3D effect */
+  perspective: 1000px;
 }
 
-/* The card itself */
 .card-base {
   width: 210px;
   height: 300px;
   position: relative;
-  transform-style: preserve-3d; /* Required for 3D transformations */
-  transition: transform 0.6s; /* Smooth flip effect */
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
   display: flex;
   flex-direction: column;
 }
 
 .card-base:hover {
-  transform: rotateY(180deg); /* Flip the card on hover */
+  transform: rotateY(180deg);
 }
 
-/* Front side of the card */
-.card-front, .card-back {
+.card-front,
+.card-back {
   border-radius: 15px;
   box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.2), 0 3px 20px 0 rgba(255, 255, 255, 0.3);
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Hide the back side during the flip */
+  backface-visibility: hidden;
 }
 
 .card-front {
-  background-image: url('https://i.imgur.com/ja1q8a4.jpeg'); /* Front image */
+  background-image: url('../images/mapcard-bg-front.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1011,37 +361,36 @@ body {
 }
 
 .card-back {
-  background-image: url('https://i.imgur.com/rJ9KkzJ.jpeg'); /* Back image */
+  background-image: url('../images/mapcard-bg-back.webp');
   background-size: cover;
   background-position: center;
-  transform: rotateY(180deg); /* Initially hidden by 180 degrees */
+  transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
 }
 
-/* Card sections */
 .card-top {
   height: 8%;
-  font-family: 'Black Ops One'; /* Apply the Black Ops One font */
+  font-family: 'Black Ops One';
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
   box-sizing: border-box;
   width: 100%;
-  overflow: visible; /* Ensure no overflow is hidden */
+  overflow: visible;
 }
 
 .card-top h1 {
   color: white;
   margin: 0;
   text-align: center;
-  white-space: nowrap; /* Prevent text from wrapping */
+  white-space: nowrap;
   width: 100%;
-  font-size: 20px; /* Default size */
-  flex-shrink: 0; /* Prevent shrinking */
+  font-size: 20px;
+  flex-shrink: 0;
   box-sizing: border-box;
-  text-overflow: clip; /* Ensure no ellipsis */
+  text-overflow: clip;
   display: inline-block;
   max-width: 100%;
 }
@@ -1050,25 +399,25 @@ body {
   height: 83%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align the image at the top */
+  justify-content: flex-start;
   align-items: center;
-  padding: 0 5px; /* Left and right padding of 5px */
+  padding: 0 5px;
 }
 
 .card-image {
   width: 100%;
-  aspect-ratio: 1 / 1; /* Maintain a 1x1 aspect ratio */
-  object-fit: cover; /* Ensure image covers the area without stretching */
-  margin-bottom: 10px; /* Space between the image and the text */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
 .card-middle-text {
   text-align: center;
-  font-size: 14px; /* Fixed font size for text */
-  color: white; /* Ensure text is visible */
-  padding: 0 5px; /* Padding to ensure the text doesn't touch the edges */
-  font-family: 'Black Ops One'; /* Use the same font as h1 */
-  margin-top: 0; /* Make sure there's no additional space above the text */
+  font-size: 14px;
+  color: white;
+  padding: 0 5px;
+  font-family: 'Black Ops One';
+  margin-top: 0;
 }
 
 .card-bottom {
@@ -1076,63 +425,104 @@ body {
   text-align: center;
 }
 
-/* Styles for the back side content *//* Card sections */
 .card-top-back {
   height: 19%;
-  font-family: 'Black Ops One'; /* Apply the Black Ops One font */
+  font-family: 'Black Ops One';
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
   box-sizing: border-box;
   width: 100%;
-  overflow: visible; /* Ensure no overflow is hidden */
+  overflow: visible;
 }
 
 .card-top-back h1 {
   color: white;
   margin: 0;
   text-align: center;
-  white-space: nowrap; /* Prevent text from wrapping */
+  white-space: nowrap;
   width: 100%;
-  font-size: 20px; /* Default size */
-  flex-shrink: 0; /* Prevent shrinking */
+  font-size: 20px;
+  flex-shrink: 0;
   box-sizing: border-box;
-  text-overflow: clip; /* Ensure no ellipsis */
+  text-overflow: clip;
   display: inline-block;
   max-width: 100%;
 }
 
 .card-middle-back {
-  height: 64%;
+  height: 14%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align the image at the top */
+  justify-content: flex-start;
   align-items: center;
-  padding: 0 5px; /* Left and right padding of 5px */
+  padding: 0 5px;
+}
+
+.card-middle-down-back {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
 }
 
 .card-middle-text-back {
   text-align: center;
-  font-size: 14px; /* Fixed font size for text */
-  color: white; /* Ensure text is visible */
-  padding: 0 5px; /* Padding to ensure the text doesn't touch the edges */
-  font-family: 'Black Ops One'; /* Use the same font as h1 */
-  margin-top: 0; /* Make sure there's no additional space above the text */
+  font-size: 14px;
+  color: white;
+  padding: 0 5px;
+  font-family: 'Black Ops One';
+  margin-top: 0;
+}
+
+.card-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card-tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  max-width: 260px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Black Ops One';
+  position: absolute;
+  z-index: 1002;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.card-tooltip:hover .card-tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 .card-bottom-back {
   height: 17%;
   display: flex;
-  justify-content: center; /* center horizontally */
-  align-items: center;     /* center vertically */
+  justify-content: center;
+  align-items: center;
   position: relative;
   text-align: center;
 }
 
 .card-button {
   font-family: 'Black Ops One';
-  /* Remove positioning so flexbox handles it */
   white-space: nowrap;
   border-radius: 25px;
   padding: 6px 30px;
@@ -1144,14 +534,12 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Style variant with white border */
 .card-button1 {
   background-color: transparent;
   color: white;
   border: 2px solid white;
 }
 
-/* Hover effect */
 .card-button1:hover {
   background-color: #868787;
   color: white;
@@ -1162,10 +550,9 @@ body {
   color: white;
 }
 
-/* Back side button positioning */
 .card-back .card-bottom {
   height: 9%;
-  position: relative; /* Ensure button is positioned correctly */
+  position: relative;
   text-align: center;
 }
 
@@ -1180,4172 +567,241 @@ body {
 .card-base.flipped {
   transform: rotateY(180deg);
 }
+/* Map Showcase End*/
 
-.u-section-5-1 {
-  background-image: url("../images/1iF1N7x.jpg");
-  background-position: 50% 50%;
+/* Supported Mods Start */
+.section-bg {
+  background-color: #292e33;
+  padding-bottom: 30px;
+  overflow: hidden;
 }
 
-.u-section-5-1 .u-sheet-1 {
-  min-height: 700px;
+.tabcontent {
+  animation: fadeEffect 1s;
 }
 
-.u-section-5-1 .u-group-1 {
-  height: auto;
-  min-height: 258px;
-  --radius: 50px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
-.u-section-5-1 .u-container-layout-1 {
-  padding: 10px 30px;
-}
-
-.u-section-5-1 .u-text-1 {
-  font-size: 2.25rem;
-  margin: 0 auto;
-}
-
-.u-section-5-1 .u-text-2 {
-  font-size: 1.125rem;
-  margin: 0;
-}
-
-.u-section-5-1 .u-btn-1 {
-  font-family: "Black Ops One";
-  margin: 20px auto 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-5-1 .u-group-1 {
-    height: auto;
-  }
-
-  .u-section-5-1 .u-text-1 {
-    width: auto;
-  }
-
-  .u-section-5-1 .u-text-2 {
-    width: auto;
-  }
-
-  .u-section-5-1 .u-btn-1 {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-5-1 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-5-1 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-5-1 .u-text-1 {
-    font-size: 1.25rem;
-  }
-
-  .u-section-5-1 .u-text-2 {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-5-1 .u-sheet-1 {
-    min-height: 378px;
-  }
-}
-
-.u-section-5-2 {
-  background-image: url("../images/l1J86Cy.jpg");
-  background-position: 50% 50%;
-}
-
-.u-section-5-2 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-5-2 .u-group-1 {
-  height: auto;
-  min-height: 232px;
-  --radius: 50px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.u-section-5-2 .u-container-layout-1 {
-  padding: 10px 30px;
-}
-
-.u-section-5-2 .u-text-1 {
-  font-size: 2.25rem;
-  margin: 0 auto;
-}
-
-.u-section-5-2 .u-text-2 {
-  font-size: 1.125rem;
-  margin: 0;
-}
-
-.u-section-5-2 .u-btn-1 {
-  font-family: "Black Ops One";
-  margin: 20px auto 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-5-2 .u-group-1 {
-    min-height: 282px;
-    height: auto;
-  }
-
-  .u-section-5-2 .u-text-1 {
-    width: auto;
-  }
-
-  .u-section-5-2 .u-text-2 {
-    width: auto;
-  }
-
-  .u-section-5-2 .u-btn-1 {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-5-2 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-5-2 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-5-2 .u-text-1 {
-    font-size: 1.25rem;
-  }
-
-  .u-section-5-2 .u-text-2 {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-5-2 .u-sheet-1 {
-    min-height: 378px;
-  }
-}
-
-.u-section-5-3 {
-  background-image: url("../images/spXolCz.jpg");
-  background-position: 50% 50%;
-}
-
-.u-section-5-3 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-5-3 .u-group-1 {
-  height: auto;
-  min-height: 282px;
-  --radius: 50px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.u-section-5-3 .u-container-layout-1 {
-  padding: 10px 30px;
-}
-
-.u-section-5-3 .u-text-1 {
-  font-size: 2.25rem;
-  margin: 0 auto;
-}
-
-.u-section-5-3 .u-text-2 {
-  font-size: 1.125rem;
-  margin: 0;
-}
-
-.u-section-5-3 .u-btn-1 {
-  font-family: "Black Ops One";
-  margin: 20px auto 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-5-3 .u-group-1 {
-    min-height: 300px;
-    height: auto;
-  }
-
-  .u-section-5-3 .u-text-1 {
-    width: auto;
-  }
-
-  .u-section-5-3 .u-text-2 {
-    width: auto;
-  }
-
-  .u-section-5-3 .u-btn-1 {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-5-3 .u-group-1 {
-    min-height: 356px;
-  }
-
-  .u-section-5-3 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-5-3 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-5-3 .u-text-1 {
-    font-size: 1.25rem;
-  }
-
-  .u-section-5-3 .u-text-2 {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-5-3 .u-sheet-1 {
-    min-height: 378px;
-  }
-}
-
-.u-section-5-4 {
-  background-image: url("../images/BC9Eudu.jpg");
-  background-position: 50% 50%;
-}
-
-.u-section-5-4 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-5-4 .u-group-1 {
-  height: auto;
-  min-height: 229px;
-  --radius: 50px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.u-section-5-4 .u-container-layout-1 {
-  padding: 10px 30px;
-}
-
-.u-section-5-4 .u-text-1 {
-  font-size: 2.25rem;
-  margin: 0 auto;
-}
-
-.u-section-5-4 .u-text-2 {
-  font-size: 1.125rem;
-  margin: 0;
-}
-
-.u-section-5-4 .u-btn-1 {
-  font-family: "Black Ops One";
-  margin: 20px auto 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-5-4 .u-group-1 {
-    min-height: 300px;
-    height: auto;
-  }
-
-  .u-section-5-4 .u-text-1 {
-    width: auto;
-  }
-
-  .u-section-5-4 .u-text-2 {
-    width: auto;
-  }
-
-  .u-section-5-4 .u-btn-1 {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-5-4 .u-group-1 {
-    min-height: 356px;
-  }
-
-  .u-section-5-4 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-5-4 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-5-4 .u-text-1 {
-    font-size: 1.25rem;
-  }
-
-  .u-section-5-4 .u-text-2 {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-5-4 .u-sheet-1 {
-    min-height: 378px;
-  }
-}
-
-.u-section-5-5 {
-  background-image: url("../images/1sUo49w.jpg");
-  background-position: 50% 50%;
-}
-
-.u-section-5-5 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-5-5 .u-group-1 {
-  height: auto;
-  min-height: 229px;
-  --radius: 50px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.u-section-5-5 .u-container-layout-1 {
-  padding: 10px 30px;
-}
-
-.u-section-5-5 .u-text-1 {
-  font-size: 2.25rem;
-  margin: 0 auto;
-}
-
-.u-section-5-5 .u-text-2 {
-  font-size: 1.125rem;
-  margin: 0;
-}
-
-.u-section-5-5 .u-btn-1 {
-  font-family: "Black Ops One";
-  margin: 20px auto 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-5-5 .u-group-1 {
-    min-height: 300px;
-    height: auto;
-  }
-
-  .u-section-5-5 .u-text-1 {
-    width: auto;
-  }
-
-  .u-section-5-5 .u-text-2 {
-    width: auto;
-  }
-
-  .u-section-5-5 .u-btn-1 {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-5-5 .u-group-1 {
-    min-height: 356px;
-  }
-
-  .u-section-5-5 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-5-5 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-5-5 .u-text-1 {
-    font-size: 1.25rem;
-  }
-
-  .u-section-5-5 .u-text-2 {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-5-5 .u-sheet-1 {
-    min-height: 378px;
-  }
-}
-
-.u-section-5-6 {
-  background-image: url("../images/gtYZ1AM.jpg");
-  background-position: 50% 50%;
-}
-
-.u-section-5-6 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-5-6 .u-group-1 {
-  height: auto;
-  min-height: 229px;
-  --radius: 50px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.u-section-5-6 .u-container-layout-1 {
-  padding: 10px 30px;
-}
-
-.u-section-5-6 .u-text-1 {
-  font-size: 2.25rem;
-  margin: 0 auto;
-}
-
-.u-section-5-6 .u-text-2 {
-  font-size: 1.125rem;
-  margin: 0;
-}
-
-.u-section-5-6 .u-btn-1 {
-  font-family: "Black Ops One";
-  margin: 20px auto 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-5-6 .u-group-1 {
-    min-height: 300px;
-    height: auto;
-  }
-
-  .u-section-5-6 .u-text-1 {
-    width: auto;
-  }
-
-  .u-section-5-6 .u-text-2 {
-    width: auto;
-  }
-
-  .u-section-5-6 .u-btn-1 {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-5-6 .u-group-1 {
-    min-height: 356px;
-  }
-
-  .u-section-5-6 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-5-6 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-5-6 .u-text-1 {
-    font-size: 1.25rem;
-  }
-
-  .u-section-5-6 .u-text-2 {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-5-6 .u-sheet-1 {
-    min-height: 378px;
-  }
-}
-
-.u-section-5-7 {
-  background-image: url("../images/azknLRp.jpg");
-  background-position: 50% 50%;
-}
-
-.u-section-5-7 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-5-7 .u-group-1 {
-  height: auto;
-  min-height: 229px;
-  --radius: 50px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.u-section-5-7 .u-container-layout-1 {
-  padding: 10px 30px;
-}
-
-.u-section-5-7 .u-text-1 {
-  font-size: 2.25rem;
-  margin: 0 auto;
-}
-
-.u-section-5-7 .u-text-2 {
-  font-size: 1.125rem;
-  margin: 0;
-}
-
-.u-section-5-7 .u-btn-1 {
-  font-family: "Black Ops One";
-  margin: 20px auto 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-5-7 .u-group-1 {
-    min-height: 300px;
-    height: auto;
-  }
-
-  .u-section-5-7 .u-text-1 {
-    width: auto;
-  }
-
-  .u-section-5-7 .u-text-2 {
-    width: auto;
-  }
-
-  .u-section-5-7 .u-btn-1 {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-5-7 .u-group-1 {
-    min-height: 356px;
-  }
-
-  .u-section-5-7 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-5-7 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-5-7 .u-text-1 {
-    font-size: 1.25rem;
-  }
-
-  .u-section-5-7 .u-text-2 {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-5-7 .u-sheet-1 {
-    min-height: 378px;
-  }
-}
-
-.u-section-5-8 {
-  background-image: url("../images/ZemrwNb.jpg");
-  background-position: 50% 50%;
-}
-
-.u-section-5-8 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-5-8 .u-group-1 {
-  height: auto;
-  min-height: 229px;
-  --radius: 50px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.u-section-5-8 .u-container-layout-1 {
-  padding: 10px 30px;
-}
-
-.u-section-5-8 .u-text-1 {
-  font-size: 2.25rem;
-  margin: 0 auto;
-}
-
-.u-section-5-8 .u-text-2 {
-  font-size: 1.125rem;
-  margin: 0;
-}
-
-.u-section-5-8 .u-btn-1 {
-  font-family: "Black Ops One";
-  margin: 20px auto 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-5-8 .u-group-1 {
-    min-height: 300px;
-    height: auto;
-  }
-
-  .u-section-5-8 .u-text-1 {
-    width: auto;
-  }
-
-  .u-section-5-8 .u-text-2 {
-    width: auto;
-  }
-
-  .u-section-5-8 .u-btn-1 {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-5-8 .u-group-1 {
-    min-height: 356px;
-  }
-
-  .u-section-5-8 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-5-8 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-5-8 .u-text-1 {
-    font-size: 1.25rem;
-  }
-
-  .u-section-5-8 .u-text-2 {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-5-8 .u-sheet-1 {
-    min-height: 378px;
-  }
-}
-
-.u-section-5-9 {
-  background-image: url("../images/Untitled-4.jpg");
-  background-position: 50% 50%;
-}
-
-.u-section-5-9 .u-sheet-1 {
-  min-height: 700px;
-}
-
-.u-section-5-9 .u-group-1 {
-  height: auto;
-  min-height: 229px;
-  --radius: 50px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.u-section-5-9 .u-container-layout-1 {
-  padding: 10px 30px;
-}
-
-.u-section-5-9 .u-text-1 {
-  font-size: 2.25rem;
-  margin: 0 auto;
-}
-
-.u-section-5-9 .u-text-2 {
-  font-size: 1.125rem;
-  margin: 0;
-}
-
-.u-section-5-9 .u-btn-1 {
-  font-family: "Black Ops One";
-  margin: 20px auto 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-5-9 .u-group-1 {
-    min-height: 300px;
-    height: auto;
-  }
-
-  .u-section-5-9 .u-text-1 {
-    width: auto;
-  }
-
-  .u-section-5-9 .u-text-2 {
-    width: auto;
-  }
-
-  .u-section-5-9 .u-btn-1 {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-5-9 .u-group-1 {
-    min-height: 356px;
-  }
-
-  .u-section-5-9 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-5-9 .u-sheet-1 {
-    min-height: 600px;
-  }
-
-  .u-section-5-9 .u-text-1 {
-    font-size: 1.25rem;
-  }
-
-  .u-section-5-9 .u-text-2 {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-5-9 .u-sheet-1 {
-    min-height: 378px;
-  }
-}
-
-.u-section-6 .u-sheet-1 {
-  min-height: 79px;
-}
-
-.u-section-6 .u-text-1 {
-  font-family: "Black Ops One";
-  font-size: 4.5rem;
-  margin: 0 auto;
-}
-
-@media (max-width: 1199px) {
-  .u-section-6 .u-text-1 {
-    font-size: 3.75rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-6 .u-sheet-1 {
-    min-height: 32px;
-  }
-
-  .u-section-6 .u-text-1 {
-    font-size: 1.875rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-6 .u-sheet-1 {
-    min-height: 18px;
-  }
-
-  .u-section-6 .u-text-1 {
-    font-size: 1.125rem;
-    width: auto;
-  }
-}
-
-.u-section-7 {
-  background-image: none;
-  min-height: 754px;
-}
-
-.u-section-7 .u-tabs-1 {
-  min-height: 752px;
-  height: auto;
-  margin: 1px auto 1px 0;
-}
-
-.u-section-7 .u-tab-link-1 {
-  background-image: none;
-  letter-spacing: 0px;
-  font-family: "Black Ops One";
-  font-size: 1rem;
-  font-weight: normal;
-  padding: 2px 13px;
-}
-
-.u-section-7 .u-tab-link-2 {
-  background-image: none;
-  letter-spacing: 0px;
-  font-family: "Black Ops One";
-  font-size: 1rem;
-  font-weight: normal;
-  padding: 2px 13px;
-}
-
-.u-section-7 .u-tab-link-3 {
-  background-image: none;
-  letter-spacing: 0px;
-  font-family: "Black Ops One";
-  font-size: 1rem;
-  font-weight: normal;
-  padding: 2px 13px;
-}
-
-.u-section-7 .u-tab-link-4 {
-  background-image: none;
-  letter-spacing: 0px;
-  font-family: "Black Ops One";
-  font-size: 1rem;
-  font-weight: normal;
-  padding: 2px 13px;
-}
-
-.u-section-7 .u-tab-link-5 {
-  background-image: none;
-  letter-spacing: 0px;
-  font-family: "Black Ops One";
-  font-size: 1rem;
-  font-weight: normal;
-  padding: 2px 13px;
-}
-
-.u-section-7 .u-tab-link-6 {
-  background-image: none;
-  letter-spacing: 0px;
-  font-family: "Black Ops One";
-  font-size: 1rem;
-  font-weight: normal;
-  padding: 2px 13px;
-}
-
-.u-section-7 .u-tab-link-7 {
-  background-image: none;
-  letter-spacing: 0px;
-  font-family: "Black Ops One";
-  font-size: 1rem;
-  font-weight: normal;
-  padding: 2px 13px;
-}
-
-.u-section-7 .u-tab-pane-1 {
-  background-image: none;
-}
-
-.u-section-7 .u-container-layout-1 {
-  padding: 0 29px;
-}
-
-.u-section-7 .u-group-elements-1 {
-  min-height: 126px;
-  height: auto;
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 1102px;
-}
-
-.u-section-7 .u-text-1 {
-  font-size: 1.5rem;
-  width: auto;
-  margin: 0;
-}
-
-.u-section-7 .u-text-2 {
-  text-transform: none;
-  font-size: 0.875rem;
-  width: auto;
-  margin: 0;
-}
-
-.u-section-7 .u-btn-1 {
-  border-style: solid;
-  text-transform: uppercase;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-  margin: 9px auto 0;
-}
-
-.u-section-7 .u-shape-1 {
-  --radius: 50px;
-  height: 5px;
-  width: 700px;
-  margin: 9px auto 0;
-}
-
-.u-section-7 .u-group-elements-2 {
-  min-height: 132px;
-  height: auto;
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin-top: 14px;
-  margin-bottom: 0;
-}
-
-.u-section-7 .u-text-3 {
-  font-size: 1.5rem;
-  width: auto;
-  margin: 0 -10px;
-}
-
-.u-section-7 .u-text-4 {
-  text-transform: none;
-  font-size: 0.875rem;
-  width: auto;
-  margin: 0 -10px;
-}
-
-.u-section-7 .u-btn-2 {
-  border-style: solid;
-  text-transform: uppercase;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-  margin: 9px auto 0;
-}
-
-.u-section-7 .u-shape-2 {
-  --radius: 50px;
-  height: 5px;
-  width: 700px;
-  margin: 9px auto 0;
-}
-
-.u-section-7 .u-group-elements-3 {
-  min-height: 126px;
-  height: auto;
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.u-section-7 .u-text-5 {
-  font-size: 1.5rem;
-  width: auto;
-  margin: 0;
-}
-
-.u-section-7 .u-text-6 {
-  width: auto;
-  text-transform: none;
-  font-size: 0.875rem;
-  margin: 0;
-}
-
-.u-section-7 .u-btn-3 {
-  border-style: solid;
-  text-transform: uppercase;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-  margin: 9px auto 0;
-}
-
-.u-section-7 .u-shape-3 {
-  --radius: 50px;
-  height: 5px;
-  width: 700px;
-  margin: 9px auto 0;
-}
-
-.u-section-7 .u-group-elements-4 {
-  min-height: 126px;
-  height: auto;
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.u-section-7 .u-text-7 {
-  font-size: 1.5rem;
-  width: auto;
-  margin: 0;
-}
-
-.u-section-7 .u-text-8 {
-  text-transform: none;
-  font-size: 0.875rem;
-  width: auto;
-  margin: 0;
-}
-
-.u-section-7 .u-btn-4 {
-  border-style: solid;
-  text-transform: uppercase;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-  margin: 9px auto 0;
-}
-
-.u-section-7 .u-shape-4 {
-  --radius: 50px;
-  height: 5px;
-  width: 700px;
-  margin: 9px auto 0;
-}
-
-.u-section-7 .u-group-elements-5 {
-  min-height: 162px;
-  height: auto;
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
-  width: 1080px;
-  margin: 0 auto;
-}
-
-.u-section-7 .u-text-9 {
-  font-size: 1.5rem;
-  width: auto;
-  margin: 0;
-}
-
-.u-section-7 .u-text-10 {
-  text-transform: none;
-  font-size: 0.875rem;
-  width: auto;
-  margin: 0;
-}
-
-.u-section-7 .u-shape-5 {
-  --radius: 50px;
-  height: 5px;
-  width: 700px;
-  margin: 9px auto 0;
-}
-
-.u-section-7 .u-tab-pane-2 {
-  background-image: none;
-}
-
-.u-section-7 .u-container-layout-2 {
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-1 {
-  width: 90%;
-  margin: 20px auto;
-}
-
-.u-section-7 .u-accordion-link-1 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-1 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-1 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-3 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-11 {
-  margin-bottom: 0;
-  margin-top: 0;
-  font-size: 1rem;
-}
-
-.u-section-7 .u-btn-5 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-2 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-2 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-2 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-4 {
-  padding: 30px 30px 29px;
-}
-
-.u-section-7 .u-text-12 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-6 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-3 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-3 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-3 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-5 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-13 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-7 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-item-4 {
-  font-weight: 400;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.u-section-7 .u-accordion-link-4 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-4 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-4 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-6 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-14 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-8 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-5 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-5 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-5 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-7 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-15 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-9 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-6 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-6 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-6 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-8 {
-  padding: 29px 30px;
-}
-
-.u-section-7 .u-text-16 {
-  font-size: 1rem;
-  margin: 0 auto 0 1px;
-}
-
-.u-section-7 .u-btn-10 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-7 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-7 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-7 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-9 {
-  padding: 29px 30px;
-}
-
-.u-section-7 .u-text-17 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-11 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-btn-12 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-btn-13 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-8 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-8 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-8 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-10 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-18 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-14 {
-  font-size: 1.125rem;
-  text-align: left;
-  font-family: 'Open Sans', sans-serif;
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-9 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-9 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-9 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-11 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-19 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-15 {
-  font-size: 1rem;
-  text-align: left;
-  font-family: 'Open Sans', sans-serif;
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-10 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-10 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-10 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-12 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-20 {
-  font-size: 1rem;
-  margin: 0 auto 0 1px;
-}
-
-.u-section-7 .u-btn-16 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-11 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-11 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-11 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-13 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-21 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-17 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-12 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-12 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-12 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-14 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-22 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-18 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-13 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-13 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-13 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-15 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-23 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-19 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-14 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-14 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-14 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-16 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-24 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-20 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-15 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-15 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-15 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-17 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-25 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-21 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-tab-pane-3 {
-  background-image: none;
-}
-
-.u-section-7 .u-container-layout-18 {
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-2 {
-  width: 95%;
-  margin: 23px auto -682px;
-}
-
-.u-section-7 .u-accordion-link-16 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-16 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-16 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-19 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-26 {
-  margin-bottom: 0;
-  margin-top: 0;
-  font-size: 1rem;
-}
-
-.u-section-7 .u-btn-22 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-btn-23 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-17 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-17 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-17 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-20 {
-  padding: 30px 30px 29px;
-}
-
-.u-section-7 .u-text-27 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-accordion-link-18 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-18 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-18 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-21 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-28 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-24 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-btn-25 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-btn-26 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-item-19 {
-  font-weight: 400;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.u-section-7 .u-accordion-link-19 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-19 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-19 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-22 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-29 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-27 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-item-20 {
-  font-weight: 400;
-  margin: 0;
-}
-
-.u-section-7 .u-accordion-link-20 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-20 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-20 {
-  min-height: 135px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-23 {
-  padding: 29px 30px;
-}
-
-.u-section-7 .u-text-30 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-28 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-tab-pane-4 {
-  background-image: none;
-}
-
-.u-section-7 .u-container-layout-24 {
-  padding: 30px;
-}
-
-.u-section-7 .u-accordion-3 {
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-accordion-link-21 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-21 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-21 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-25 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-31 {
-  margin-bottom: 0;
-  margin-top: 0;
-  font-size: 1rem;
-}
-
-.u-section-7 .u-btn-29 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-22 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-22 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-22 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-26 {
-  padding: 30px 30px 29px;
-}
-
-.u-section-7 .u-text-32 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-30 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-23 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-23 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-23 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-27 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-33 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-31 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-item-24 {
-  font-weight: 400;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.u-section-7 .u-accordion-link-24 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-24 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-24 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-28 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-34 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-32 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-item-25 {
-  font-weight: 400;
-  margin: 0;
-}
-
-.u-section-7 .u-accordion-link-25 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-25 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-25 {
-  min-height: 135px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-29 {
-  padding: 29px 30px;
-}
-
-.u-section-7 .u-text-35 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-33 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-item-26 {
-  font-weight: 400;
-  margin: 0;
-}
-
-.u-section-7 .u-accordion-link-26 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-26 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-26 {
-  min-height: 135px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-30 {
-  padding: 29px 30px;
-}
-
-.u-section-7 .u-text-36 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-34 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-tab-pane-5 {
-  background-image: none;
-}
-
-.u-section-7 .u-container-layout-31 {
-  padding: 30px;
-}
-
-.u-section-7 .u-accordion-4 {
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-accordion-link-27 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-27 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-27 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-32 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-37 {
-  margin-bottom: 0;
-  margin-top: 0;
-  font-size: 1rem;
-}
-
-.u-section-7 .u-btn-35 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-btn-36 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-28 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-28 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-28 {
-  min-height: 129px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-33 {
-  padding: 30px 30px 29px;
-}
-
-.u-section-7 .u-text-38 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-37 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-tab-pane-6 {
-  background-image: none;
-}
-
-.u-section-7 .u-container-layout-34 {
-  padding: 30px;
-}
-
-.u-section-7 .u-accordion-5 {
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-accordion-link-29 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 2px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-  padding: 10px 21px;
-}
-
-.u-section-7 .u-icon-29 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-29 {
-  min-height: 81px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-35 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-39 {
-  margin-bottom: 0;
-  margin-top: 0;
-  font-size: 1rem;
-}
-
-.u-section-7 .u-btn-38 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-30 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 2px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-  padding: 10px 21px;
-}
-
-.u-section-7 .u-icon-30 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-30 {
-  min-height: 81px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-36 {
-  padding: 30px 30px 29px;
-}
-
-.u-section-7 .u-text-40 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-39 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-31 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 2px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-  padding: 10px 21px;
-}
-
-.u-section-7 .u-icon-31 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-31 {
-  min-height: 81px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-37 {
-  padding: 29px 30px;
-}
-
-.u-section-7 .u-text-41 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-40 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-item-32 {
-  font-weight: 400;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.u-section-7 .u-accordion-link-32 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 2px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-  padding: 10px 21px;
-}
-
-.u-section-7 .u-icon-32 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-32 {
-  min-height: 81px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-38 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-42 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-41 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-tab-pane-7 {
-  background-image: none;
-}
-
-.u-section-7 .u-container-layout-39 {
-  padding: 30px;
-}
-
-.u-section-7 .u-accordion-6 {
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-accordion-link-33 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-33 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-33 {
-  min-height: 105px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-40 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-43 {
-  margin-bottom: 0;
-  margin-top: 0;
-  font-size: 1rem;
-}
-
-.u-section-7 .u-btn-42 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-34 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-34 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-34 {
-  min-height: 105px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-41 {
-  padding: 30px 30px 29px;
-}
-
-.u-section-7 .u-text-44 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-43 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-link-35 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-35 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-35 {
-  min-height: 105px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-42 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-45 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-44 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-btn-45 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-accordion-item-36 {
-  font-weight: 400;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.u-section-7 .u-accordion-link-36 {
-  background-image: none;
-  font-size: 1.25rem;
-  letter-spacing: 0px;
-  font-weight: 700;
-  font-family: "Black Ops One";
-}
-
-.u-section-7 .u-icon-36 {
-  height: 20px;
-  width: 20px;
-  background-image: none;
-  padding: 4px;
-}
-
-.u-section-7 .u-accordion-pane-36 {
-  min-height: 105px;
-  background-image: none;
-  height: auto;
-}
-
-.u-section-7 .u-container-layout-43 {
-  padding: 30px;
-}
-
-.u-section-7 .u-text-46 {
-  font-size: 1rem;
-  margin: 0 auto 0 0;
-}
-
-.u-section-7 .u-btn-46 {
-  background-image: none;
-  padding: 0;
-}
-
-.u-section-7 .u-btn-47 {
-  background-image: none;
-  padding: 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-7 .u-tabs-1 {
-    min-height: 785px;
-    margin-right: initial;
-    margin-left: initial;
-  }
-
-  .u-section-7 .u-tab-link-1 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-tab-link-2 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-tab-link-3 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-tab-link-4 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-tab-link-5 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-tab-link-6 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-tab-link-7 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-group-elements-1 {
-    width: auto;
-  }
-
-  .u-section-7 .u-group-elements-5 {
-    width: 882px;
-  }
-
-  .u-section-7 .u-container-layout-2 {
-    padding-top: 7px;
-  }
-
-  .u-section-7 .u-accordion-3 {
-    margin-right: initial;
-    margin-left: initial;
-  }
-
-  .u-section-7 .u-accordion-4 {
-    margin-right: initial;
-    margin-left: initial;
-  }
-
-  .u-section-7 .u-accordion-5 {
-    margin-right: initial;
-    margin-left: initial;
-  }
-
-  .u-section-7 .u-accordion-6 {
-    margin-right: initial;
-    margin-left: initial;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-7 .u-tabs-1 {
-    min-height: 823px;
-    margin-right: initial;
-    margin-left: initial;
-  }
-
-  .u-section-7 .u-tab-link-1 {
-    font-size: 0.625rem;
-  }
-
-  .u-section-7 .u-tab-link-2 {
-    font-size: 0.625rem;
-  }
-
-  .u-section-7 .u-tab-link-3 {
-    font-size: 0.625rem;
-  }
-
-  .u-section-7 .u-tab-link-4 {
-    font-size: 0.625rem;
-  }
-
-  .u-section-7 .u-tab-link-5 {
-    font-size: 0.625rem;
-  }
-
-  .u-section-7 .u-tab-link-6 {
-    font-size: 0.625rem;
-  }
-
-  .u-section-7 .u-tab-link-7 {
-    font-size: 0.625rem;
-  }
-
-  .u-section-7 .u-group-elements-5 {
-    width: 662px;
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
   }
-
-  .u-section-7 .u-container-layout-2 {
-    padding-top: 5px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-7 .u-tabs-1 {
-    min-height: 1017px;
-    margin-right: initial;
-    margin-left: initial;
-  }
-
-  .u-section-7 .u-tab-link-1 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-tab-link-2 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-tab-link-3 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-tab-link-4 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-tab-link-5 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-tab-link-6 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-tab-link-7 {
-    font-size: 0.875rem;
-  }
-
-  .u-section-7 .u-container-layout-1 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .u-section-7 .u-group-elements-1 {
-    margin-top: 25px;
-    width: auto;
-  }
-
-  .u-section-7 .u-text-1 {
-    font-size: 1.125rem;
-    width: 340px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .u-section-7 .u-text-2 {
-    width: 340px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .u-section-7 .u-shape-1 {
-    width: 400px;
-  }
-
-  .u-section-7 .u-group-elements-2 {
-    width: 542px;
-    margin-top: 9px;
-    margin-left: -1px;
-    margin-right: -1px;
-  }
-
-  .u-section-7 .u-text-3 {
-    font-size: 1.125rem;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .u-section-7 .u-text-4 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .u-section-7 .u-shape-2 {
-    width: 400px;
-  }
-
-  .u-section-7 .u-group-elements-3 {
-    width: 520px;
-    margin-top: 9px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .u-section-7 .u-text-5 {
-    font-size: 1.125rem;
-  }
-
-  .u-section-7 .u-shape-3 {
-    width: 400px;
-  }
-
-  .u-section-7 .u-group-elements-4 {
-    margin-top: 9px;
-  }
-
-  .u-section-7 .u-text-7 {
-    font-size: 1.125rem;
-  }
-
-  .u-section-7 .u-shape-4 {
-    width: 400px;
-  }
-
-  .u-section-7 .u-group-elements-5 {
-    margin-top: 9px;
-    margin-right: initial;
-    margin-left: initial;
-    width: auto;
-  }
-
-  .u-section-7 .u-text-9 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-shape-5 {
-    width: 400px;
-  }
-
-  .u-section-7 .u-container-layout-2 {
-    padding-bottom: 22px;
-  }
-
-  .u-section-7 .u-accordion-link-1 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-3 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-2 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-4 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-3 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-5 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-4 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-6 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-5 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-7 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-6 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-8 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-7 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-9 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-8 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-10 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-9 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-11 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-10 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-12 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-11 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-13 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-12 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-14 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-13 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-15 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-14 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-16 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-15 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-17 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-16 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-19 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-17 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-20 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-18 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-21 {
-    padding-left: 10px;
-    padding-right: 10px;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-
-  .u-section-7 .u-accordion-link-19 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-22 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-20 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-23 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-container-layout-24 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-21 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-25 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-22 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-26 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-23 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-27 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-24 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-28 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-25 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-29 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-26 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-30 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-container-layout-31 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-27 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-32 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-28 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-33 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-container-layout-34 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-29 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-35 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-30 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-36 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-31 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-37 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-32 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-38 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-container-layout-39 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-33 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-40 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-34 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-41 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-35 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-42 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-7 .u-accordion-link-36 {
-    font-size: 1rem;
-  }
-
-  .u-section-7 .u-container-layout-43 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-7 .u-tab-link-1 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .u-section-7 .u-tab-link-2 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .u-section-7 .u-tab-link-3 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .u-section-7 .u-tab-link-4 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .u-section-7 .u-tab-link-5 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .u-section-7 .u-tab-link-6 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .u-section-7 .u-tab-link-7 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .u-section-7 .u-text-1 {
-    width: auto;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  .u-section-7 .u-text-2 {
-    font-size: 0.75rem;
-    width: auto;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  .u-section-7 .u-shape-1 {
-    width: 250px;
-  }
-
-  .u-section-7 .u-group-elements-2 {
-    width: 260px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .u-section-7 .u-text-4 {
-    font-size: 0.75rem;
-  }
-
-  .u-section-7 .u-shape-2 {
-    width: 250px;
-  }
-
-  .u-section-7 .u-group-elements-3 {
-    width: 340px;
-  }
-
-  .u-section-7 .u-text-6 {
-    font-size: 0.75rem;
-  }
-
-  .u-section-7 .u-shape-3 {
-    width: 250px;
-  }
-
-  .u-section-7 .u-text-8 {
-    font-size: 0.75rem;
-  }
-
-  .u-section-7 .u-shape-4 {
-    width: 250px;
-  }
-
-  .u-section-7 .u-text-9 {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-
-  .u-section-7 .u-text-10 {
-    font-size: 0.75rem;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-
-  .u-section-7 .u-shape-5 {
-    width: 250px;
-  }
-}
-
-.u-section-8 {
-  background-image: url("../images/Cars.webp");
-  background-position: 50% 50%;
-  min-height: 490px;
-}
-
-.u-section-8 .u-text-1 {
-  font-size: 1.875rem;
-  text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
-  margin: 10px auto 0;
-}
-
-.u-section-8 .u-line-1 {
-  width: 912px;
-  height: 0;
-  margin: 0 auto;
 }
 
-.u-section-8 .u-list-1 {
+.mods-tab {
   width: 100%;
-  margin: 20px auto 10px 0;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #292e33;
+  justify-content: flex-start;
+  align-content: center;
 }
 
-.u-section-8 .u-repeater-1 {
-  min-height: 400px;
-  grid-auto-columns: calc(33.3333% - 6.66667px);
-  grid-template-columns: calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px);
-  grid-gap: 10px 10px;
+.mods-tab-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #222;
+  width: 100%;
+  overflow-x: auto;
+  z-index: 5;
 }
 
-.u-section-8 .u-container-layout-1 {
-  padding: 30px;
-}
-
-.u-section-8 .u-group-1 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
-}
-
-.u-section-8 .u-container-layout-2 {
-  padding: 1px 5px;
-}
-
-.u-section-8 .u-text-2 {
+.mods-tab button {
+  font-family: "Black Ops One";
+  flex: 1 1 auto;
+  background-color: #676767;
+  outline: solid;
+  color: rgb(21, 21, 21);
+  border: none;
+  padding: 12px;
+  text-align: center;
   font-size: 1rem;
-  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.mods-tab button:hover {
+  background-color: #444;
+}
+
+.mods-tab button.active {
+  background-color: #ffd700;
+}
+
+.mods-tabcontent {
+  width: 75%;
+  display: none;
   margin: 0 auto;
+  padding-top: 10px;
+  background-color: #1c1c1c00;
+  color: rgba(255, 255, 255, 0);
+  border-radius: 0 0 20px 20px;
+  min-height: 200px;
+  z-index: 0;
+  position: relative;
+  cursor: default;
 }
 
-.u-section-8 .u-btn-1 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
+.mods-tabcontent.active {
+  background-color: #1c1c1c5c;
+  color: white;
+  display: block;
+  animation: slideInFromTop 1.5s ease-out;
 }
 
-.u-section-8 .u-container-layout-3 {
-  padding: 30px;
+.mods-content {
+  padding-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.u-section-8 .u-group-2 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
+.content-mods-header {
+  font-family: "Black Ops One";
+  font-size: 2rem;
+}
+h1.content-mods-header {
+  font-family: "Black Ops One";
+  font-size: 1.5rem;
+  text-align: left;
+  width: 90%;
+  text-decoration-line: underline;
+  text-decoration-color: #797979;
 }
 
-.u-section-8 .u-container-layout-4 {
-  padding: 1px 5px;
+.content-mods-info {
+  font-family: 'Open Sans',sans-serif !important;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  max-width: 90%;
 }
 
-.u-section-8 .u-text-3 {
+ul.mods {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+ul.mods-2 {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  width: 90%;
+  list-style-type: disc;
+  text-align: left;
+  list-style-position: inside;
+}
+
+.mods-link {
+  color: #3193f8;
+}
+
+.mods-link:hover {
+  color: #79bcff;
+}
+
+.content-mods-button {
+  display: inline-block;
+  padding: 5px 10px;
+  font-family: "Black Ops One";
+  background-color: #ffd90000;
+  border: solid;
+  border-width: 2px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.9s ease, border-color 0.9s ease, color 0.9s ease;
+  margin-bottom: 30px;
+}
+
+.content-mods-button:hover {
+  color: #1c1c1c;
+  background-color: #ffd200;
+  border-color: #00000000;
+}
+
+.content-mods-divider {
+  width: 75%;
+  height: 5px;
+  background-color: #ffd700;
+  border-radius: 10px;
+}
+
+.content-mods-divider-full {
+  width: 95%;
+  height: 4px;
+  background-color: #626262;
+  border-radius: 10px;
+}
+/* Supported Mods End */
+
+/* Donation Start */
+.donation-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/MiddleEast.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.donation-content {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: white;
+  cursor: default;
+}
+
+.donation-title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.donation-subtext {
   font-size: 1rem;
-  font-weight: 700;
-  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
-.u-section-8 .u-btn-2 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
+.donation-note {
+  font-size: 0.6rem;
+  margin-bottom: 30px;
 }
 
-.u-section-8 .u-container-layout-5 {
-  padding: 30px;
+.donate-button {
+  display: inline-block;
+  padding: 5px 30px;
+  background-color: #ffd90000;
+  border: solid;
+  border-width: 2px;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: color 0.5s ease;
 }
 
-.u-section-8 .u-group-3 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
+.donate-button:hover {
+  color: #ffd700;
 }
-
-.u-section-8 .u-container-layout-6 {
-  padding: 1px 5px;
-}
-
-.u-section-8 .u-text-4 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.u-section-8 .u-btn-3 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
-}
-
-.u-section-8 .u-container-layout-7 {
-  padding: 30px;
-}
-
-.u-section-8 .u-group-4 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
-}
-
-.u-section-8 .u-container-layout-8 {
-  padding: 1px 5px;
-}
-
-.u-section-8 .u-text-5 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.u-section-8 .u-btn-4 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
-}
-
-.u-section-8 .u-container-layout-9 {
-  padding: 30px;
-}
-
-.u-section-8 .u-group-5 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
-}
-
-.u-section-8 .u-container-layout-10 {
-  padding: 1px 5px;
-}
-
-.u-section-8 .u-text-6 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.u-section-8 .u-btn-5 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
-}
-
-.u-section-8 .u-container-layout-11 {
-  padding: 30px;
-}
-
-.u-section-8 .u-group-6 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
-}
-
-.u-section-8 .u-container-layout-12 {
-  padding: 1px 5px;
-}
-
-.u-section-8 .u-text-7 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.u-section-8 .u-btn-6 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
-}
-
-.u-section-8 .u-container-layout-13 {
-  padding: 30px;
-}
-
-.u-section-8 .u-group-7 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
-}
-
-.u-section-8 .u-container-layout-14 {
-  padding: 1px 5px;
-}
-
-.u-section-8 .u-text-8 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.u-section-8 .u-btn-7 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
-}
-
-.u-section-8 .u-container-layout-15 {
-  padding: 30px;
-}
-
-.u-section-8 .u-group-8 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
-}
-
-.u-section-8 .u-container-layout-16 {
-  padding: 1px 5px;
-}
-
-.u-section-8 .u-text-9 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.u-section-8 .u-btn-8 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
-}
-
-.u-section-8 .u-container-layout-17 {
-  padding: 30px;
-}
-
-.u-section-8 .u-group-9 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
-}
-
-.u-section-8 .u-container-layout-18 {
-  padding: 1px 5px;
-}
-
-.u-section-8 .u-text-10 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.u-section-8 .u-btn-9 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
-}
-
-.u-section-8 .u-container-layout-19 {
-  padding: 30px;
-}
-
-.u-section-8 .u-group-10 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
-}
-
-.u-section-8 .u-container-layout-20 {
-  padding: 1px 5px;
-}
-
-.u-section-8 .u-text-11 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.u-section-8 .u-btn-10 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
-}
-
-.u-section-8 .u-container-layout-21 {
-  padding: 30px;
-}
-
-.u-section-8 .u-group-11 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
-}
-
-.u-section-8 .u-container-layout-22 {
-  padding: 1px 5px;
-}
-
-.u-section-8 .u-text-12 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.u-section-8 .u-btn-11 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
-}
-
-.u-section-8 .u-container-layout-23 {
-  padding: 30px;
-}
-
-.u-section-8 .u-group-12 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
-}
-
-.u-section-8 .u-container-layout-24 {
-  padding: 1px 5px;
-}
-
-.u-section-8 .u-text-13 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.u-section-8 .u-btn-12 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
-}
-
-.u-section-8 .u-container-layout-25 {
-  padding: 30px;
-}
-
-.u-section-8 .u-group-13 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
-}
-
-.u-section-8 .u-container-layout-26 {
-  padding: 1px 5px;
-}
-
-.u-section-8 .u-text-14 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.u-section-8 .u-btn-13 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
-}
-
-.u-section-8 .u-container-layout-27 {
-  padding: 30px;
-}
-
-.u-section-8 .u-group-14 {
-  width: 300px;
-  --radius: 10px;
-  height: 100px;
-  min-height: 100px;
-  margin: 120px auto 0;
-}
-
-.u-section-8 .u-container-layout-28 {
-  padding: 1px 5px;
-}
-
-.u-section-8 .u-text-15 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 auto;
-}
-
-.u-section-8 .u-btn-14 {
-  letter-spacing: 0px;
-  font-size: 0.625rem;
-  margin: 0 auto;
-  padding: 5px 20px;
-}
-
-.u-section-8 .u-gallery-nav-1 {
-  position: absolute;
-  left: 10px;
-  width: 60px;
-  height: 60px;
-  padding: 10px;
-}
-
-.u-section-8 .u-gallery-nav-2 {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  left: auto;
-  top: 170px;
-  right: 10px;
-  padding: 10px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-8 {
-    min-height: 404px;
-  }
-
-  .u-section-8 .u-repeater-1 {
-    grid-auto-columns: calc(33.333333333333336% - 6.66667px);
-    grid-template-columns: repeat(3, calc(33.333333333333336% - 6.66667px));
-  }
-
-  .u-section-8 .u-group-1 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-2 {
-    margin-top: 1px;
-  }
-
-  .u-section-8 .u-group-2 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-3 {
-    margin-top: 1px;
-  }
-
-  .u-section-8 .u-group-3 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-4 {
-    margin-top: 1px;
-  }
-
-  .u-section-8 .u-group-4 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-5 {
-    margin-top: 1px;
-  }
-
-  .u-section-8 .u-group-5 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-6 {
-    margin-top: 1px;
-  }
-
-  .u-section-8 .u-group-6 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-7 {
-    margin-top: 1px;
-  }
-
-  .u-section-8 .u-group-7 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-8 {
-    margin-top: 1px;
-  }
-
-  .u-section-8 .u-group-8 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-9 {
-    margin-top: 1px;
-  }
-
-  .u-section-8 .u-group-9 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-10 {
-    margin-top: 1px;
-  }
-
-  .u-section-8 .u-group-10 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-11 {
-    margin-top: 1px;
-  }
-
-  .u-section-8 .u-group-11 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-12 {
-    margin-top: 1px;
-  }
-
-  .u-section-8 .u-group-12 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-13 {
-    margin-top: 1px;
-  }
-
-  .u-section-8 .u-group-13 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-14 {
-    margin-top: 1px;
-  }
-
-  .u-section-8 .u-group-14 {
-    width: 224px;
-    min-height: 109px;
-    margin-top: 0;
-    height: auto;
-  }
-
-  .u-section-8 .u-text-15 {
-    margin-top: 1px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-8 {
-    min-height: 309px;
-  }
-
-  .u-section-8 .u-line-1 {
-    width: 720px;
-  }
-
-  .u-section-8 .u-list-1 {
-    margin-right: initial;
-    margin-left: initial;
-    width: auto;
-  }
-
-  .u-section-8 .u-repeater-1 {
-    grid-auto-columns: calc(50% - 5px);
-    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
-  }
-
-  .u-section-8 .u-group-1 {
-    width: 223px;
-    min-height: 110px;
-  }
-
-  .u-section-8 .u-group-2 {
-    width: 223px;
-    min-height: 110px;
-  }
-
-  .u-section-8 .u-group-3 {
-    width: 223px;
-    min-height: 110px;
-  }
-
-  .u-section-8 .u-group-4 {
-    width: 223px;
-    min-height: 110px;
-  }
-
-  .u-section-8 .u-group-5 {
-    width: 223px;
-    min-height: 110px;
-  }
-
-  .u-section-8 .u-group-6 {
-    width: 223px;
-    min-height: 110px;
-  }
-
-  .u-section-8 .u-group-7 {
-    width: 223px;
-    min-height: 110px;
-  }
-
-  .u-section-8 .u-group-8 {
-    width: 223px;
-    min-height: 110px;
-  }
-
-  .u-section-8 .u-group-9 {
-    width: 223px;
-    min-height: 110px;
-  }
-
-  .u-section-8 .u-group-10 {
-    width: 223px;
-    min-height: 110px;
-  }
-
-  .u-section-8 .u-group-11 {
-    width: 223px;
-    min-height: 110px;
-  }
-
-  .u-section-8 .u-group-12 {
-    width: 223px;
-    min-height: 110px;
-  }
-
-  .u-section-8 .u-group-13 {
-    width: 223px;
-    min-height: 110px;
-  }
-
-  .u-section-8 .u-group-14 {
-    width: 223px;
-    min-height: 110px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-8 {
-    min-height: 232px;
-  }
-
-  .u-section-8 .u-text-1 {
-    font-size: 1rem;
-  }
-
-  .u-section-8 .u-line-1 {
-    width: 540px;
-  }
-
-  .u-section-8 .u-repeater-1 {
-    grid-auto-columns: calc(100% - 0px);
-    grid-template-columns: 100%;
-  }
-
-  .u-section-8 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-1 {
-    width: 250px;
-  }
-
-  .u-section-8 .u-container-layout-3 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-2 {
-    width: 250px;
-  }
-
-  .u-section-8 .u-container-layout-5 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-3 {
-    width: 250px;
-  }
-
-  .u-section-8 .u-container-layout-7 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-4 {
-    width: 250px;
-  }
-
-  .u-section-8 .u-container-layout-9 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-5 {
-    width: 250px;
-  }
-
-  .u-section-8 .u-container-layout-11 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-6 {
-    width: 250px;
-  }
-
-  .u-section-8 .u-container-layout-13 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-7 {
-    width: 250px;
-  }
-
-  .u-section-8 .u-container-layout-15 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-8 {
-    width: 250px;
-  }
-
-  .u-section-8 .u-container-layout-17 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-9 {
-    width: 250px;
-  }
-
-  .u-section-8 .u-container-layout-19 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-10 {
-    width: 250px;
-  }
-
-  .u-section-8 .u-container-layout-21 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-11 {
-    width: 250px;
-  }
-
-  .u-section-8 .u-container-layout-23 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-12 {
-    width: 250px;
-  }
-
-  .u-section-8 .u-container-layout-25 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-13 {
-    width: 250px;
-  }
-
-  .u-section-8 .u-container-layout-27 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-8 .u-group-14 {
-    width: 250px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-8 {
-    min-height: 146px;
-  }
-
-  .u-section-8 .u-line-1 {
-    width: 340px;
-  }
-
-  .u-section-8 .u-repeater-1 {
-    grid-auto-columns: 100%;
-  }
-}
-
-.u-section-9 {
-  min-height: 435px;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/MiddleEast.webp");
-  background-position: 50% 50%;
-}
-
-.u-section-9 .u-text-1 {
-  font-weight: 700;
-  font-size: 4.5rem;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
-  margin: 108px 115px 0;
-}
-
-.u-section-9 .u-text-2 {
-  font-weight: normal;
-  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
-  margin: 14px 115px 0;
-}
-
-.u-section-9 .u-btn-1 {
-  border-style: solid;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0px;
-  --radius: 50px;
-  margin: 14px auto 60px;
-  padding: 10px 181px 11px 179px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-9 {
-    min-height: 462px;
-  }
-
-  .u-section-9 .u-text-1 {
-    font-size: 3.75rem;
-    width: auto;
-    margin-top: 128px;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .u-section-9 .u-text-2 {
-    width: auto;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-  .u-section-9 .u-btn-1 {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-9 {
-    min-height: 371px;
-  }
-
-  .u-section-9 .u-text-1 {
-    font-size: 3rem;
-    margin-top: 90px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .u-section-9 .u-text-2 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-9 {
-    min-height: 500px;
-    background-size: auto 120%;
-  }
-
-  .u-section-9 .u-text-1 {
-    font-size: 2.25rem;
-    margin-top: 155px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-9 {
-    min-height: 459px;
-  }
-
-  .u-section-9 .u-text-1 {
-    font-size: 1.5rem;
-    margin-top: 128px;
-  }
-
-  .u-section-9 .u-btn-1 {
-    padding-left: 126px;
-    padding-right: 126px;
-  }
-}
+/* Donation End */
