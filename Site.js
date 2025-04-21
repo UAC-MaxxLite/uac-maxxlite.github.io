@@ -279,3 +279,21 @@ function toggleFAQ(button) {
         faqBox.style.height = 'auto';
     }, 600);
 }
+
+document.querySelectorAll('.team-member-wrapper').forEach(wrapper => {
+    wrapper.addEventListener('click', function () {
+        // Close all others
+        document.querySelectorAll('.team-member-wrapper').forEach(w => {
+            if (w !== this) w.classList.remove('active');
+        });
+        // Toggle this one
+        this.classList.toggle('active');
+    });
+});
+
+// Optional: Close when tapping outside
+document.addEventListener('click', function (e) {
+    if (!e.target.closest('.team-member-wrapper')) {
+        document.querySelectorAll('.team-member-wrapper').forEach(w => w.classList.remove('active'));
+    }
+});

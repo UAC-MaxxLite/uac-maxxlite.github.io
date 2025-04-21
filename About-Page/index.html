@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-GB" style="font-size: 16px;">
+
+<head>
+    <script type="text/javascript" src="../Site.js" defer=""></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgb(41, 41, 41);
+            border-radius: 5px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #d1b902;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9e8c00;
+        }
+    </style>
+    <title>About - Antistasi Ultimate</title>
+    <meta name="keywords"
+        content="AntistasiUltimate, About, Arma3, Mod, Help, Support, Answers, Arma 3 Antistasi Ultimate">
+    <meta name="description" content="Learn about the Antistasi Ultimate mod team, mission, and history.">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="2 days">
+    <meta name="author" content="Maxx">
+    <meta name="theme-color" content="#e8ba00">
+    <meta property="og:title" content="Antistasi Ultimate - About">
+    <meta property="og:description" content="Learn about the creators and vision behind Antistasi Ultimate.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../images/UACLogoSmall.png">
+
+    <link href="About.css" rel="stylesheet" />
+    <link href="../Site.css" rel="stylesheet" />
+    <link href="../images/Yellow.png" rel="icon" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Open+Sans:300,400,600,700,800|Black+Ops+One:400"
+        rel="stylesheet" />
+    <script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"name": "Antistasi Ultimate",
+			"logo": "../images/UACLogoSmall.png",
+			"sameAs": [
+				"https://www.youtube.com/@AntistasiUltimateCommunity",
+				"https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate",
+				"https://discord.gg/antistasiultimate",
+				"https://steamcommunity.com/sharedfiles/filedetails/?id=3020755032"
+			]
+		}
+	</script>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="sticky-header">
+        <a href="https://antistasiultimate.com/Home/" class="logo-link">
+            <img src="../images/SiteLogo1.png" alt="Logo" class="header-logo" />
+        </a>
+
+        <div class="header-dropdowns">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <span class="dropbtn-text">Information</span>
+                    <span class="dropdown-arrow">▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate" target="_blank">Documentation</a>
+                    <a href="https://antistasiultimate.com/Useful-Information" target="_blank">More Info</a>
+                    <a href="https://antistasiultimate.com/FAQ" target="_blank">FAQ</a>
+                    <a href="https://antistasiultimate.com/About-Page" target="_blank">About</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <span class="dropbtn-text">Links</span>
+                    <span class="dropdown-arrow">▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="https://antistasiultimate.com/Community" target="_blank">Community</a>
+                    <a href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate" target="_blank">Github</a>
+                    <a href="https://discord.gg/antistasiultimate" target="_blank">Discord</a>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3020755032" target="_blank">Steam
+                        Workshop</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <nav class="mobile-navbar">
+        <a href="https://antistasiultimate.com/Home/" class="logo-link">
+            <img src="../images/SiteLogo1.png" alt="Logo" class="header-logo" />
+        </a>
+        <button class="menu-toggle" onclick="toggleMobileMenu(this)">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+    <div class="mobile-nav-links" id="mobileNav">
+        <div class="mobile-menu-links">
+            <h3>Information</h3>
+            <div class="content-mods-divider-full"></div>
+            <a href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate" target="_blank">Documentation</a>
+            <a href="https://antistasiultimate.com/Useful-Information" target="_blank">More Info</a>
+            <a href="https://antistasiultimate.com/FAQ" target="_blank">FAQ</a>
+            <a href="https://antistasiultimate.com/About-Page" target="_blank">About</a>
+            <div style="padding:10px"></div>
+            <h3>Links</h3>
+            <div class="content-mods-divider-full"></div>
+            <a href="https://antistasiultimate.com/Community" target="_blank">Community</a>
+            <a href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate" target="_blank">Github</a>
+            <a href="https://discord.gg/antistasiultimate" target="_blank">Discord</a>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3020755032" target="_blank">Steam
+                Workshop</a>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <section class="about-section">
+        <div class="about-top-wrapper">
+            <div class="about-top">
+                <img src="https://i.imgur.com/38sjrM5.png" alt="Logo" class="about-logo" />
+                <div class="about-info">
+                    <h2>About Us</h2>
+                    <p>Welcome to the Antistasi Ultimate Community! Our journey began in 2019 as the Casual Arma Bois, a
+                        small
+                        group of friends exploring Antistasi together. Led by Stutpip, we've grown into a thriving
+                        community
+                        dedicated to enhancing the Antistasi experience.</p>
+                    <p>Over time, we've collaborated with individuals like Silence and Karl, pooling our talents to
+                        create
+                        Antistasi Ultimate, a mod that expands and improves upon the original Antistasi Plus mission.
+                        Despite
+                        challenges and changes, our commitment to excellence remains strong.</p>
+                    <p>With our recent merger with the Untitled Arma Community, we've gained new leadership and fresh
+                        perspectives. Together, we're excited to continue developing Antistasi Ultimate and creating
+                        memorable
+                        gaming experiences.</p>
+                    <p>Join us in our mission to redefine immersive gaming and shape the future of Antistasi Ultimate.
+                        Whether
+                        you're a seasoned player or new to the game, there's a place for you in our welcoming community.
+                    </p>
+                    <p><b>Welcome to the Antistasi Ultimate Community—Where Every Player Matters!</b></p>
+                    <a href="https://discord.gg/antistasiultimate" rel="nofollow" class="about-button">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+        <hr class="about-divider">
+        <h2 class="team-header">Administration Team</h2>
+        <div class="team-container">
+            <div class="team-member-wrapper">
+                <div class="team-member">
+                    <div class="team-member-inner">
+                        <h3>Maxx</h3>
+                        <p>Community Operations Director</p>
+                    </div>
+                </div>
+                <div class="contact-slideout">
+                    <p>Contact Me:</p>
+                    <div class="contact-icons">
+                        <a href="https://steamcommunity.com/id/MaxxLite_Dev/" target="_blank" rel="nofollow"
+                            title="Steam">
+                            <img src="https://i.imgur.com/NA1qWnm.png" alt="Steam">
+                        </a>
+                        <a href="https://discordapp.com/users/201170426506903554/" target="_blank" rel="nofollow"
+                            title="Discord">
+                            <img src="https://i.imgur.com/IUnsZVf.png" alt="Discord">
+                        </a>
+                        <a href="mailto:maxx@antistasiultimate.com" target="_blank" rel="nofollow" title="Email">
+                            <img src="https://i.imgur.com/9oDw02f.png" alt="Email">
+                        </a>
+                        <a href="https://github.com/UAC-MaxxLite" target="_blank" rel="nofollow" title="GitHub">
+                            <img src="https://i.imgur.com/V1hhjdY.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member-wrapper">
+                <div class="team-member">
+                    <div class="team-member-inner">
+                        <h3>Fatboy</h3>
+                        <p>Community Engagement Director</p>
+                    </div>
+                </div>
+                <div class="contact-slideout">
+                    <p>Contact Me:</p>
+                    <div class="contact-icons">
+                        <a href="https://steamcommunity.com/profiles/76561199185706995/" target="_blank" rel="nofollow"
+                            title="Steam">
+                            <img src="https://i.imgur.com/NA1qWnm.png" alt="Steam">
+                        </a>
+                        <a href="https://discordapp.com/users/853411288327127040/" target="_blank" rel="nofollow"
+                            title="Discord">
+                            <img src="https://i.imgur.com/IUnsZVf.png" alt="Discord">
+                        </a>
+                        <a href="mailto:fatboy@antistasiultimate.com" target="_blank" rel="nofollow" title="Email">
+                            <img src="https://i.imgur.com/9oDw02f.png" alt="Email">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member-wrapper">
+                <div class="team-member">
+                    <div class="team-member-inner">
+                        <h3>Stutpip</h3>
+                        <p>Community ​Director</p>
+                    </div>
+                </div>
+                <div class="contact-slideout">
+                    <p>Contact Me:</p>
+                    <div class="contact-icons">
+                        <a href="https://steamcommunity.com/id/stutpip123" target="_blank" rel="nofollow" title="Steam">
+                            <img src="https://i.imgur.com/NA1qWnm.png" alt="Steam">
+                        </a>
+                        <a href="https://discordapp.com/users/189800745254518796/" target="_blank" rel="nofollow"
+                            title="Discord">
+                            <img src="https://i.imgur.com/IUnsZVf.png" alt="Discord">
+                        </a>
+                        <a href="mailto:stutpip@antistasiultimate.com" target="_blank" rel="nofollow" title="Email">
+                            <img src="https://i.imgur.com/9oDw02f.png" alt="Email">
+                        </a>
+                        <a href="https://github.com/stutpip123" target="_blank" rel="nofollow" title="GitHub">
+                            <img src="https://i.imgur.com/V1hhjdY.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member-wrapper">
+                <div class="team-member">
+                    <div class="team-member-inner">
+                        <h3>Silence</h3>
+                        <p>Lead Developer</p>
+                    </div>
+                </div>
+                <div class="contact-slideout">
+                    <p>Contact Me:</p>
+                    <div class="contact-icons">
+                        <a href="https://steamcommunity.com/id/SilenceWasTakenWASTAKEN" target="_blank" rel="nofollow"
+                            title="Steam">
+                            <img src="https://i.imgur.com/NA1qWnm.png" alt="Steam">
+                        </a>
+                        <a href="https://discordapp.com/users/474144080801169418/" target="_blank" rel="nofollow"
+                            title="Discord">
+                            <img src="https://i.imgur.com/IUnsZVf.png" alt="Discord">
+                        </a>
+                        <a href="mailto:silence@antistasiultimate.com" target="_blank" rel="nofollow" title="Email">
+                            <img src="https://i.imgur.com/9oDw02f.png" alt="Email">
+                        </a>
+                        <a href="https://github.com/SilenceIsFatto" target="_blank" rel="nofollow" title="GitHub">
+                            <img src="https://i.imgur.com/V1hhjdY.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="about-divider">
+        <h3 class="contrib-header">For the full contributors list press the button below</h3>
+        <a href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Developers" rel="nofollow"
+            class="about-button">FULL LIST</a>
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="site-footer">
+        <div class="footer-logo-container">
+            <img src="../images/Yellow.png" alt="Logo" class="footer-logo">
+        </div>
+        <div class="footer-links">
+            <a href="https://antistasiultimate.com/About-Page" target="_blank">ABOUT US</a>
+            <a href="https://discord.gg/antistasiultimate" target="_blank">CONTACT US</a>
+            <a href="https://drive.google.com/file/d/1UrDAuN9-9us8Xb-AIFxLrvs6tzw2hbb5/view?usp=sharing"
+                target="_blank">LICENSES</a>
+            <a href="https://drive.google.com/drive/folders/1R3Ylk2RGkukywdA9IhdoURtnonqs7W8Y?usp=sharing"
+                target="_blank">RESOURCES</a>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-icons">
+            <a href="https://www.youtube.com/@AntistasiUltimateCommunity" target="_blank"><img
+                    src="../images/youtubelogo.png" alt="YouTube"></a>
+            <a href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate" target="_blank"><img
+                    src="../images/githublogo.png" alt="GitHub"></a>
+            <a href="https://discord.gg/antistasiultimate" target="_blank"><img src="../images/discordlogo.png"
+                    alt="Discord"></a>
+            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3020755032" target="_blank"><img
+                    src="../images/steamlogo.png" alt="Steam"></a>
+        </div>
+        <p class="footer-copyright">
+            Copyright © 2023 - 2025 Antistasi Ultimate All Rights Reserved
+        </p>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>
