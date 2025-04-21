@@ -35,9 +35,15 @@
 
     const target = redirects[cleanedPath];
 
-    // Only redirect if we’re not already on the correct destination
-    if (target && originalPath !== target) {
-        window.location.replace(target);
+    if (target) {
+        // Normalize current path for comparison
+        const currentNormalized = originalPath.replace(/\/+$/, '');
+        const targetNormalized = target.replace(/\/+$/, '');
+
+        // Only redirect if current path does not match target (case-insensitive)
+        if (currentNormalized.toLowerCase() !== targetNormalized.toLowerCase()) {
+            window.location.replace(target);
+        }
     }
 })();
 
