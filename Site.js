@@ -3,7 +3,6 @@
     const cleanedPath = originalPath.replace(/\/+$/, '').toLowerCase();
 
     const redirects = {
-        "/home": "/Home/",
         "/main": "/Home/",
         "/homepage": "/Home/",
 
@@ -12,7 +11,6 @@
         "/abou": "/About-Page/",
         "/abput": "/About-Page/",
 
-        "/faq": "/FAQ/",
         "/faqs": "/FAQ/",
         "/fqa": "/FAQ/",
         "/fq": "/FAQ/",
@@ -21,11 +19,9 @@
         "/community": "/Community/",
         "/comunity": "/Community/",
         "/comm": "/Community/",
-        "/commmunity": "/Community/",
 
         "/info": "/Useful-Information/",
         "/inf": "/Useful-Information/",
-        "/useful-information": "/Useful-Information/",
         "/usefulinfo": "/Useful-Information/",
         "/useful": "/Useful-Information/",
         "/information": "/Useful-Information/",
