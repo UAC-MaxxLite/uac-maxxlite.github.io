@@ -1,26 +1,28 @@
 (function () {
-    let path = window.location.pathname.toLowerCase().replace(/\/+$/, ''); // remove trailing slash
+    const rawPath = window.location.pathname.replace(/\/+$/, ''); // Remove trailing slashes
+    const path = rawPath.toLowerCase(); // Normalize to compare
+
     const redirects = {
         "/home": "/Home/",
         "/main": "/Home/",
         "/homepage": "/Home/",
-    
+
         "/about": "/About-Page/",
         "/abot": "/About-Page/",
         "/abou": "/About-Page/",
         "/abput": "/About-Page/",
-    
+
         "/faq": "/FAQ/",
         "/faqs": "/FAQ/",
         "/fqa": "/FAQ/",
         "/fq": "/FAQ/",
         "/fawq": "/FAQ/",
-    
+
         "/community": "/Community/",
         "/comunity": "/Community/",
         "/comm": "/Community/",
         "/commmunity": "/Community/",
-    
+
         "/info": "/Useful-Information/",
         "/inf": "/Useful-Information/",
         "/useful-information": "/Useful-Information/",
@@ -31,7 +33,7 @@
         "/documentation": "/Useful-Information/"
     };
 
-    if (redirects[path] && path !== redirects[path]) {
+    if (redirects[path] && rawPath !== redirects[path]) {
         window.location.replace(redirects[path]);
     }
 })();
