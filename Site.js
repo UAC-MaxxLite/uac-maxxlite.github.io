@@ -1,3 +1,20 @@
+(function () {
+    let path = window.location.pathname.toLowerCase().replace(/\/+$/, ''); // remove trailing slash
+    const redirects = {
+        "/home": "/",
+        "/index": "/",
+        "/faq": "/faq/",
+        "/community": "/community/",
+        "/about": "/about/",
+        "/info": "/info/",
+        "/useful-information": "/info/"
+    };
+
+    if (redirects[path] && path !== redirects[path]) {
+        window.location.replace(redirects[path]);
+    }
+})();
+
 function autoResizeText(selector) {
     const elements = document.querySelectorAll(selector);
 
