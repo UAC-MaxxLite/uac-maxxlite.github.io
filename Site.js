@@ -1,6 +1,6 @@
 (function () {
-    const rawPath = window.location.pathname.replace(/\/+$/, ''); // Remove trailing slashes
-    const path = rawPath.toLowerCase(); // Normalize to compare
+    const originalPath = window.location.pathname;
+    const cleanedPath = originalPath.replace(/\/+$/, '').toLowerCase();
 
     const redirects = {
         "/home": "/Home/",
@@ -33,8 +33,11 @@
         "/documentation": "/Useful-Information/"
     };
 
-    if (redirects[path] && rawPath !== redirects[path]) {
-        window.location.replace(redirects[path]);
+    const target = redirects[cleanedPath];
+
+    // Only redirect if we’re not already on the correct destination
+    if (target && originalPath !== target) {
+        window.location.replace(target);
     }
 })();
 
