@@ -48,13 +48,19 @@ function autoResizeText(selector) {
 
     elements.forEach(el => {
         el.style.fontSize = ''; // Reset any previous inline font size
+        el.style.textAlign = 'center';  // Horizontally center text
+        el.style.display = 'flex';      // Enable flexbox for vertical centering
+        el.style.justifyContent = 'center'; // Center horizontally in flexbox
+        el.style.alignItems = 'center';     // Center vertically in flexbox
+        el.style.boxSizing = 'border-box';  // Include padding in size calculations
+
         const parent = el.parentElement;
-        const minFontSize = 5; // Minimum font size
+        const minFontSize = 0.1; // Minimum font size
         let fontSize = 20; // Starting font size
 
         // Apply font size shrinking until the text fits both width and height
         while (el.scrollWidth > parent.offsetWidth || el.scrollHeight > parent.offsetHeight) {
-            fontSize -= 1.5;
+            fontSize -= 0.5;
             el.style.fontSize = fontSize + 'px';
 
             // Stop if the font size is too small

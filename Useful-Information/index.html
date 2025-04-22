@@ -143,16 +143,16 @@
             <div class="info-block">
                 <h4 class="info-block-title">Spawn enemy support at players position</h4>
                 <pre class="info-code-block"><code class="language-sqf">private _type = "CAS"; // CASDIVE, QRF, Etc
-    private _side = Occupants; // Occupants/Invaders
-    ["CAS", Occupants, "attack", 500, player, getPosATL player, 0.8, 0] call A3A_fnc_createSupport;</code></pre>
+private _side = Occupants; // Occupants/Invaders
+["CAS", Occupants, "attack", 500, player, getPosATL player, 0.8, 0] call A3A_fnc_createSupport;</code></pre>
             </div>
             <div class="info-block">
                 <h4 class="info-block-title">Spawn spec ops HQ attack mission (Server Exec)</h4>
                 <pre class="info-code-block"><code class="language-sqf">private _side = Occupants; // Occupants, Invaders
     
-    private _marker = ["CSAT_carrier", "NATO_carrier"] select {_side isEqualTo Occupants};
-    
-    [_side, _marker, 0] spawn A3A_fnc_attackHQ;</code></pre>
+private _marker = ["CSAT_carrier", "NATO_carrier"] select {_side isEqualTo Occupants};
+
+[_side, _marker, 0] spawn A3A_fnc_attackHQ;</code></pre>
             </div>
             <div class="info-block">
                 <h4 class="info-block-title">Spawn Trader Mission</h4>
@@ -169,9 +169,9 @@
                 <p class="info-block-description">You can also have multiple crates and do this to export them one at a
                     time</p>
                 <pre class="info-code-block"><code class="language-sqf">//crate 1
-    this addAction ["copy", {[(_this select 0), "RHS", "Rifles"] call A3U_fnc_exportCrate}];
-    //crate 2
-    this addAction ["copy", {[(_this select 0), "RHS", "Sniper Rifles"] call A3U_fnc_exportCrate}];</code></pre>
+this addAction ["copy", {[(_this select 0), "RHS", "Rifles"] call A3U_fnc_exportCrate}];
+//crate 2
+this addAction ["copy", {[(_this select 0), "RHS", "Sniper Rifles"] call A3U_fnc_exportCrate}];</code></pre>
             </div>
             <div class="info-block">
                 <h4 class="info-block-title">Export Pylon Loadout For Config</h4>
@@ -217,10 +217,10 @@
                 <p class="info-block-description">Sets up the rivals, and reveals their location on the commander menu
                 </p>
                 <pre class="info-code-block"><code class="language-sqf">[] spawn {
-       [] remoteExecCall ["SCRT_fnc_rivals_activate", 2];
-       uiSleep 2;
-       [10000] call SCRT_fnc_rivals_addProgressToRivalsLocationReveal;
-    };</code></pre>
+    [] remoteExecCall ["SCRT_fnc_rivals_activate", 2];
+    uiSleep 2;
+    [10000] call SCRT_fnc_rivals_addProgressToRivalsLocationReveal;
+};</code></pre>
             </div>
         </div>
 
@@ -231,8 +231,7 @@
                 <p class="info-block-description">
                 <p class="info-block-description"><a class="info-link"
                         href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/tree/unstable/Tools/TownGenerator">Town
-                        Generator</a> You can override mission parameters like difficulty or AI settings by editing
-                    the mission config:<br><br>sort.py does the heavy lifting and doesn't necessarily need to be used
+                        Generator</a> is a bundle of 2 python scripts, input.py and sort.py<br><br>sort.py does the heavy lifting and doesn't necessarily need to be used
                     directly (input.py imports the sort.py function). input.py can be ran and will prompt you to put in
                     an array provided by <a class="info-link"
                         href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/blob/unstable/A3A/addons/ultimate/functions/Utility/fn_exportTowns.sqf">A3U_fnc_exportTowns</a>.<br><br>After
@@ -246,34 +245,34 @@
             <div class="info-block">
                 <h4 class="info-block-title">VSCode arma-dev.json</h4>
                 <pre class="info-code-block"><code class="language-js">{
-        "title": "Antistasi Ultimate",
-        "name": "A3U",
-        "author": "Antistasi Ultimate Dev Team",
-        "website": "",
-        "version": "0.0.1",
-        "buildPath": "build",
-        "privateKey": "",
-        "serverDirs": [],
-        "serverUse32bit": false,
-        "clientDirs": [
-            "A3A/addons/config_fixes",
-            "A3A/addons/core",
-            "A3A/addons/events",
-            "A3A/addons/garage",
-            "A3A/addons/gui",
-            "A3A/addons/hals",
-            "A3A/addons/jeroen_arsenal",
-            "A3A/addons/logistics",
-            "A3A/addons/main_menu",
-            "A3A/addons/maps",
-            "A3A/addons/patcom",
-            "A3A/addons/scrt",
-            "A3A/addons/ultimate"
-        ],
-        "clientMods": [],
-        "ftpConnection": {},
-        "steamPath": "pathToSteamLibrary"
-    }</code></pre>
+    "title": "Antistasi Ultimate",
+    "name": "A3U",
+    "author": "Antistasi Ultimate Dev Team",
+    "website": "",
+    "version": "0.0.1",
+    "buildPath": "build",
+    "privateKey": "",
+    "serverDirs": [],
+    "serverUse32bit": false,
+    "clientDirs": [
+        "A3A/addons/config_fixes",
+        "A3A/addons/core",
+        "A3A/addons/events",
+        "A3A/addons/garage",
+        "A3A/addons/gui",
+        "A3A/addons/hals",
+        "A3A/addons/jeroen_arsenal",
+        "A3A/addons/logistics",
+        "A3A/addons/main_menu",
+        "A3A/addons/maps",
+        "A3A/addons/patcom",
+        "A3A/addons/scrt",
+        "A3A/addons/ultimate"
+    ],
+    "clientMods": [],
+    "ftpConnection": {},
+    "steamPath": "pathToSteamLibrary"
+}</code></pre>
             </div>
         </div>
         <div class="info-code-section">

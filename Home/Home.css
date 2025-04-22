@@ -1,4 +1,3 @@
-
 /* Text Devider Start */
 .section-divider {
   width: 100%;
@@ -19,6 +18,7 @@
   font-family: "Black Ops One";
   color: #ffffff;
 }
+
 /* Text Devider End */
 
 /* Connect Page Start */
@@ -123,6 +123,7 @@
   transform: scale(1.05);
   color: #ffd700;
 }
+
 /* Connect Page End */
 
 /* Slider Section Start */
@@ -282,6 +283,7 @@
 .slider-arrow.right {
   right: 0;
 }
+
 /* Slider Section End */
 
 /* Map Showcase Start*/
@@ -296,6 +298,7 @@
     opacity: 1;
   }
 }
+
 
 .card-section {
   width: 100%;
@@ -324,7 +327,12 @@
 }
 
 .card-container {
+  background-color: transparent;
   perspective: 1000px;
+}
+
+.card-container:hover .card-base {
+  transform: rotateY(180deg);
 }
 
 .card-base {
@@ -335,10 +343,9 @@
   transition: transform 0.6s;
   display: flex;
   flex-direction: column;
-}
-
-.card-base:hover {
-  transform: rotateY(180deg);
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .card-front,
@@ -367,6 +374,7 @@
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .card-top {
@@ -453,6 +461,7 @@
 
 .card-middle-back {
   height: 14%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -483,6 +492,8 @@
   display: inline-block;
   cursor: pointer;
   width: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .card-tooltip-text {
@@ -567,6 +578,7 @@
 .card-base.flipped {
   transform: rotateY(180deg);
 }
+
 /* Map Showcase End*/
 
 /* Supported Mods Start */
@@ -581,8 +593,13 @@
 }
 
 @keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideInFromTop {
@@ -590,6 +607,7 @@
     transform: translateY(-100%);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -672,6 +690,7 @@
   font-family: "Black Ops One";
   font-size: 2rem;
 }
+
 h1.content-mods-header {
   font-family: "Black Ops One";
   font-size: 1.5rem;
@@ -682,7 +701,7 @@ h1.content-mods-header {
 }
 
 .content-mods-info {
-  font-family: 'Open Sans',sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
   font-size: 0.9rem;
   color: #ccc;
   margin-bottom: 20px;
@@ -746,6 +765,7 @@ ul.mods-2 {
   background-color: #626262;
   border-radius: 10px;
 }
+
 /* Supported Mods End */
 
 /* Donation Start */
@@ -808,4 +828,5 @@ ul.mods-2 {
 .donate-button:hover {
   color: #ffd700;
 }
+
 /* Donation End */
