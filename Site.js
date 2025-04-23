@@ -102,7 +102,7 @@ function copyToClipboard(element) {
         .map(node => node.textContent.trim())
         .join("");
 
-    navigator.clipboard.writeText(text);
+    navigator.clipboard.writeText("Antistasi_" + text);
 
     const tooltip = element.querySelector(".card-tooltip-text");
     tooltip.textContent = "Copied!";
