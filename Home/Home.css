@@ -2,7 +2,7 @@
 .section-divider {
   width: 100%;
   background-color: #1c1c1c;
-  padding: 10px 20px;
+  padding: 10px 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,8 +13,7 @@
 }
 
 .divider-text {
-  margin: 0;
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 6vw, 4rem);
   font-family: "Black Ops One";
   color: #ffffff;
 }
@@ -215,8 +214,8 @@
 .slide-text-background {
   position: absolute;
   top: -100%;
-  left: 50%;
-  transform: translateX(-50%);
+  max-width: 90%;
+  width: fit-content;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
   border-radius: 0 0 10px 10px;
@@ -234,7 +233,7 @@
   text-align: center;
   position: relative;
   top: -50%;
-  font-size: 3rem;
+  font-size: clamp(1rem, 2vw, 6rem);
   transition: top 1.5s ease-out;
   margin: 5px 0;
   z-index: 2;
@@ -244,8 +243,7 @@
   color: white;
   text-align: center;
   position: relative;
-  top: -50%;
-  font-size: 1.2rem;
+  font-size: clamp(0.6rem, 1vw, 4rem);
   transition: top 2s ease-out;
   margin: 5px 0;
   z-index: 2;
@@ -256,6 +254,7 @@
   top: 0;
   bottom: 0;
   width: 60px;
+  max-width: 10%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -356,6 +355,7 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  align-items: center;
 }
 
 .card-front {
@@ -374,7 +374,6 @@
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .card-top {
@@ -385,7 +384,7 @@
   align-items: center;
   padding: 5px;
   box-sizing: border-box;
-  width: 100%;
+  width: 90%;
   overflow: visible;
 }
 
@@ -441,7 +440,7 @@
   align-items: center;
   padding: 5px;
   box-sizing: border-box;
-  width: 100%;
+  width: 90%;
   overflow: visible;
 }
 
@@ -636,6 +635,7 @@
 .mods-tab button {
   font-family: "Black Ops One";
   flex: 1 1 auto;
+  font-weight: bold;
   background-color: #676767;
   outline: solid;
   color: rgb(21, 21, 21);
