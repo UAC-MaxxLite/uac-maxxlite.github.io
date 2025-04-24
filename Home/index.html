@@ -31,7 +31,10 @@
 	<title>Home Page - Antistasi Ultimate</title>
 	<link href="Home.css" rel="stylesheet" />
 	<link href="../Site.css" rel="stylesheet" />
-	<link href="../images/Yellow.png" rel="icon" />
+	<meta property="og:image" content="../images/Yellow.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="300">
+	<meta property="og:image:height" content="300">
 	<link
 		href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
 		id="u-theme-google-font" rel="stylesheet" />
@@ -66,10 +69,6 @@
 <meta property="og:description"
 	content="The official site for the Antistasi Ultimate Mod for Arma3. All the information you need in one place!">
 <meta property="og:type" content="website">
-<meta property="og:image" content="../images/Yellow.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="300">
-<meta property="og:image:height" content="300">
 <meta data-intl-tel-input-cdn-path="intlTelInput/">
 
 <body>
@@ -253,8 +252,9 @@
 	<section class="section-divider" id="maps-section">
 		<h2 class="divider-text">Supported Maps</h2>
 	</section>
+
 	<section class="card-section">
-		<a href="#mods-section" class="card-button card-button1">↓ Go To Bottom ↓</a>
+		<a href="#mods-section" class="card-button no-flip">↓ Go To Bottom ↓</a>
 		<div id="card-grid" class="card-grid">
 			<div class="card-container">
 				<div class="card-base" onclick="this.classList.toggle('flipped')">
@@ -264,7 +264,7 @@
 							<h1 class="card-text">Altis</h1>
 						</div>
 						<div class="card-middle">
-							<img class="card-image" src="../images/satmaps/satmap-altis.webp" alt="SatMap">
+							<img class="card-image" src="https://i.imgur.com/i6l6NUq.jpeg" alt="SatMap">
 							<p class="card-middle-text" style="margin: -3px">Map Size: 30 x 30 km</p>
 							<p class="card-middle-text">Zone Amount: 92</p>
 						</div>
@@ -276,10 +276,8 @@
 							<h1 class="card-text">Altis</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Altis.Altis
+							<p class="card-tooltip no-flip" data-value="Antistasi_Altis.Altis"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -294,7 +292,7 @@
 						<div class="card-bottom-back">
 							<!-- Button to Steam Page -->
 							<a href="https://store.steampowered.com/app/107410/Arma_3/" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Steam Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Steam Page</a>
 						</div>
 					</div>
 				</div>
@@ -319,10 +317,8 @@
 							<h1 class="card-text">Anizay</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								tem_anizay.tem_anizay
+							<p class="card-tooltip no-flip" data-value="Antistasi_tem_anizay.tem_anizay"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -336,7 +332,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1537973181" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -361,10 +357,8 @@
 							<h1 class="card-text">Cam Lao Nam</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								cam_lao_nam.cam_lao_nam
+							<p class="card-tooltip no-flip" data-value="Antistasi_cam_lao_nam.cam_lao_nam"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -378,7 +372,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/?curator_clanid=2799889"
-								target="_blank" rel="noopener noreferrer" class="card-button card-button1">Steam
+								target="_blank" rel="noopener noreferrer" class="card-button no-flip">Steam
 								Page</a>
 						</div>
 					</div>
@@ -404,10 +398,8 @@
 							<h1 class="card-text">Chernarus (2020)</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								cup_chernarus_A3.cup_chernarus_A3
+							<p class="card-tooltip no-flip" data-value="Antistasi_cup_chernarus_A3.cup_chernarus_A3"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -421,7 +413,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1981964169" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -446,10 +438,8 @@
 							<h1 class="card-text">Chernarus (Autumn)</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								chernarus.chernarus
+							<p class="card-tooltip no-flip" data-value="Antistasi_chernarus.chernarus"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -463,7 +453,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=583544987" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -488,10 +478,8 @@
 							<h1 class="card-text">Chernarus (Summer)</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								chernarus_summer.chernarus_summer
+							<p class="card-tooltip no-flip" data-value="Antistasi_chernarus_summer.chernarus_summer"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -505,7 +493,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=583544987" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -530,10 +518,8 @@
 							<h1 class="card-text">Chernarus (Winter)</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								chernarus_winter.chernarus_winter
+							<p class="card-tooltip no-flip" data-value="Antistasi_chernarus_winter.chernarus_winter"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -547,7 +533,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=583544987" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -572,10 +558,8 @@
 							<h1 class="card-text">Chernarus Green Sea Terrain</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								green_sea.green_sea
+							<p class="card-tooltip no-flip" data-value="Antistasi_green_sea.green_sea"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -589,7 +573,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2645015212" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -614,10 +598,8 @@
 							<h1 class="card-text">Chernarus Redux</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Antistasi.chernarusredux.chernarusredux
+							<p class="card-tooltip no-flip" data-value="Antistasi.chernarusredux.chernarusredux"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -631,7 +613,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1128256978" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -656,10 +638,8 @@
 							<h1 class="card-text">Esseker</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Esseker.Esseker
+							<p class="card-tooltip no-flip" data-value="Antistasi_Esseker.Esseker"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -673,7 +653,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=498101407" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -698,10 +678,8 @@
 							<h1 class="card-text">Fapovo Island</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								fapovo.fapovo
+							<p class="card-tooltip no-flip" data-value="Antistasi_fapovo.fapovo"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -715,7 +693,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1910457930" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -740,10 +718,8 @@
 							<h1 class="card-text">G.O.S Al Rayak</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								pja310.pja310
+							<p class="card-tooltip no-flip" data-value="Antistasi_pja310.pja310"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -757,7 +733,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=648172507" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -782,10 +758,8 @@
 							<h1 class="card-text">Gabreta</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								stozec.stozec
+							<p class="card-tooltip no-flip" data-value="Antistasi_stozec.stozec"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -799,7 +773,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://store.steampowered.com/app/1294440/Arma_3_Creator_DLC_CSLA_Iron_Curtain/"
-								target="_blank" rel="noopener noreferrer" class="card-button card-button1">Steam
+								target="_blank" rel="noopener noreferrer" class="card-button no-flip">Steam
 								Page</a>
 						</div>
 					</div>
@@ -825,10 +799,8 @@
 							<h1 class="card-text">Gulfcoast Islands</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Gulfcoast.Gulfcoast
+							<p class="card-tooltip no-flip" data-value="Antistasi_Gulfcoast.Gulfcoast"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -842,7 +814,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1617004814" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -865,10 +837,8 @@
 							<h1 class="card-text">Isla Abramia</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								abramia.abramia
+							<p class="card-tooltip no-flip" data-value="Antistasi_abramia.abramia"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -882,7 +852,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=648775794" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -905,10 +875,8 @@
 							<h1 class="card-text">Island Panthera</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Panthera3.Panthera3
+							<p class="card-tooltip no-flip" data-value="Antistasi_Panthera3.Panthera3"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -922,7 +890,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=708278910" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -945,10 +913,8 @@
 							<h1 class="card-text">Island Panthera Winter</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Winthera3.Winthera3
+							<p class="card-tooltip no-flip" data-value="Antistasi_Winthera3.Winthera3"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -962,7 +928,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=708278910" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -985,10 +951,8 @@
 							<h1 class="card-text">Khe Sahn</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								vn_khe_sanh.vn_khe_sanh
+							<p class="card-tooltip no-flip" data-value="Antistasi_vn_khe_sanh.vn_khe_sanh"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1002,7 +966,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/?curator_clanid=2799889"
-								target="_blank" rel="noopener noreferrer" class="card-button card-button1">Steam
+								target="_blank" rel="noopener noreferrer" class="card-button no-flip">Steam
 								Page</a>
 						</div>
 					</div>
@@ -1026,10 +990,8 @@
 							<h1 class="card-text">Kujari</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								tem_kujari.tem_kujari
+							<p class="card-tooltip no-flip" data-value="Antistasi_tem_kujari.tem_kujari"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1043,7 +1005,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1726494027" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1066,10 +1028,8 @@
 							<h1 class="card-text">Kunduz</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Kunduz.Kunduz
+							<p class="card-tooltip no-flip" data-value="Antistasi_Kunduz.Kunduz"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1083,7 +1043,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=421620913" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1106,10 +1066,8 @@
 							<h1 class="card-text">Lingor</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								lingor3.lingor3
+							<p class="card-tooltip no-flip" data-value="Antistasi_lingor3.lingor3"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1123,7 +1081,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=718649903" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1146,10 +1104,8 @@
 							<h1 class="card-text">Livonia</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Enoch.Enoch
+							<p class="card-tooltip no-flip" data-value="Antistasi_Enoch.Enoch"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1163,7 +1119,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://store.steampowered.com/app/1021790/Arma_3_Contact/?snr=1_16_16_creator_curatorfeatureddiscount&curator_clanid=2799889"
-								target="_blank" rel="noopener noreferrer" class="card-button card-button1">Steam
+								target="_blank" rel="noopener noreferrer" class="card-button no-flip">Steam
 								Page</a>
 						</div>
 					</div>
@@ -1187,10 +1143,8 @@
 							<h1 class="card-text">Lythium</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Lythium.Lythium
+							<p class="card-tooltip no-flip" data-value="Antistasi_Lythium.Lythium"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1204,7 +1158,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=909547724" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1227,10 +1181,8 @@
 							<h1 class="card-text">Madrigal</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								OPTRE_Madrigal.OPTRE_Madrigal
+							<p class="card-tooltip no-flip" data-value="Antistasi_OPTRE_Madrigal.OPTRE_Madrigal"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1244,7 +1196,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=769440155" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1267,10 +1219,8 @@
 							<h1 class="card-text">Malden</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Malden.Malden
+							<p class="card-tooltip no-flip" data-value="Antistasi_Malden.Malden"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1284,7 +1234,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://store.steampowered.com/app/107410/Arma_3/" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Steam Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Steam Page</a>
 						</div>
 					</div>
 				</div>
@@ -1307,10 +1257,8 @@
 							<h1 class="card-text">Mehland</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								mehland.mehland
+							<p class="card-tooltip no-flip" data-value="Antistasi_mehland.mehland"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1324,7 +1272,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3317364155" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1347,10 +1295,8 @@
 							<h1 class="card-text">Mortain</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								SPE_Mortain.SPE_Mortain
+							<p class="card-tooltip no-flip" data-value="Antistasi_SPE_Mortain.SPE_Mortain"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1364,7 +1310,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/"
-								target="_blank" rel="noopener noreferrer" class="card-button card-button1">Steam
+								target="_blank" rel="noopener noreferrer" class="card-button no-flip">Steam
 								Page</a>
 						</div>
 					</div>
@@ -1388,10 +1334,8 @@
 							<h1 class="card-text">Namalsk [R]</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								namalsk.namalsk
+							<p class="card-tooltip no-flip" data-value="Antistasi_namalsk.namalsk"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1405,7 +1349,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3013966707" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1428,10 +1372,8 @@
 							<h1 class="card-text">Napf Island</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Napf.Napf
+							<p class="card-tooltip no-flip" data-value="Antistasi_Napf.Napf"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1445,7 +1387,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1425442364" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1468,10 +1410,8 @@
 							<h1 class="card-text">Napf Winter Island</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								NapfWinter.NapfWinter
+							<p class="card-tooltip no-flip" data-value="Antistasi_NapfWinter.NapfWinter"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1485,7 +1425,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1425442364" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1508,10 +1448,8 @@
 							<h1 class="card-text">New Esseker</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Esseker.Esseker
+							<p class="card-tooltip no-flip" data-value="Antistasi_Esseker.Esseker"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1525,7 +1463,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2712204589" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1548,10 +1486,8 @@
 							<h1 class="card-text">Normandy</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								SPE_Normandy.SPE_Normandy
+							<p class="card-tooltip no-flip" data-value="Antistasi_SPE_Normandy.SPE_Normandy"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1565,7 +1501,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/"
-								target="_blank" rel="noopener noreferrer" class="card-button card-button1">Steam
+								target="_blank" rel="noopener noreferrer" class="card-button no-flip">Steam
 								Page</a>
 						</div>
 					</div>
@@ -1589,10 +1525,8 @@
 							<h1 class="card-text">Omaha Beach</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								WW2_Omaha_Beach.WW2_Omaha_Beach
+							<p class="card-tooltip no-flip" data-value="Antistasi_WW2_Omaha_Beach.WW2_Omaha_Beach"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1606,7 +1540,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2993515557" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1629,10 +1563,8 @@
 							<h1 class="card-text">Phouc Tuy Province</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								psyfx_pht.psyfx_pht
+							<p class="card-tooltip no-flip" data-value="Antistasi_psyfx_pht.psyfx_pht"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1646,7 +1578,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/workshop/filedetails/?id=943001311" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1669,10 +1601,8 @@
 							<h1 class="card-text">Prei Khmaoch Luong</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								rhspkl.rhspkl
+							<p class="card-tooltip no-flip" data-value="Antistasi_rhspkl.rhspkl"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1686,7 +1616,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1978754337" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1709,10 +1639,8 @@
 							<h1 class="card-text">Pulau</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Antistasi.pulau.pulau
+							<p class="card-tooltip no-flip" data-value="Antistasi.pulau.pulau"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1726,7 +1654,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1423583812" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1749,10 +1677,8 @@
 							<h1 class="card-text">Ruha</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								ruha.ruha
+							<p class="card-tooltip no-flip" data-value="Antistasi_ruha.ruha"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1766,7 +1692,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1368857262" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1789,10 +1715,8 @@
 							<h1 class="card-text">Sahrani</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								sara.sara
+							<p class="card-tooltip no-flip" data-value="Antistasi_sara.sara"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1806,7 +1730,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=583544987" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1829,10 +1753,8 @@
 							<h1 class="card-text">Saint Kapaulio</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Kapaulio.Kapaulio
+							<p class="card-tooltip no-flip" data-value="Antistasi_Kapaulio.Kapaulio"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1846,7 +1768,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=939686262" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1869,10 +1791,8 @@
 							<h1 class="card-text">Sefrou-Ramal</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								SefrouRamal.SefrouRamal
+							<p class="card-tooltip no-flip" data-value="Antistasi_SefrouRamal.SefrouRamal"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1886,7 +1806,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://store.steampowered.com/app/1681170/Arma_3_Creator_DLC_Western_Sahara/"
-								target="_blank" rel="noopener noreferrer" class="card-button card-button1">DLC Page</a>
+								target="_blank" rel="noopener noreferrer" class="card-button no-flip">DLC Page</a>
 						</div>
 					</div>
 				</div>
@@ -1909,10 +1829,8 @@
 							<h1 class="card-text">Sehreno</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Sehreno.Sehreno
+							<p class="card-tooltip no-flip" data-value="Antistasi_Sehreno.Sehreno"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1926,7 +1844,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2876540929" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1949,10 +1867,8 @@
 							<h1 class="card-text">Staszow</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Staszow.Staszow
+							<p class="card-tooltip no-flip" data-value="Antistasi_Staszow.Staszow"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -1966,7 +1882,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2648308937" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -1989,10 +1905,8 @@
 							<h1 class="card-text">Staszow (Winter)</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								StaszowWinter.StaszowWinter
+							<p class="card-tooltip no-flip" data-value="Antistasi_StaszowWinter.StaszowWinter"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2006,7 +1920,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2648308937" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -2029,10 +1943,8 @@
 							<h1 class="card-text">Stubbhult</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Antistasi.stubbhult.stubbhult
+							<p class="card-tooltip no-flip" data-value="Antistasi.stubbhult.stubbhult"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2046,7 +1958,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3353189981" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -2069,10 +1981,8 @@
 							<h1 class="card-text">Šumava</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								brf_sumava.brf_sumava
+							<p class="card-tooltip no-flip" data-value="Antistasi_brf_sumava.brf_sumava"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2086,7 +1996,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2947655994" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -2109,10 +2019,8 @@
 							<h1 class="card-text">Svartmarka</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								tem_chernarus.tem_chernarus
+							<p class="card-tooltip no-flip" data-value="Antistasi_tem_chernarus.tem_chernarus"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2126,7 +2034,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1630816076" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -2149,10 +2057,8 @@
 							<h1 class="card-text">Svartmarka Winter</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								tem_chernarusw.tem_chernarusw
+							<p class="card-tooltip no-flip" data-value="Antistasi_tem_chernarusw.tem_chernarusw"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2166,7 +2072,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1630816076" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -2189,10 +2095,8 @@
 							<h1 class="card-text">Takistan</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								takistan.takistan
+							<p class="card-tooltip no-flip" data-value="Antistasi_takistan.takistan"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2206,7 +2110,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=583544987" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -2229,10 +2133,8 @@
 							<h1 class="card-text">Tanoa</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Tanoa.Tanoa
+							<p class="card-tooltip no-flip" data-value="Antistasi_Tanoa.Tanoa"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2246,7 +2148,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://store.steampowered.com/app/395180/Arma_3_Apex/?snr=1_16_16_creator_curatorfeatureddiscount&curator_clanid=2799889"
-								target="_blank" rel="noopener noreferrer" class="card-button card-button1">DLC Page</a>
+								target="_blank" rel="noopener noreferrer" class="card-button no-flip">DLC Page</a>
 						</div>
 					</div>
 				</div>
@@ -2269,10 +2171,8 @@
 							<h1 class="card-text">Tembelan Island</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								Tembelan.Tembelan
+							<p class="card-tooltip no-flip" data-value="Antistasi_Tembelan.Tembelan"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2286,7 +2186,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1252091296" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -2309,10 +2209,9 @@
 							<h1 class="card-text">Tobruk</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								iron_excelsior_Tobruk.iron_excelsior_Tobruk
+							<p class="card-tooltip no-flip"
+								data-value="Antistasi_iron_excelsior_Tobruk.iron_excelsior_Tobruk"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2326,7 +2225,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2648308937" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -2349,10 +2248,8 @@
 							<h1 class="card-text">UMB Colombia</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								UMB_Colombia.UMB_Colombia
+							<p class="card-tooltip no-flip" data-value="Antistasi_UMB_Colombia.UMB_Colombia"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2366,7 +2263,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2266710560" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -2389,10 +2286,8 @@
 							<h1 class="card-text">Utah Beach</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								spex_utah_beach.spex_utah_beach
+							<p class="card-tooltip no-flip" data-value="Antistasi_spex_utah_beach.spex_utah_beach"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2406,7 +2301,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3117898674" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -2429,10 +2324,8 @@
 							<h1 class="card-text">Vidda</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								blud_vidda.blud_vidda
+							<p class="card-tooltip no-flip" data-value="Antistasi_blud_vidda.blud_vidda"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2446,7 +2339,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1282716647" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -2469,10 +2362,8 @@
 							<h1 class="card-text">Virolahti</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								vt7.vt7
+							<p class="card-tooltip no-flip" data-value="Antistasi_vt7.vt7"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2486,7 +2377,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1926513010" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
@@ -2509,10 +2400,9 @@
 							<h1 class="card-text">Weferlingen</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								gm_weferlingen_summer.gm_weferlingen_summer
+							<p class="card-tooltip no-flip"
+								data-value="Antistasi_gm_weferlingen_summer.gm_weferlingen_summer"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2526,7 +2416,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/"
-								target="_blank" rel="noopener noreferrer" class="card-button card-button1">Workshop
+								target="_blank" rel="noopener noreferrer" class="card-button no-flip">Workshop
 								Page</a>
 						</div>
 					</div>
@@ -2550,10 +2440,9 @@
 							<h1 class="card-text">Weferlingen (Winter)</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								gm_weferlingen_winter.gm_weferlingen_winter
+							<p class="card-tooltip no-flip"
+								data-value="Antistasi_gm_weferlingen_winter.gm_weferlingen_winter"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2567,7 +2456,7 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/"
-								target="_blank" rel="noopener noreferrer" class="card-button card-button1">Workshop
+								target="_blank" rel="noopener noreferrer" class="card-button no-flip">Workshop
 								Page</a>
 						</div>
 					</div>
@@ -2591,10 +2480,8 @@
 							<h1 class="card-text">Yulakia</h1>
 						</div>
 						<div class="card-middle-back">
-							<p class="card-middle-text-back" style="margin: 2px">Map Scenario Name:</p>
-							<p class="card-middle-text-back card-tooltip" style="margin-bottom: 10px"
-								onclick="copyToClipboard(this)">
-								yulakia.yulakia
+							<p class="card-tooltip no-flip" data-value="Antistasi_yulakia.yulakia"
+								onclick="copyToClipboard(this)">Click To Copy<br>Scenario Name
 								<span class="card-tooltip-text">Click to copy</span>
 							</p>
 						</div>
@@ -2608,13 +2495,14 @@
 						</div>
 						<div class="card-bottom-back">
 							<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2950257727" target="_blank"
-								rel="noopener noreferrer" class="card-button card-button1">Workshop Page</a>
+								rel="noopener noreferrer" class="card-button no-flip">Workshop Page</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div><!--no code needed after this point-->
-		<a href="#maps-section" class="card-button card-button1">↑ Go To Top ↑</a>
+		</div>
+		<!--no code needed after this point-->
+		<a href="#maps-section" class="card-button no-flip">↑ Go To Top ↑</a>
 	</section>
 	<!-- Map Showcase End -->
 	<!-- Supported Mods Start -->

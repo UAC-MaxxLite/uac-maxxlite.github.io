@@ -43,47 +43,76 @@
     }
 })();
 
-function autoResizeText(selector) {
-    const elements = document.querySelectorAll(selector);
 
+function resizeTextToFit(elements) {
     elements.forEach(el => {
-        el.style.fontSize = ''; // Reset any previous inline font size
-        el.style.textAlign = 'center';  // Horizontally center text
-        el.style.display = 'flex';      // Enable flexbox for vertical centering
-        el.style.justifyContent = 'center'; // Center horizontally in flexbox
-        el.style.alignItems = 'center';     // Center vertically in flexbox
-        el.style.boxSizing = 'border-box';  // Include padding in size calculations
+        const container = el.parentElement;
+        let fontSize = 100; // Start large
+        el.style.fontSize = fontSize + 'px';
+        el.style.whiteSpace = 'nowrap';
 
-        const parent = el.parentElement;
-        const minFontSize = 0.1; // Minimum font size
-        let fontSize = 20; // Starting font size
+        const maxHeight = container.clientHeight; // container inner height
+        const maxWidth = container.clientWidth;  // container inner width
 
-        // Apply font size shrinking until the text fits both width and height
-        while (el.scrollWidth > parent.offsetWidth || el.scrollHeight > parent.offsetHeight) {
-            fontSize -= 0.5;
+        // For tooltips, apply a minimum font size
+        const isTooltip = el.classList.contains('card-tooltip-text');
+        const minFontSize = isTooltip ? 12 : 5; // Tooltips have a minimum of 12px for readability
+
+        // Resize text to fit both width and height of the container
+        while ((el.scrollHeight > maxHeight || el.scrollWidth > maxWidth) && fontSize > minFontSize) {
+            fontSize -= 1;
             el.style.fontSize = fontSize + 'px';
-
-            // Stop if the font size is too small
-            if (fontSize <= minFontSize) {
-                break;
-            }
         }
     });
 }
 
-// Apply auto-resize for h1 and card-middle-text-back
-window.addEventListener('load', () => {
-    autoResizeText('h1.card-text, .card-middle-text-back');
-});
+function resizeUITexts() {
+    const headings = document.querySelectorAll('.card-top h1');
+    const tooltips = document.querySelectorAll('.card-tooltip-text');
+    resizeTextToFit([...headings, ...tooltips]);
+}
 
-window.addEventListener('resize', () => {
-    autoResizeText('h1.card-text, .card-middle-text-back');
-});
+window.addEventListener('load', resizeUITexts);
+window.addEventListener('resize', resizeUITexts);
 
-document.querySelectorAll('.card-base').forEach(card => {
-    card.addEventListener('click', () => {
-        card.classList.toggle('flipped');
+
+function isMobile() {
+    return window.innerWidth <= 768;
+}
+
+function setFlipListeners(enable) {
+    document.querySelectorAll('.card-base').forEach(card => {
+        // Define the flip handler once
+        const flipHandler = function (e) {
+            if (!e.target.closest('.no-flip')) {
+                card.classList.toggle('flipped');
+            }
+        };
+
+        // Enable flipping
+        if (enable && !card._flipHandler) {
+            card._flipHandler = flipHandler;
+            card.addEventListener('click', flipHandler);
+        }
+        // Disable flipping
+        else if (!enable && card._flipHandler) {
+            card.removeEventListener('click', card._flipHandler);
+            delete card._flipHandler;
+        }
     });
+}
+
+// Initial check
+setFlipListeners(isMobile());
+
+// Dynamically toggle listeners on resize
+let lastState = isMobile();
+window.addEventListener('resize', () => {
+    const currentState = isMobile();
+    if (currentState !== lastState) {
+        setFlipListeners(currentState);
+        lastState = currentState;
+    }
 });
 
 window.addEventListener('scroll', () => {
@@ -96,22 +125,23 @@ window.addEventListener('scroll', () => {
 });
 
 function copyToClipboard(element) {
-    // Only get the text from the node, excluding the tooltip span
-    const text = Array.from(element.childNodes)
-        .filter(node => node.nodeType === Node.TEXT_NODE)
-        .map(node => node.textContent.trim())
-        .join("");
+    // Get the data-value attribute from the element
+    const dataToCopy = element.dataset.value;
 
-    navigator.clipboard.writeText("Antistasi_" + text);
+    if (!dataToCopy) return; // Optional: prevent copying if no data-value present
+
+    navigator.clipboard.writeText(dataToCopy);
 
     const tooltip = element.querySelector(".card-tooltip-text");
-    tooltip.textContent = "Copied!";
-    element.classList.add("show-tooltip");
+    if (tooltip) {
+        tooltip.textContent = "Copied!";
+        element.classList.add("show-tooltip");
 
-    setTimeout(() => {
-        tooltip.textContent = "Click to copy";
-        element.classList.remove("show-tooltip");
-    }, 1500);
+        setTimeout(() => {
+            tooltip.textContent = "Click to copy";
+            element.classList.remove("show-tooltip");
+        }, 1500);
+    }
 }
 
 

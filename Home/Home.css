@@ -17,7 +17,6 @@
   font-family: "Black Ops One";
   color: #ffffff;
 }
-
 /* Text Devider End */
 
 /* Connect Page Start */
@@ -122,7 +121,6 @@
   transform: scale(1.05);
   color: #ffd700;
 }
-
 /* Connect Page End */
 
 /* Slider Section Start */
@@ -289,7 +287,6 @@
 .slider-arrow.right {
   right: 0;
 }
-
 /* Slider Section End */
 
 /* Map Showcase Start*/
@@ -305,11 +302,10 @@
   }
 }
 
-
 .card-section {
   width: 100%;
   background-size: contain;
-  background-image: url('../images/mapcard-page-bg.webp');
+  background-image: url('https://i.imgur.com/Sqt0fU7.jpeg');
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -342,6 +338,7 @@
 }
 
 .card-base {
+  cursor: default;
   width: 210px;
   height: 300px;
   position: relative;
@@ -352,6 +349,8 @@
   align-content: center;
   align-items: center;
   text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .card-front,
@@ -366,7 +365,7 @@
 }
 
 .card-front {
-  background-image: url('../images/mapcard-bg-front.webp');
+  background-image: url('https://i.imgur.com/ja1q8a4.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -375,7 +374,7 @@
 }
 
 .card-back {
-  background-image: url('../images/mapcard-bg-back.webp');
+  background-image: url('https://i.imgur.com/BANi1Ht.png');
   background-size: cover;
   background-position: center;
   transform: rotateY(180deg);
@@ -383,30 +382,41 @@
   flex-direction: column;
 }
 
-.card-top {
-  height: 8%;
-  font-family: 'Black Ops One';
+.card-top,
+.card-top-back,
+.card-middle,
+.card-middle-back,
+.card-middle-down-back,
+.card-bottom,
+.card-bottom-back {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  font-family: 'Black Ops One';
+  text-align: center;
   box-sizing: border-box;
+  width: 96%;
+}
+
+.card-top {
+  height: 8%;
   width: 90%;
   overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-top h1 {
+  line-height: 1;
+  font-size: 1px;
   color: white;
   margin: 0;
   text-align: center;
   white-space: nowrap;
-  width: 100%;
-  font-size: 20px;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  text-overflow: clip;
-  display: inline-block;
-  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Black Ops One';
 }
 
 .card-middle {
@@ -415,14 +425,13 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 5px;
 }
 
 .card-image {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
 }
 
 .card-middle-text {
@@ -436,17 +445,10 @@
 
 .card-bottom {
   height: 9%;
-  text-align: center;
 }
 
 .card-top-back {
   height: 19%;
-  font-family: 'Black Ops One';
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  box-sizing: border-box;
   width: 90%;
   overflow: visible;
 }
@@ -454,8 +456,6 @@
 .card-top-back h1 {
   color: white;
   margin: 0;
-  text-align: center;
-  white-space: nowrap;
   width: 100%;
   font-size: 20px;
   flex-shrink: 0;
@@ -468,24 +468,17 @@
 .card-middle-back {
   height: 14%;
   width: 90%;
-  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   padding: 0 5px;
 }
 
 .card-middle-down-back {
-  height: 50%;
-  display: flex;
+  height: 49%;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 5px;
 }
 
+.card-tooltip,
 .card-middle-text-back {
-  text-align: center;
   font-size: 14px;
   color: white;
   padding: 0 5px;
@@ -494,34 +487,31 @@
 }
 
 .card-tooltip {
-  position: relative;
-  display: inline-block;
   cursor: pointer;
-  width: 100%;
-  padding-right: 5px;
-  padding-left: 5px;
 }
 
 .card-tooltip-text {
   visibility: hidden;
   opacity: 0;
-  width: max-content;
-  max-width: 260px;
-  background-color: #222;
+  background-color: #222222ba;
   color: #fff;
-  text-align: center;
+  border: solid;
+  width: auto;
+  backdrop-filter: blur(5px);
+  border-color: rgba(255, 255, 255, 0.5);
+  border-width: 2px;
   padding: 6px 10px;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: clamp(0.5rem, 1.5vw, 2rem);
   font-family: 'Black Ops One';
   position: absolute;
-  z-index: 1002;
-  bottom: 125%;
+  bottom: 69%;
   left: 50%;
   transform: translateX(-50%);
-  transition: opacity 0.3s ease;
+  z-index: 1002;
   white-space: nowrap;
-  pointer-events: none;
+  text-align: center;
+  transition: opacity 0.3s ease;
 }
 
 .card-tooltip:hover .card-tooltip-text {
@@ -530,41 +520,42 @@
 }
 
 .card-bottom-back {
-  height: 17%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 18%;
   position: relative;
-  text-align: center;
 }
 
 .card-button {
   font-family: 'Black Ops One';
   white-space: nowrap;
   border-radius: 25px;
-  padding: 6px 30px;
+  width: 90%;
+  height: 60%;
+  max-width: 40vh;
   text-decoration: none;
   display: inline-block;
+  text-align: center;
+  align-items: center;
+  align-content: center;
   font-size: 1em;
   margin: 0;
   cursor: pointer;
-  transition: all 0.3s ease;
+  background-color: #ffd90000;
+  border: solid;
+  border-width: 2px;
+  color: #fff;
+  transition: background-color 0.9s ease, border-color 0.9s ease, color 0.9s ease;
 }
 
-.card-button1 {
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
+.card-button:hover {
+  color: #1c1c1c;
+  background-color: #ffd200;
+  border-color: #00000000;
 }
 
-.card-button1:hover {
-  background-color: #868787;
-  color: white;
-}
-
-.card-button1:active {
-  background-color: #868787;
-  color: white;
+.card-button:active {
+  color: #1c1c1c;
+  background-color: #ffd200;
+  border-color: #00000000;
 }
 
 .card-back .card-bottom {
@@ -584,7 +575,6 @@
 .card-base.flipped {
   transform: rotateY(180deg);
 }
-
 /* Map Showcase End*/
 
 /* Supported Mods Start */
@@ -772,7 +762,6 @@ ul.mods-2 {
   background-color: #626262;
   border-radius: 10px;
 }
-
 /* Supported Mods End */
 
 /* Donation Start */
@@ -805,7 +794,6 @@ ul.mods-2 {
   box-sizing: border-box;
 }
 
-/* Responsive text scaling */
 .donation-title {
   font-size: clamp(1.5rem, 2vw, 6rem);
   color: #ffd700;
@@ -839,5 +827,4 @@ ul.mods-2 {
 .donate-button:hover {
   color: #ffd700;
 }
-
 /* Donation End */
