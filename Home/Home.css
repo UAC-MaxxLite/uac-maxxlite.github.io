@@ -442,7 +442,7 @@
 
 .card-middle-text {
   text-align: center;
-  font-size: clamp(0.5rem, 1.5vw, 2rem);
+  font-size: clamp(0.5rem, 0.8vw, 2rem);
   color: white;
   padding: 0 5px;
   font-family: 'Black Ops One';
@@ -463,7 +463,7 @@
   color: white;
   margin: 0;
   width: 100%;
-  font-size: 20px;
+  font-size: clamp(0.5rem, 1vw, 2rem);
   flex-shrink: 0;
   box-sizing: border-box;
   text-overflow: clip;
@@ -485,7 +485,7 @@
 
 .card-tooltip,
 .card-middle-text-back {
-  font-size: clamp(0.5rem, 1.5vw, 2rem);
+  font-size: clamp(0.43rem, 0.8vw, 2rem);
   color: white;
   padding: 0 5px;
   font-family: 'Black Ops One';
@@ -540,9 +540,8 @@
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  align-items: center;
   align-content: center;
-  font-size: clamp(0.5rem, 1.5vw, 2rem);
+  font-size: clamp(0.5rem, 0.8vw, 2rem);
   margin: 0;
   cursor: pointer;
   background-color: #ffd90000;
@@ -568,13 +567,6 @@
   height: 9%;
   position: relative;
   text-align: center;
-}
-
-@media (max-width: 480px) {
-  .card-button {
-    font-size: clamp(0.5rem, 1.5vw, 2rem);
-    padding: 5px 20px;
-  }
 }
 
 .card-base:hover,
