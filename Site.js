@@ -77,33 +77,23 @@ window.addEventListener('resize', resizeUITexts);
 
 
 function isMobile() {
-    return window.innerWidth <= 768;
+    return window.innerWidth <= 768; // Adjust breakpoint if needed
 }
 
-function setFlipListeners(enable) {
+if (isMobile()) {
     document.querySelectorAll('.card-base').forEach(card => {
-        // Define the flip handler once
-        const flipHandler = function (e) {
+        card.addEventListener('click', (e) => {
+            // Prevent flip if a non-flipping element is clicked
             if (!e.target.closest('.no-flip')) {
-                card.classList.toggle('flipped');
+                if (e.target.closest("flipped")) {
+                    card.classList.remove("flipped");
+                } else {
+                    card.classList.toggle('flipped');
+                }
             }
-        };
-
-        // Enable flipping
-        if (enable && !card._flipHandler) {
-            card._flipHandler = flipHandler;
-            card.addEventListener('click', flipHandler);
-        }
-        // Disable flipping
-        else if (!enable && card._flipHandler) {
-            card.removeEventListener('click', card._flipHandler);
-            delete card._flipHandler;
-        }
+        });
     });
 }
-
-// Initial check
-setFlipListeners(isMobile());
 
 // Dynamically toggle listeners on resize
 let lastState = isMobile();
