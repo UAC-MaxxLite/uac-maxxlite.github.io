@@ -346,4 +346,16 @@ body {
     margin-top: 20px;
 }
 
+.shhh {
+    font-size: 1px;
+    width: 10px;
+    height: 10px;
+    color: #dddddd11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
 /* Footer End*/
