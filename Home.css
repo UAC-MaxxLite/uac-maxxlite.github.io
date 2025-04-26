@@ -24,8 +24,9 @@
 .server-section {
   width: 100%;
   height: fit-content;
-  margin: 1% 0 1% 0;
-  background: url('../images/StealthNight.webp') center center / cover no-repeat;
+  padding: 1% 0 1% 0;
+  background-image: url("../images/StealthNight.webp");
+  background-size: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +42,7 @@
   align-items: center;
   position: relative;
   z-index: 2;
+  padding: 10% 0 10% 0;
 }
 
 .server-shape-container {
