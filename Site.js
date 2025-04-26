@@ -3,8 +3,8 @@
     const cleanedPath = originalPath.replace(/\/+$/, '').toLowerCase();
 
     const redirects = {
-        "/main": "/Home/",
-        "/homepage": "/Home/",
+        "/main": "//",
+        "/page": "//",
 
         "/about": "/About-Page/",
         "/abot": "/About-Page/",
