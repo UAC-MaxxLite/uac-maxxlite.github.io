@@ -17,6 +17,7 @@
   font-family: "Black Ops One";
   color: #ffffff;
 }
+
 /* Text Devider End */
 
 /* Connect Page Start */
@@ -93,6 +94,7 @@
 .server-text {
   color: white;
   font-size: 18px;
+  font-family: "Abel", sans-serif;
 }
 
 .server-btn {
@@ -121,6 +123,7 @@
   transform: scale(1.05);
   color: #ffd700;
 }
+
 /* Connect Page End */
 
 /* Slider Section Start */
@@ -234,6 +237,8 @@
 }
 
 .slide-text {
+  font-family: "Abel", sans-serif !important;
+  font-weight: bolder;
   color: white;
   text-align: center;
   position: relative;
@@ -248,6 +253,7 @@
   color: white;
   text-align: center;
   position: relative;
+  font-family: "Abel", sans-serif;
   font-size: clamp(0.6rem, 1vw, 4rem);
   transition: top 2s ease-out;
   margin: 5px 0;
@@ -287,6 +293,7 @@
 .slider-arrow.right {
   right: 0;
 }
+
 /* Slider Section End */
 
 /* Map Showcase Start*/
@@ -445,7 +452,7 @@
   font-size: clamp(0.5rem, 0.8vw, 2rem);
   color: white;
   padding: 0 5px;
-  font-family: 'Black Ops One';
+  font-family: "Abel", sans-serif;
   margin-top: 0;
 }
 
@@ -488,7 +495,7 @@
   font-size: clamp(0.43rem, 0.8vw, 2rem);
   color: white;
   padding: 0 5px;
-  font-family: 'Black Ops One';
+  font-family: "Abel", sans-serif;
   margin-top: 0;
 }
 
@@ -509,7 +516,7 @@
   padding: 6px 10px;
   border-radius: 10px;
   font-size: clamp(0.5rem, 1.5vw, 2rem);
-  font-family: 'Black Ops One';
+  font-family: "Abel", sans-serif;
   position: absolute;
   bottom: 69%;
   left: 50%;
@@ -573,6 +580,7 @@
 .card-base.flipped {
   transform: rotateY(180deg);
 }
+
 /* Map Showcase End*/
 
 /* Supported Mods Start */
@@ -628,16 +636,16 @@
 }
 
 .mods-tab button {
-  font-family: "Black Ops One";
+  font-family: "Abel", sans-serif;
+  font-weight: bolder;
   flex: 1 1 auto;
-  font-weight: bold;
   background-color: #676767;
   outline: solid;
   color: rgb(21, 21, 21);
   border: none;
   padding: 12px;
   text-align: center;
-  font-size: clamp(0.5rem, 0.9vw, 2rem);
+  font-size: clamp(0.5rem, 1vw, 2rem);
   cursor: pointer;
   transition: background-color 0.3s ease;
   white-space: nowrap;
@@ -696,7 +704,7 @@ h1.content-mods-header {
 }
 
 .content-mods-info {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: "Abel", sans-serif;
   font-size: clamp(0.5rem, 0.9vw, 2rem);
   color: #ccc;
   margin-bottom: 20px;
@@ -709,7 +717,7 @@ ul.mods {
 }
 
 ul.mods-2 {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: "Abel", sans-serif !important;
   font-size: clamp(0.5rem, 0.9vw, 2rem);
   color: #ccc;
   margin-bottom: 20px;
@@ -760,6 +768,7 @@ ul.mods-2 {
   background-color: #626262;
   border-radius: 10px;
 }
+
 /* Supported Mods End */
 
 /* Donation Start */
@@ -777,7 +786,6 @@ ul.mods-2 {
   position: relative;
   padding: 40px 8px 40px 8px;
   margin: 10px 0 10px 0;
-  background-color: #ff0000;
 }
 
 .donation-content {
@@ -798,17 +806,20 @@ ul.mods-2 {
 }
 
 .donation-subtext {
+  font-family: "Abel", sans-serif !important;
   font-size: clamp(0.8rem, 1.5vw, 4rem);
   margin-top: 10px;
 }
 
 .donation-note {
+  font-family: "Abel", sans-serif !important;
   font-size: clamp(0.6rem, 1vw, 2rem);
   margin: 10px;
   color: #ffffffc2;
 }
 
 .donate-button {
+  font-family: "Abel", sans-serif !important;
   display: inline-block;
   padding: 5px 30px;
   background-color: #ffd90000;
@@ -825,4 +836,5 @@ ul.mods-2 {
 .donate-button:hover {
   color: #ffd700;
 }
+
 /* Donation End */

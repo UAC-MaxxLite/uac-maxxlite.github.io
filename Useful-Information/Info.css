@@ -15,7 +15,8 @@
 }
 
 .useful-info-subheader {
-  font-family: "Black Ops One";
+  font-family: "Abel", sans-serif;
+  font-weight: bolder;
   font-size: clamp(1.1rem, 2.2vw, 2.2rem);
   color: #ffffff;
   margin-bottom: 30px;
@@ -42,7 +43,7 @@
 }
 
 .info-block-title {
-  font-family: "Black Ops One";
+  font-family: "Abel", sans-serif;
   color: #ffd200;
   font-size: clamp(0.9rem, 1.8vw, 2.8rem);
   margin-bottom: 10px;
@@ -61,6 +62,7 @@
   color: #e0e0e0;
   margin-bottom: 10px;
 }
+
 ul.info-block-description {
   list-style-position: inside;
   padding-inline-start: 0px;
