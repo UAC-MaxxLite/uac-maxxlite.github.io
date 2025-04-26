@@ -23,7 +23,8 @@
 /* Connect Page Start */
 .server-section {
   width: 100%;
-  height: 100vh;
+  height: fit-content;
+  margin: 1% 0 1% 0;
   background: url('../images/StealthNight.webp') center center / cover no-repeat;
   display: flex;
   justify-content: center;
@@ -161,6 +162,8 @@
 }
 
 .slide-inner {
+    opacity: 0;
+    transition: opacity 0.8s ease;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -171,15 +174,21 @@
   align-items: center;
 }
 
+.slide.active .slide-inner {
+    opacity: 1;
+}
+
 .slider-dots {
-  bottom: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  z-index: 5;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    bottom: 13%; /* Adjust how high you want it */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    z-index: 10; /* Ensures dots float over slides */
+    pointer-events: auto;
 }
 
 .dots-background {
