@@ -197,13 +197,40 @@
                     <div class="faq-stack">
                         <button class="faq-question" onclick="toggleFAQ(this)">
                             <span class="faq-icon">+</span>
+                            <span class="faq-text">"What is an RPT? Where do I find one?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>An RPT file is a "report" log file. It logs everything happening and can aid developers in helping you or fixing bugs.<br>
+                                You usually find them here (Windows): <i>C:\Users\[name]\AppData\Local\Arma 3</i><br>
+                                Look for the files with the prefix <i>Arma3_x64_YEAR_MONTH-DAY_HOUR-TIME-TIME.rpt</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
+                            <span class="faq-text">"Where are the saves located?"</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Generally: <i>C:\Users\[name]\Documents\Arma 3 - Other Profiles\[profilename].</i><br>
+                                Servers vary on where they are stored, so just search for .vars if possible.<br>
+                                In there, you will need either <i>[profilename].vars.Arma3Profile</i> or <i>AntistasiUltimate.vars.</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-stack">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-icon">+</span>
                             <span class="faq-text">"Do I need to enable the Contact DLC in the launcher?"</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>No. There really isn't ever a reason to load the Contact DLC unless you are playing the
-                                campaign it adds. Despite Contact having the ability to be loaded like a CDLC, it's
-                                actually like a normal DLC in which you can access its content without loading it.</p>
+                            <p>No. Despite Contact having the ability to be loaded like a CDLC, it's
+                                actually more like a normal DLC in which you can access the majority of its content without loading it.</p>
                         </div>
                     </div>
                 </div>
@@ -215,7 +242,7 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>In the new update, you will unlock vehicles based on the zones you have mostly. Check out
+                            <p>You will unlock vehicles based on the zones you have. Check out
                                 the <a class="faq-link"
                                     href="https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Arms-Dealer">Arms
                                     Dealer</a> page for concrete information.</p>
@@ -261,10 +288,13 @@
                         </button>
                         <div class="faq-answer">
                             <p>Load <a class="faq-link"
-                                    href="https://steamcommunity.com/workshop/filedetails/?id=2648308937">IFA3</a> OR <a
+                                    href="https://steamcommunity.com/workshop/filedetails/?id=2648308937">IFA3</a>, <a
                                     class="faq-link"
-                                    href="https://steamcommunity.com/sharedfiles/filedetails/?id=2894199585">C-47
-                                    Skytrain Mega Pack</a></p>
+                                    href="https://steamcommunity.com/sharedfiles/filedetails/?id=2894199585">C-47 
+                                    Skytrain Mega Pack</a> OR <a
+                                    class="faq-link"
+                                    href="https://steamcommunity.com/sharedfiles/filedetails/?id=3117898674">SPEX
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -277,9 +307,7 @@
                         </button>
                         <div class="faq-answer">
                             <p>Depends, we all have lives. You can make a suggestion but we guarantee nothing but our
-                                best. If you want to do these yourself, feel free to do so and create a PR. If we deem
-                                that your addition/change is suitable, you will be added to the contributor list on our
-                                github page.</p>
+                                best. If you want to do these yourself, feel free to do so and create a PR.</p>
                         </div>
                     </div>
                 </div>
@@ -358,11 +386,9 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Antistasi Ultimate offers all the features of Antistasi Plus, anything you can do in Plus
-                                can also be done in Ultimate. But beyond that, it has support for more factions and more
-                                maps. More new content to experience. Better support for mixing mods together for any
-                                faction combination you like, the newly reworked trader will work with whatever
-                                supported mods you load and factions you use.</p>
+                            <p>Ultimately the goal is to have fun. 
+                                We think you should try out all available options before making a decision on what you enjoy the most!
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -374,21 +400,8 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Arms dealer location can be obtained via squad leader interrogations, documents and
+                            <p>The arms dealer location can be obtained via squad leader interrogations, documents, civilian interaction and
                                 laptop hacks.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-stack">
-                        <button class="faq-question" onclick="toggleFAQ(this)">
-                            <span class="faq-icon">+</span>
-                            <span class="faq-text">"Where is the HQ tent?"</span>
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>HQ tent was removed, it's functionality was moved into Commander Menu, Environment tab.
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -401,8 +414,8 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Antistasi Ultimate will not appear in Scenarios menu, but you can still play as single
-                                player by creating a LAN server in Arma 3's multiplayer menu.</p>
+                            <p>Antistasi Ultimate will not appear in Scenarios menu, but you can still play in "single
+                                player" by creating a LAN server in Arma 3's multiplayer menu.</p>
                         </div>
                     </div>
                 </div>
@@ -414,8 +427,8 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>This is no longer just a mission, it is a mod. Therefore it does not have PBOs like pure
-                                missions. It must be handled either via admin commands to switch to the mission when
+                            <p>This is no longer just a mission, it is a mod. Therefore it does not have PBOs like
+                                scenarios. It must be handled either via admin commands to switch to the mission when
                                 logged into a dedicated server, or via a custom mission config. Please join the discord
                                 if you require help with this.</p>
                         </div>
