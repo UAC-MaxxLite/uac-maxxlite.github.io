@@ -459,8 +459,8 @@
   padding: 0 5px;
   color: rgb(255 255 255);
   text-decoration-line: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 10%;
+  text-decoration-thickness: 10%;
+  text-underline-offset: 25%;
 }
 
 .card-middle-down-back {
