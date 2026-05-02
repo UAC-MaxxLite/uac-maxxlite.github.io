@@ -1,54 +1,30 @@
+
 function resizeTextToFit(elements) {
     elements.forEach(el => {
         const container = el.parentElement;
+        let fontSize = 100; // Start large
+        el.style.fontSize = fontSize + 'px';
+        el.style.whiteSpace = 'nowrap';
 
-        if (!container) return;
+        const maxHeight = container.clientHeight; // container inner height
+        const maxWidth = container.clientWidth;  // container inner width
 
-        const computedStyle = window.getComputedStyle(container);
-        const containerHeight = container.clientHeight
-            - parseFloat(computedStyle.paddingTop)
-            - parseFloat(computedStyle.paddingBottom);
-
-        const containerWidth = container.clientWidth
-            - parseFloat(computedStyle.paddingLeft)
-            - parseFloat(computedStyle.paddingRight);
-
-        // Reset font size first to avoid compounding
-        el.style.fontSize = '100px';
-        el.style.whiteSpace = 'nowrap'; // Try to keep it to one line if applicable
-
+        // For tooltips, apply a minimum font size
         const isTooltip = el.classList.contains('card-tooltip-text');
-        const minFontSize = isTooltip ? 12 : 5;
-        let fontSize = 100;
+        const minFontSize = isTooltip ? 12 : 5; // Tooltips have a minimum of 12px for readability
 
-        // Temporarily make sure element is visible if it's hidden (like tooltips)
-        const originalVisibility = el.style.visibility;
-        el.style.visibility = 'hidden';
-        el.style.display = 'block';
-        el.style.position = 'absolute';
-
-        while (
-            (el.scrollHeight > containerHeight || el.scrollWidth > containerWidth) &&
-            fontSize > minFontSize
-        ) {
+        // Resize text to fit both width and height of the container
+        while ((el.scrollHeight > maxHeight || el.scrollWidth > maxWidth) && fontSize > minFontSize) {
             fontSize -= 1;
             el.style.fontSize = fontSize + 'px';
         }
-
-        // Restore original visibility
-        el.style.visibility = originalVisibility;
-        el.style.position = '';
     });
 }
-
 
 function resizeUITexts() {
     const headings = document.querySelectorAll('.card-top h1');
     const tooltips = document.querySelectorAll('.card-tooltip-text');
-    const tooltiptext = document.querySelectorAll('.card-tooltip');
-    const middlebacktext = document.querySelectorAll('.card-middle-text-back');
-    const middletext = document.querySelectorAll('.card-middle-text');
-    resizeTextToFit([...headings, ...tooltips, ...tooltiptext, ...middlebacktext, ...middletext]);
+    resizeTextToFit([...headings, ...tooltips]);
 }
 
 window.addEventListener('load', resizeUITexts);
@@ -59,29 +35,12 @@ function isMobile() {
     return window.innerWidth <= 768; // Adjust breakpoint if needed
 }
 
-if (isMobile()) {
-    document.querySelectorAll('.card-base').forEach(card => {
-        card.addEventListener('click', (e) => {
-            // Prevent flip if a non-flipping element is clicked
-            if (!e.target.closest('.no-flip')) {
-                if (e.target.closest("flipped")) {
-                    card.classList.remove("flipped");
-                } else {
-                    card.classList.toggle('flipped');
-                }
-            }
-        });
-    });
-}
-
-// Dynamically toggle listeners on resize
-let lastState = isMobile();
-window.addEventListener('resize', () => {
-    const currentState = isMobile();
-    if (currentState !== lastState) {
-        setFlipListeners(currentState);
-        lastState = currentState;
-    }
+// Use event delegation so card-flip works for both statically and dynamically added cards.
+// Clicking a .no-flip descendant (e.g. download links, copy button) does not flip the card.
+document.addEventListener('click', (e) => {
+    if (e.target.closest('.no-flip')) return;
+    const card = e.target.closest('.card-base');
+    if (card) card.classList.toggle('flipped');
 });
 
 window.addEventListener('scroll', () => {
@@ -112,6 +71,88 @@ function copyToClipboard(element) {
         }, 1500);
     }
 }
+
+function getMapName(card) {
+    const nameElement = card.querySelector('.card-front .card-top .card-text');
+    return nameElement ? nameElement.textContent.trim() : '';
+}
+
+function getMapZoneAmount(card) {
+    const stats = card.querySelectorAll('.card-front .card-middle .card-middle-text');
+    for (const stat of stats) {
+        const text = stat.textContent || '';
+        if (text.includes('Zone Amount')) {
+            const match = text.match(/(\d+)/);
+            return match ? parseInt(match[1], 10) : 0;
+        }
+    }
+    return 0;
+}
+
+function getMapSizeArea(card) {
+    const stats = card.querySelectorAll('.card-front .card-middle .card-middle-text');
+    for (const stat of stats) {
+        const text = stat.textContent || '';
+        if (text.includes('Map Size')) {
+            const match = text.match(/(\d+(?:\.\d+)?)\s*x\s*(\d+(?:\.\d+)?)/i);
+            if (!match) {
+                return 0;
+            }
+
+            const width = parseFloat(match[1]);
+            const height = parseFloat(match[2]);
+            return Number.isFinite(width) && Number.isFinite(height) ? width * height : 0;
+        }
+    }
+    return 0;
+}
+
+function initMapSorting() {
+    const cardGrid = document.getElementById('card-grid');
+    const sortBySelect = document.getElementById('map-sort-by');
+    const sortDirectionSelect = document.getElementById('map-sort-direction');
+
+    if (!cardGrid || !sortBySelect || !sortDirectionSelect) {
+        return;
+    }
+
+    function applyMapSorting() {
+        const sortBy = sortBySelect.value;
+        const direction = sortDirectionSelect.value === 'desc' ? -1 : 1;
+        const cards = Array.from(cardGrid.querySelectorAll('.card-container'));
+
+        cards.sort((a, b) => {
+            if (sortBy === 'zones') {
+                const zoneDifference = getMapZoneAmount(a) - getMapZoneAmount(b);
+                if (zoneDifference !== 0) {
+                    return zoneDifference * direction;
+                }
+                return getMapName(a).localeCompare(getMapName(b), undefined, { sensitivity: 'base' }) * direction;
+            }
+
+            if (sortBy === 'size') {
+                const sizeDifference = getMapSizeArea(a) - getMapSizeArea(b);
+                if (sizeDifference !== 0) {
+                    return sizeDifference * direction;
+                }
+                return getMapName(a).localeCompare(getMapName(b), undefined, { sensitivity: 'base' }) * direction;
+            }
+
+            const nameDifference = getMapName(a).localeCompare(getMapName(b), undefined, { sensitivity: 'base' });
+            if (nameDifference !== 0) {
+                return nameDifference * direction;
+            }
+            return (getMapZoneAmount(a) - getMapZoneAmount(b)) * direction;
+        });
+
+        cards.forEach(card => cardGrid.appendChild(card));
+    }
+
+    sortBySelect.addEventListener('change', applyMapSorting);
+    sortDirectionSelect.addEventListener('change', applyMapSorting);
+}
+
+initMapSorting();
 
 
 let currentIndex = 0;
@@ -286,7 +327,7 @@ function toggleFAQ(button) {
             a.classList.add('hide');
             setTimeout(() => {
                 if (a.classList.contains('hide')) a.style.display = 'none';
-            }, 400);
+            }, 0);
         }
     });
 
@@ -323,14 +364,14 @@ function toggleFAQ(button) {
 
         setTimeout(() => {
             answer.style.display = 'none';
-        }, 400);
+        }, 0);
     }
 
     // Reset height to auto after animation
     setTimeout(() => {
         faqBox.style.transition = '';
         faqBox.style.height = 'auto';
-    }, 600);
+    }, 0);
 }
 
 document.querySelectorAll('.team-member-wrapper').forEach(wrapper => {
